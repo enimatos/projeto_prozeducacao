@@ -10,31 +10,31 @@
     <!--Dados Pessoais-->
         <h1>Cadastro</h1>
         <form>
-            <label>Nome completo: </label>
-            <input type="text" name="nome_completo" id="nome">
-            <label>CPF: </label>
-            <input type="text" maxlength="11" name="cpf" id="cpf"></p>
-            <label>E-mail: </label>
-             <input type="email" name="email" id="email">
-            <label>Telefone: </label> 
-            <input type="text" name="telefone" id="telefone"></p>
+            <label for="nome_completo">Nome completo: </label>
+            <input type="text" name="nome_completo" id="nome_completo">
+            <p><label for="cpf">CPF: </label>
+            <input type="text" maxlength="11" name="cpf" id="cpf" placeholder="Apenas números"></p>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email">
+            <label for="telefone">Telefone: </label> 
+            <input type="tel" name="telefone" id="telefone">
         </form>
     <!--Endereço-->
         <div>
             <form>
-                <label>Endereço: </label>
+                <p><label for="endereco">Endereço: </label>
                 <input type="text" name="endereco" id="endereco">
-                <label>Número/Apto: </label>
+                <label for="numero">Número/Apto: </label>
                 <input type="text" name="numero" id="numero"></p>
-                <label>Bairro: </label>
+                <p><label for="bairro">Bairro: </label>
                 <input type="text" name="bairro" id="bairro">
-                <label>CEP: </label>
+                <label for="cep">CEP: </label>
                 <input type="text" name="cep" id="cep"></p>
-                <label>Cidade: </label>
+                <label for="cidade">Cidade: </label>
                 <input type="text" name="cidade" id="cidade">
-                <label>Estado: </label>
+                <label for="estado">Estado: </label>
                 <input type="text" name="estado" id="estado">
-                <label>País: </label>
+                <label for="país">País: </label>
                 <input type="text" name="país" id="país">
             </form>
         </div>
@@ -42,10 +42,10 @@
         <div>
             <form>
                 <br>
-                <label>Senha: </label>
+                <label for="senha">Senha: </label>
                 <input type="password" name="senha" id="senha">
-                <label>Confirme sua senha: </label>
-                <input type="password" name="senha">
+                <label for="senha">Confirme sua senha: </label>
+                <input type="password" name="senha" id="senha">
                 <p><input type="submit" value="Enviar"></p>
             </form>
         </div>
