@@ -4,35 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Entre em contato</title>
 </head>
 <body>
+    <header>
+        <section id="topo">
+            <div id="logo">
+                <img src="./imagens/Ellas-Logo.jpg" alt="circulo lilás escrito na cor laranja. Ellas, e abaixo escrito na cor preta, você tem o seu lugar" width="150px">
+            </div>
+            <div id="divPesquisa">
+                <img src="search3.png" alt="Pesquisar..."/>
+                <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
+                <button id="btnBusca">Buscar</button>
+            </div>
+            <div id="login">
+                <a href="cadastro.html"><h5>Login/Cadastro</h5></a>
+            </div>
+       </section>
+    </header>
     <h1>Contato:</h1>
-    <form>
-            <div>
-                <label for="assunto">Assunto:</label>
-            <input type="text" name="assunto" id="assunto">
-            </div>
-        
-                <div>
-                   <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome"> 
-                </div>
-            </div>
+    <form style="width:50%;">
+        <label for="assunto">Assunto:</label>
+        <input type="text" name="assunto" id="assunto">
 
-                <div>
-                    <label for="e-mail">E-mail:</label>
-            <input type="e-mail" name="e-mail" id="e-mail">
-                </div>
-            </div>
-            
-                <div>
-                    <label for="vamos lá, me conta">Vamos lá, me conta:</label>
-            <textarea id="vamos lá, me conta" name="nome"></textarea>
-                </div>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome"> 
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="texto">Vamos lá, me conta:</label>
+        <textarea id="texto" name="texto"></textarea>
     
-            <input type="submit" value="enviar">   
+        <input type="submit" value="enviar">   
     </form>
+    <footer>
+        <section id="rodape">
+            <nav>
+                <ul class="padrao">
+                    <li><a href="./sobre_nos.html">Sobre nós</a></li>
 
+                    <li><a href="./contato.html">contato</a>
+                    <img src="" alt=""></li>
+                    <li><a href="">Ellas-Logo.jpg</li></a>
+                    <li><a href=".#">Facebook</a>
+                    <img src="./imagens/facebook.png" alt="" width="30"></li>
+
+                    <li><a href="#">Instagram</a>
+                    <img src="./imagens/instagram.png" alt="" width="25"></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
 </body>
 </html>
