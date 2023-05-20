@@ -24,10 +24,16 @@ form {
 
 nav ul li{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     text-decoration: none;
     
+}
+
+.menu li{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
 }
 
 ul {
@@ -36,6 +42,10 @@ ul {
 }
 
 
+#logo img{
+    width: 180px;
+    height: 150px;
+}
 .padrao {
     display: flex;
     justify-content: space-between;
@@ -46,10 +56,66 @@ ul {
 
 main{
     display: flex;
-    flex-direction: column;
+
 }
 
 .item{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    justify-content:last baseline;
+
+}
+
+li{
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.links{
+    display:inline-block;
+    width: 220px;
+    height: 600px;
+    justify-items: center;
+
+   
+}
+
+.corpo div img{
+    display: flex;    
+
+}
+
+
+.corpo{
+    display: flex;
+    flex-direction:column;
+}
+
+.item img{
+    width: 200px;
+}
+
+.img_item{
+    display: flex;
+    
+    
+}
+
+.alinhado{
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
+}
+
+aside nav ul li{
+    align-content: center;
 }
