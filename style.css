@@ -6,6 +6,7 @@ h1{
 }
 
 body{
+    display: inline;
     background-color: rgb(249, 242, 238);
     margin: 20px 50px 20px 50px;
     width: 90%;
@@ -19,7 +20,7 @@ body{
 }
 
 form {
-    background-color: rgb(243, 226, 204);
+    background-color: rgb(247, 245, 242);
 }
 
 nav ul li{
@@ -33,7 +34,12 @@ nav ul li{
 .menu li{
     display: flex;
     flex-direction: column;
-    align-content:center;
+    align-items:center;
+    
+}
+
+.menu{
+    vertical-align:text-bottom;
 }
 
 ul {
