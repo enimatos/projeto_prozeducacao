@@ -1,22 +1,86 @@
 
-
-h1{
-    font-size: x-large;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    margin: 0;
+    padding: 0;
 }
+/* body*/
+#cabecalho{
+    display: flex;
+    margin: auto;
 
-body{
-    display: inline;
-    background-color: rgb(249, 242, 238);
-    margin: 20px 50px 20px 50px;
-    width: 90%;
 }
 
 #topo{
     display: flex;
-    justify-content: space-between;
-    align-items:center;
-    margin-bottom: 1rem;
+    background-color: rgb(249, 242, 238);
+    align-items: center;
+    justify-content:space-between;
+    padding: 3rem;
+    height: 20px;
+    width: 100%;
+}
+
+#logo img{
+    width: 100px;
+    height: 80px;
+    padding-left: 3.5rem;
+}
+
+ul.alinhado{
+    display: flex;
+    gap: 1rem;
+    align-items:first baseline;
+    padding-inline: 2rem;
+}
+
+aside{
+    display: flex;
+    height: 100%;
+    width: 250px;
+    justify-items: center;
+    padding: 10px 0 10px 0;
+    
+}
+
+ul.lista_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+main.conteudo{
+    display: flex;
+}
+
+div.corpo{
+    flex-direction:column;
+    padding: 2rem;
+
+}
+
+div.item{
+    display:inline-block;
+    align-items:space-around;
+    width: 200px;
+    height:fit-content;
+
+}
+
+.image_top{
+    display: inline-block;
+    align-content: center;
+    justify-items: center;
+    height: 30%;
+}
+
+h1{
+    font-size: x-large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 form {
@@ -28,55 +92,20 @@ nav ul li{
     justify-content:center;
     align-items: center;
     text-decoration: none;
-    
 }
 
-.menu li{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    
-}
-
-.menu{
-    vertical-align:text-bottom;
-}
-
-ul {
-    justify-content: space-between;
-
-}
-
-
-#logo img{
-    width: 180px;
-    height: 150px;
-}
 .padrao {
     display: flex;
     justify-content: space-between;
     background-color: rgb(225, 196, 160);
-    height: 5rem;
-    padding: 0 2rem;
-}
-
-main{
-    display: flex;
 
 }
 
-.item{
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    justify-content:last baseline;
 
-}
 
 li{
     list-style: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
     
 
 }
@@ -86,42 +115,20 @@ a{
     
 }
 
-.links{
-    display:inline-block;
-    width: 220px;
-    height: 600px;
-    justify-items: center;
-
-   
-}
-
-.corpo div img{
-    display: flex;    
-
-}
 
 
-.corpo{
+
+div.item img{
     display: flex;
-    flex-direction:column;
-}
-
-.item img{
+    justify-items: space-around;
     width: 200px;
 }
 
-.img_item{
+div.img_item{
     display: flex;
-    
+    width: 200px;
+    height: 150px;
     
 }
 
-.alinhado{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
 
-aside nav ul li{
-    align-content: center;
-}
