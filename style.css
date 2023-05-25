@@ -1,7 +1,7 @@
 
 *{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: small;
+    font-family: 'Roboto', sans-serif;
+    font-size:small;
     margin: 0;
     padding: 0;
 }
@@ -63,7 +63,9 @@ main.conteudo{
 }
 
 div.corpo{
+    display: flex;
     flex-direction:column;
+    width: 100%;
 
 }
 
@@ -78,9 +80,12 @@ div.item{
 
 
 h1{
-    font-size: x-large;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    font-family: 'Dancing Script', cursiva;
+    color: orangered;
+    font-size:xx-large;
+    text-align: center;
+    width: 70%;
+  }
 
 
 li{
@@ -106,7 +111,7 @@ div.img_item{
 }
 
 div.image_top{
-    display: inline-block;
+    display: inline-flex;
     height: 30%;
     padding: 0;
 }
@@ -131,9 +136,62 @@ nav.rodape{
     height: auto;
 }
 
-
-form {
-    background-color: rgb(247, 245, 242);
+div#foto{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+div#foto img{
+    display: flex;
+    justify-content: flex-start;
+    height: 350px;
+    
+}
 
+.contato{
+    display: flex;
+    height: 100%;
+    background-color: rgb(249, 242, 238);
+}
+
+div.texto_sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    width: 70%;
+}
+
+.texto_sobre p{
+    padding: 1rem;
+}
+
+div.formulario {
+    background-color: rgba(247, 245, 242, 0.315);
+    height: 95%;
+    justify-content: center;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, textarea{
+    border-radius: 10px;
+}
+
+.botao{
+    width: 50px;
+}
+form label{
+    font-weight: bold;
+}

@@ -1,50 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Entre em contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ephesis&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Ellas - você tem o seu lugar</title>
 </head>
 <body>
-    <header>
-        <section id="topo">
-             <div id="logo">
-                 <img src="./imagens/Ellas-Logo.jpg" alt="circulo lilás escrito na cor laranja. Ellas, e abaixo escrito na cor preta, você tem o seu lugar">
-             </div>
-             <div id="divPesquisa">
-                 <img src="search3.png" alt="Pesquisar..."/>
-                 <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
-                 <button id="btnBusca">Buscar</button>
-             </div>
-             <nav>
-                 <ul class="alinhado">
-                     <li><a href="favoritos.html">Meus favoritos</a></li>
-                     <li><a href="meu_carrinho.html">Carrinho</a></li>
-                     <li><a href="cadastro.html">Login/Cadastro</a></li> 
-                 </ul>
-             </nav>
-             
-        </section>
-     </header>
-     <main>
-    <h1>Contato:</h1>
-    <form style="width:50%;">
-        <label for="assunto">Assunto:</label>
-        <input type="text" name="assunto" id="assunto">
+    <header id="cabecalho">
+       <section id="topo">
+            <div id="logo">
+                <img src="./imagens/Ellas-Logo.jpg" alt="circulo lilás escrito na cor laranja. Ellas, e abaixo escrito na cor preta, você tem o seu lugar">
+            </div>
+            <div id="divPesquisa">
+                <img src="search3.png" alt="Pesquisar..."/>
+                <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
+                <button id="btnBusca">Buscar</button>
+            </div>
+            <nav>
+                <ul class="alinhado">
+                    <li><a href="favoritos.html">Meus favoritos</a></li>
+                    <li><a href="meu_carrinho.html">Carrinho</a></li>
+                    <li><a href="cadastro.html">Login/Cadastro</a></li> 
+                </ul>
+            </nav>
+            
+       </section>
+    </header>
+    <main class="conteudo">
+        <div class="links">
+            <aside class="menu">
+                <ul class="lista_links">
+                    <li><a href="#">Bolsas</a></li>
+                    <li><a href="">Blusas e Tops</a></li>
+                    <li><a href="">Calças</a></li>
+                    <li><a href="">Casacos e Jaquetas</a></li>
+                    <li><a href="">Conjuntos</a></li>
+                    <li><a href="">Lingerie</a></li>
+                    <li><a href="">Macacão</a></li>
+                    <li><a href="saias.html">Saias</a></li>
+                    <li><a href="">Sueter</a></li>
+                    <li><a href="">Vestido</a></li>      
+                    <li><a href="">Plus Size</a></li> 
+                    <li><a href="">Acessórios</a></li>
+                    <li><a href="">Calçados</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="corpo">
+            <div class="image_top">
+                <img src="./imagens/images_editada.jpg" alt="" >
+            </div>
+                <section class="contato">
+                    <div id="foto">
+                        <img src="./imagens/Ellas-Logo.jpg" alt="logo da loja em tamanho grande">
+                    </div>
+                    <div class="formulario">
+                        <h1>Contato:</h1><br>
+                        <form>
+                            <label for="assunto">Assunto:</label>
+                            <input type="text" name="assunto" id="assunto" maxlength="50">
 
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome"> 
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" maxlength="50"> 
 
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" maxlength="50">
 
-        <label for="texto">Vamos lá, me conta:</label>
-        <textarea id="texto" name="texto"></textarea>
-    
-        <input type="submit" value="enviar">   
-    </form>
+                            <label for="texto">Vamos lá, me conta:</label>
+                            <textarea id="texto" name="texto" maxlength="300" ></textarea>
+                        
+                            <input type="submit" value="enviar" width="50px" class="botao">   
+                        </form>
+                    </div>
+                </section>
+            </div>
+
+        </div>
     </main>
     <footer>
         <section id="rodape">
