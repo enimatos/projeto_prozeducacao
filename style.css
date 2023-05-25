@@ -5,8 +5,12 @@
     margin: 0;
     padding: 0;
 }
-/* body*/
-#cabecalho{
+/* header*/
+
+body{
+    height: 700px;
+}
+header#cabecalho{
     display: flex;
     margin: auto;
 
@@ -17,12 +21,12 @@
     background-color: rgb(249, 242, 238);
     align-items: center;
     justify-content:space-between;
-    padding: 3rem;
+    padding: 2.5rem;
     height: 20px;
     width: 100%;
 }
 
-#logo img{
+div#logo img{
     width: 100px;
     height: 80px;
     padding-left: 3.5rem;
@@ -55,11 +59,11 @@ ul.lista_links{
 
 main.conteudo{
     display: flex;
+    height: 650px;
 }
 
 div.corpo{
     flex-direction:column;
-    padding: 2rem;
 
 }
 
@@ -71,52 +75,22 @@ div.item{
 
 }
 
-.image_top{
-    display: inline-block;
-    align-content: center;
-    justify-items: center;
-    height: 30%;
-}
+
 
 h1{
     font-size: x-large;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-form {
-    background-color: rgb(247, 245, 242);
-}
-
-nav ul li{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.padrao {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(225, 196, 160);
-
-}
-
-
 
 li{
     list-style: none;
     text-align: center;
-    
-
-}
+ }
 
 a{
     text-decoration: none;
-    
-}
-
-
-
+  }
 
 div.item img{
     display: flex;
@@ -129,6 +103,37 @@ div.img_item{
     width: 200px;
     height: 150px;
     
+}
+
+div.image_top{
+    display: inline-block;
+    height: 30%;
+    padding: 0;
+}
+
+
+section.rodape{
+    display: flex;
+    align-items: center;
+   
+}
+
+ul.padrao{
+    display: flex;
+    justify-content:space-around;
+    align-items:first baseline;
+    background-color: rgb(225, 196, 160);
+    padding: 1rem;
+
+}
+nav.rodape{
+    width: 100%;
+    height: auto;
+}
+
+
+form {
+    background-color: rgb(247, 245, 242);
 }
 
 
