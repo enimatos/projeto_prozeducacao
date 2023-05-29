@@ -8,12 +8,12 @@
 /* header*/
 
 body{
-    height: 700px;
+    display: flex;
+    flex-direction: column;
+
 }
 header#cabecalho{
     display: flex;
-    margin: auto;
-
 }
 
 #topo{
@@ -27,6 +27,7 @@ header#cabecalho{
 }
 
 div#logo img{
+    display: flex;
     width: 100px;
     height: 80px;
     padding-left: 3.5rem;
@@ -44,7 +45,6 @@ aside{
     height: 100%;
     width: 250px;
     justify-items: center;
-    padding: 10px 0 10px 0;
     
 }
 
@@ -59,21 +59,17 @@ ul.lista_links{
 
 main.conteudo{
     display: flex;
-    height: 650px;
+    max-width: 1900px;
+    min-width: 568px;
+    max-height: 880px;
+    min-height: 580px;
 }
 
-div.corpo{
+.corpo{
     display: flex;
     flex-direction:column;
     width: 100%;
-
-}
-
-div.item{
-    display:inline-block;
-    align-items:space-around;
-    width: 200px;
-    height:fit-content;
+    height: 100%;
 
 }
 
@@ -82,9 +78,10 @@ div.item{
 h1{
     font-family: 'Dancing Script', cursiva;
     color: orangered;
-    font-size:xx-large;
+    font-size:  5em;
     text-align: center;
     width: 70%;
+    padding: 1rem;
   }
 
 
@@ -95,24 +92,25 @@ li{
 
 a{
     text-decoration: none;
-  }
-
-div.item img{
-    display: flex;
-    justify-items: space-around;
-    width: 200px;
+    
 }
 
-div.img_item{
-    display: flex;
-    width: 200px;
-    height: 150px;
+div.item{
+    display:inline-block;
+    align-items:space-around;
+    width: 300px;
+}
+
+div.img_item img{
+    flex-direction: column;
+    justify-items:center;
+    width: 100%;
     
 }
 
 div.image_top{
-    display: inline-flex;
-    height: 30%;
+    display:flex;
+    height: 200px;
     padding: 0;
 }
 
@@ -137,23 +135,32 @@ nav.rodape{
 }
 
 div#foto{
-    width: 60%;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    width: 40%;
 }
 
 div#foto img{
     display: flex;
-    justify-content: flex-start;
-    height: 350px;
-    
+    justify-items: center;
+    width: 80%;
 }
 
 .contato{
     display: flex;
-    height: 100%;
     background-color: rgb(249, 242, 238);
+    width: 1650px;
+    height: 580px;
+    align-items: center;
+}
+
+div.principal{
+    display: flex;
+    height: 580px;
+    align-items: center;
+    background-image: url(./imagens/istockphoto-1321195792-1100x580.jpg);
+    background-position: center;
 }
 
 div.texto_sobre{
@@ -162,10 +169,12 @@ div.texto_sobre{
     align-items: center;
     text-align: justify;
     justify-content: center;
-    width: 70%;
+    height: 95%;
+    width: 100%;
 }
 
 .texto_sobre p{
+    width: 70%;
     padding: 1rem;
 }
 
@@ -174,12 +183,13 @@ div.formulario {
     height: 95%;
     justify-content: center;
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
 }
 
-form{
+
+form.form_contato{
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -189,9 +199,49 @@ form input, textarea{
     border-radius: 10px;
 }
 
-.botao{
-    width: 50px;
+form input{
+    height: 30px;
 }
+
+.botao{
+    width: 90px;
+    color: blueviolet;
+}
+
 form label{
     font-weight: bold;
+    font-size:medium;
+}
+
+main.mlogin{
+    height: 800px;
+}
+
+section.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+
+.mb-3{
+    align-items: space-between;
+    padding: 1rem;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+div.produtos{
+    flex-direction: column;
+    width: 20%;
+    height: 40%;
 }

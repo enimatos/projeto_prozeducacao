@@ -1,60 +1,81 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ellas loja</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ephesis&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Ellas - você tem o seu lugar</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-md-center vh-100">
-            <div class="col-12 col-sm-6 col-lg-3 bg-primary">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col text-center m-5">
-                            <img src="./imagens/Ellas-Logo.jpg" class="img-fluid" alt="logo ellas" srcset="">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <form>
-                                <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label">Email</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-3">
-                                  <label for="exampleInputPassword1" class="form-label">Senha</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="mb-3 form-check">
-                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Fazer Login</button>
-                              </form>
-                        </div>
-                    </div>
-                </div> 
+    <header id="cabecalho">
+       <section id="topo">
+            <div id="logo">
+                <img src="./imagens/Ellas-Logo.jpg" alt="circulo lilás escrito na cor laranja. Ellas, e abaixo escrito na cor preta, você tem o seu lugar">
             </div>
-        </div>
-    </div>
-    <main>
-        <div class="contaoner">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                  <a href="#" class="btn btn-primary">Esqueci Minha Senha </a>
-                  <div class="card-body">
-                    <h5 class="card-title"><a href="#" class="btn btn-primary">Criar Minha Conta</a> </h5>
-                    <p class="card-text">Ao acessar,você concorda com a nossa <a href="#" class="btn btn-primary">política de privacidade</a> e <a href="#" class="btn btn-primary">termos de uso</a> </p>
+            <div id="divPesquisa">
+                <img src="search3.png" alt="Pesquisar..."/>
+                <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
+                <button id="btnBusca">Buscar</button>
+            </div>
+            <nav>
+                <ul class="alinhado">
+                    <li><a href="favoritos.html">Meus favoritos</a></li>
+                    <li><a href="meu_carrinho.html">Carrinho</a></li>
+                    <li><a href="login.html">Login/Cadastro</a></li> 
+                </ul>
+            </nav>
+            
+        </section>
+    </header>
+    <main class="mlogin">                       
+        <section class="login">
+            <h1>Login</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
-              </div>
-              <div class="row">
-                
-              </div>
-        </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Fazer Login</button>
+            </form>
+            <div class="contaoner">
+                <div class="card" style="width: 30rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <a href="#" class="btn btn-primary">Esqueci Minha Senha </a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="cadastro.html" class="btn btn-primary">Criar Minha Conta</a> </h5>
+                        <p class="card-text">Ao acessar,você concorda com a nossa <a href="#" class="btn btn-primary">política de privacidade</a> e <a href="#" class="btn btn-primary">termos de uso</a> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <section class="rodape">
+            <nav class="rodape">
+                <ul class="padrao">
+                    <li><a href="./sobre_nos.html">Sobre nós</a></li>
+
+                    <li><a href="./contato.html">contato</a>
+                    <img src="" alt=""></li>
+                    <li><a href="https://pt-br.facebook.com/">Facebook <img src="./imagens/facebook.png" alt="" width="20"></a></li>
+
+                    <li><a href="https://www.instagram.com">Instagram <img src="./imagens/instagram.png" alt="" width="20"></a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
 </body>
 </html>
 
