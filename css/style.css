@@ -14,30 +14,29 @@ body{
 }
 header#cabecalho{
     display: flex;
+    height: 5vw;
+    background-color: rgb(249, 242, 238);
+    justify-content: center;
+
 }
 
 #topo{
     display: flex;
-    background-color: rgb(249, 242, 238);
     align-items: center;
     justify-content:space-between;
-    padding: 2.5rem;
-    height: 20px;
-    width: 100%;
+    width: 80%;
 }
 
 div#logo img{
     display: flex;
-    width: 100px;
-    height: 80px;
-    padding-left: 3.5rem;
+    width: 100%;
+    height: 70px;
 }
 
 ul.alinhado{
     display: flex;
     gap: 1rem;
     align-items:first baseline;
-    padding-inline: 2rem;
 }
 
 aside{
@@ -52,23 +51,31 @@ ul.lista_links{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     height: 100%;
+    padding: 1% 0;
     width: 100%;
 }
 
+button.btn_link{
+    appearance:button;
+    padding: 5px 10px;
+    width: 150px;
+    border-radius: 30%;
+    background-color: white;
+    color: black;
+}
+
+
 main.conteudo{
     display: flex;
-    max-width: 1900px;
-    min-width: 568px;
-    max-height: 880px;
-    min-height: 580px;
+    padding: 0% 5%;
+
 }
 
 .corpo{
     display: flex;
     flex-direction:column;
-    width: 100%;
+    width: 80%;
     height: 100%;
 
 }
@@ -92,19 +99,6 @@ li{
 
 a{
     text-decoration: none;
-    
-}
-
-div.item{
-    display:inline-block;
-    align-items:space-around;
-    width: 300px;
-}
-
-div.img_item img{
-    flex-direction: column;
-    justify-items:center;
-    width: 100%;
     
 }
 
@@ -150,17 +144,20 @@ div#foto img{
 .contato{
     display: flex;
     background-color: rgb(249, 242, 238);
-    width: 1650px;
+    width: 120vh;
     height: 580px;
     align-items: center;
+    justify-items: center;
 }
 
 div.principal{
     display: flex;
+    width: 100%;
     height: 580px;
     align-items: center;
-    background-image: url(./imagens/istockphoto-1321195792-1100x580.jpg);
+    background-image: url(/imagens/istockphoto-1321195792-1100x580.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 div.texto_sobre{
@@ -235,13 +232,3 @@ section.login{
     padding: 1rem;
 }
 
-.container{
-    display: flex;
-    width: 100%;
-}
-
-div.produtos{
-    flex-direction: column;
-    width: 20%;
-    height: 40%;
-}
