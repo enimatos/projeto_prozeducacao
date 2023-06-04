@@ -150,24 +150,29 @@ div.image_top{
 }
 
 
-section.rodape{
-    display: flex;
-    align-items: center;
-   
+section .rodape{
+   display: inline-flex;
 }
 
-ul.padrao{
+ul.rodape{
     display: flex;
     justify-content:space-around;
-    align-items:first baseline;
+    align-items:center;
     background-color: rgb(225, 196, 160);
     padding: 1rem;
 
 }
-nav.rodape{
-    width: 100%;
+
+.rodape img {
+    width: 25px;
     height: auto;
+    align-content: center;
 }
+
+.rodape li {
+    width: 20%;
+}
+
 
 div#foto{
     display: inline-flex;
