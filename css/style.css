@@ -42,11 +42,12 @@ ul.alinhado{
 main.conteudo{
     display: flex;
     justify-content:center;
+    width: 1400px;
     height: 60rem;
-    margin: 0 10rem;
+    margin: 0 auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
     main.conteudo{
         margin: 0 auto;
     }
@@ -63,7 +64,7 @@ span#burguer {
     cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
     span#burguer {
         display: block;
     }
@@ -93,7 +94,7 @@ ul.lista_links{
     width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
     aside, ul.lista_links{
         display: none;
     }
@@ -108,9 +109,6 @@ button.btn_link{
     background-color: white;
     color: black;
 }
-
-
-
 
 .corpo{
     display: flex;
@@ -205,7 +203,7 @@ div.principal{
     background-size: cover;
 }
 
-div.texto_sobre{
+div.texto_sobre, div.formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,40 +218,49 @@ div.texto_sobre{
     padding: 1rem;
 }
 
-div.formulario {
-    background-color: rgba(247, 245, 242, 0.315);
-    height: 95%;
+
+form#cadastro {
+    width: 80%;
+    display:grid;
+    align-content: center;
     justify-content: center;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-}
+    gap: 0.3em;
+    height: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
 
-
-form.form_contato{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
 }
 
 form input, textarea{
     border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
 }
 
 form input{
-    height: 30px;
+    height: 20px;
+}
+
+.form_contato{
+    display: grid;
+    gap: 0.3em;
+    width: 70%;
 }
 
 .botao{
-    width: 90px;
-    color: blueviolet;
+    height: fit-content;
+    width: 100px;
+    background-color:  pink;
+    font-weight: bolder;
+    
 }
 
 form label{
     font-weight: bold;
     font-size:medium;
 }
+
+
 
 main.mlogin{
     height: 800px;
