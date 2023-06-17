@@ -8,52 +8,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ephesis&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
     <title>Ellas - você tem o seu lugar</title>
 </head>
 <body>
     <header id="cabecalho">
-        <img src="./imagens/Ellas-Logo.jpg" alt="circulo lilás escrito na cor laranja. Ellas, e abaixo escrito na cor preta, você tem o seu lugar">
-         <div id="divPesquisa">
-                <img src="search3.png" alt="Pesquisar..."/>
-                <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
-                <button id="btnBusca">Buscar</button>
-         </div>
-         <nav>
-             <ul class="alinhado">
-                <li><a href="/html/favoritos.html">Meus favoritos</a></li>
-                <li><a href="/html/meu_carrinho.html">Carrinho<span class="material-symbols-outlined">shopping_cart</span></a></li>
-                <li><a href="/html/login.html">Login/Cadastro</a></li> 
-             </ul>
-         </nav>
+        <div>
+            <figure id="topo" class="div_topo">
+                <img >
+            </figure>
+        </div>
+        <nav>
+            <ul class="alinhado">
+                <li>
+                    <div id="divPesquisa">
+                    <img src="search3.png" alt="Pesquisar..."/>
+                    <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
+                    <button id="btnBusca">Buscar</button>
+                    </div>
+                </li>
+                <li><a href="./favoritos.html">Meus favoritos</a></li>
+                <li><a href="./meu_carrinho.html">Carrinho<span class="material-symbols-outlined">shopping_cart</span></a></li>
+                <li><a href="./login.html">Login/Cadastro</a></li> 
+            </ul>
+        </nav>
      </header>
-    <main class="mlogin">                       
+    <main class="conteudo">                       
         <section class="login">
-            <h1>Login</h1>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Fazer Login</button>
-            </form>
-            <div class="contaoner">
-                <div class="card" style="width: 30rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <a href="#" class="btn btn-primary">Esqueci Minha Senha </a>
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="/html/cadastro.html" class="btn btn-primary">Criar Minha Conta</a> </h5>
-                        <p class="card-text">Ao acessar,você concorda com a nossa <a href="#" class="btn btn-primary">política de privacidade</a> e <a href="#" class="btn btn-primary">termos de uso</a> </p>
+            <div id="cx-login">
+                <h1>Login</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="botao">Fazer Login</button>
+                </form>
+                <div class="contaoner">
+                    <div class="card" style="width: 30rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <a href="#" class="btn btn-primary">Esqueci Minha Senha </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="./cadastro.html" class="btn btn-primary">Criar Minha Conta</a> </h5>
+                            <p class="card-text">Ao acessar,você concorda com a nossa <a href="#" class="btn btn-primary">política de privacidade</a> e <a href="#" class="btn btn-primary">termos de uso</a> </p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </section>
     </main>
     <footer>

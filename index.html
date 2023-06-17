@@ -13,48 +13,55 @@
 </head>
 <body>
     <header id="cabecalho">
-       <img src="/imagens/Ellas-Logo.jpg" alt="circulo lilás escrito na cor laranja. Ellas, e abaixo escrito na cor preta, você tem o seu lugar">
-        <div id="divPesquisa">
-                <img src="search3.png" alt="Pesquisar..."/>
-                <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
-                <button id="btnBusca">Buscar</button>
+        <div>
+            <figure id="topo" class="div_topo">
+                <img >
+            </figure>
         </div>
-        <nav>
+        <nav >
             <ul class="alinhado">
+                <li>
+                    <div id="divPesquisa">
+                    <img src="search3.png" alt="Pesquisar..."/>
+                    <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
+                    <button id="btnBusca">Buscar</button>
+                    </div>
+                </li>
                 <li><a href="/html/favoritos.html">Meus favoritos</a></li>
                 <li><a href="/html/meu_carrinho.html">Carrinho<span class="material-symbols-outlined">shopping_cart</span></a></li>
                 <li><a href="/html/login.html">Login/Cadastro</a></li> 
             </ul>
         </nav>
     </header>
+    <nav class="menu">
+        <ul class="lista_links">
+            <li><a href="/html/bolsas.html"><button class="btn_link">Bolsas</button></a></li>
+            <li><a href="/html/blusas.html"><button class="btn_link">Blusas</button></a></li>
+            <li><a href="/html/calcas.html"><button class="btn_link">Calças</button></a></li>
+            <li><a href="/html/calcados.html"><button class="btn_link">Calçados</button></a></li>
+            <li><a href="/html/casados_jaq.html"><button class="btn_link">Casacos</button></a></li>
+            <li><a href="/html/conjuntos.html"><button class="btn_link">Conjuntos</button></a></li>
+            <li><a href="html/short.html"><button class="btn_link">Shorts</button></a></li>
+            <li><a href="html/macacao.html"><button class="btn_link">Macacão</button></a></li>
+            <li><a href="html/saias.html"><button class="btn_link">Saias</button></a></li>
+            <li><a href="html/sueter.html"><button class="btn_link">Sueter</button></a></li>
+            <li><a href="/html/vestidos.html"><button class="btn_link">Vestido</button></a></li>      
+            <li><a href="/html/acessorios.html"><button class="btn_link">Acessórios</button></a></li>
+        </ul>
+    </nav>
     <main class="conteudo">
-        <div class="links">
-            <aside class="menu">
-                <ul class="lista_links">
-                    <li><a href="/html/bolsas.html"><button class="btn_link">Bolsas</button></a></li>
-                    <li><a href="./html/blusas.html"><button class="btn_link">Blusas</button></a></li>
-                    <li><a href="/html/calcas.html"><button class="btn_link">Calças</button></a></li>
-                    <li><a href="/html/calcados.html"><button class="btn_link">Calçados</button></a></li>
-                    <li><a href="./html/casados_jaq.html"><button class="btn_link">Casacos e Jaquetas</button></a></li>
-                    <li><a href="./html/conjuntos.html"><button class="btn_link">Conjuntos</button></a></li>
-                    <li><a href="./html/lingerie.html"><button class="btn_link">Lingerie</button></a></li>
-                    <li><a href="/html/macacao.html"><button class="btn_link">Macacão</button></a></li>
-                    <li><a href="/html/saias.html"><button class="btn_link">Saias</button></a></li>
-                    <li><a href="./html/sueter.html"><button class="btn_link">Sueter</button></a></li>
-                    <li><a href="./html/vestidos.html"><button class="btn_link">Vestido</button></a></li>      
-                    <li><a href="./html/plus_size.html"><button class="btn_link">Plus Size</button></a></li> 
-                    <li><a href="./html/acessorios.html"><button class="btn_link">Acessórios</button></a></li>
-                </ul>
-            </aside>
-        </div>
+    
         <div class="corpo">
-            <div class="image_top">
-                <img src="/imagens/images_editada.jpg" alt="" >
-            </div>
             <div class="principal">
                 <h1>indice</h1>
             </div>
         </div>
+        <aside>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore ipsa, dolorum, quae placeat nemo accusantium soluta dolor molestias cumque ut amet iusto! Pariatur, minus. Quisquam dolores id quia molestias dicta.</p>
+            <figure id="side_foto">
+                <img alt="">
+            </figure>
+        </aside>
     </main>
     <footer>
         <section>
@@ -75,7 +82,9 @@
                         <img src="/imagens/instagram.png" alt="ícone do instagram">
                     </li>
                 </ul>
+                <p>2023 - <span class="material-symbols-outlined">copyright</span> Todos os direitos reservados</p>
             </nav>
+            
         </section>
     </footer>
 </body>

@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+figure {
+    border-radius: 15%;
+    background-size: cover;
+}
+#fig01{
+    background-image: url("/imagens/vestido/vestido1.jpg");    
+    
+}
+
+#fig01:hover{
+    background-image: url("/imagens/vestido/vestido1-2.webp");
+    
+}
+
+#fig02{
+    background-image: url("/imagens/vestido/vestido2.jpg");
+        
+}
+
+#fig02:hover{
+    background-image: url("/imagens/vestido/vestido2-2.jpg");
+    
+}
+
+#fig03{
+    background-image: url("/imagens/vestido/vestido3.webp");
+    
+}
+
+#fig03:hover{
+    background-image: url("/imagens/vestido/vestido3-2.webp");
+
+}
+
+#fig04{
+    background-image: url("/imagens/vestido/vestido4.webp");
+    
+}
+
+#fig04:hover{
+    background-image: url("/imagens/vestido/vestido4-2.webp");
+
+}
+#fig05{
+    background-image: url("/imagens/vestido/vestido5.jpg");
+    
+}
+
+#fig05:hover{
+    background-image: url("/imagens/vestido/vestido5-2.webp");
+
+}
+
+#fig06{
+    background-image: url("/imagens/vestido/vestido6.webp");
+    
+}
+
+#fig06:hover{
+    background-image: url("/imagens/vestido/vestido6-2.webp");
+
+}
+
+#fig07{
+    background-image: url("/imagens/vestido/vestido7.webp");
+    
+}
+
+#fig07:hover{
+    background-image: url("/imagens/vestido/vestido7-2.webp");
+ 
+}
+
+#fig08{
+    background-image: url("/imagens/vestido/vestido8.webp");
+    
+}
+
+#fig08:hover{
+    background-image: url("/imagens/vestido/vestido8-2.webp");
+
+}
+
+#fig09{
+    background-image: url("/imagens/vestido/vestido9.webp");
+    
+}
+
+#fig09:hover{
+    background-image: url("/imagens/vestido/vestido9-2.webp");
+
+}
+
+#fig10{
+    background-image: url("/imagens/vestido/vestido10.webp");
+    
+}
+
+#fig10:hover{
+    background-image: url("/imagens/vestido/vestido10-2.webp");
+    
+}
+
+#fig11{
+    background-image: url("/imagens/vestido/vestido11.webp");
+    
+}
+
+#fig11:hover{
+    background-image: url("/imagens/vestido/vestido11-2.webp");
+    
+}
+
