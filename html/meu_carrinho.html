@@ -26,21 +26,21 @@
                     <button id="btnBusca">Buscar</button>
                     </div>
                 </li>
-                <li><a href="/favoritos.html">Meus favoritos</a></li>
-                <li><a href="/meu_carrinho.html">Carrinho<span class="material-symbols-outlined">shopping_cart</span></a></li>
-                <li><a href="/login.html">Login/Cadastro</a></li> 
+                <li><a href="./favoritos.html">Meus favoritos</a></li>
+                <li><a href="./meu_carrinho.html">Carrinho<span class="material-symbols-outlined">shopping_cart</span></a></li>
+                <li><a href="./login.html">Login/Cadastro</a></li> 
             </ul>
         </nav>
      </header>
-    <main>
-        <div>
-            <h3>Meus produtos <input type="submit" value="Continuar Comprando"></h3>
-            
-            <section> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRne5dOI2EBXXlB4QXCCrXSx2KgAzln9qpj5A&usqp=CAU" alt="Jaqueta Jeans claro" ></section>
-            <figcaption>R$159,99</figcaption><br>
-            <section> <img src="https://cdn.awsli.com.br/800x800/186/186813/produto/120129206/camiseta-feminina-codigo-background-programacao-e26627fa.jpg" alt=" Camisa preta código de programação" width="200"></section>
-            <figcaption>R$49,99</figcaption>
-        </div>
+    <main class="conteudo">
+        <div class="carrinho">
+            <h1>Meus produtos </h1>
+            <div class="class-produtos">
+                <section> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRne5dOI2EBXXlB4QXCCrXSx2KgAzln9qpj5A&usqp=CAU" alt="Jaqueta Jeans claro" ></section>
+                <figcaption>R$159,99</figcaption><br>
+                <section> <img src="https://cdn.awsli.com.br/800x800/186/186813/produto/120129206/camiseta-feminina-codigo-background-programacao-e26627fa.jpg" alt=" Camisa preta código de programação" width="200"></section>
+                <figcaption>R$49,99</figcaption>
+            </div>
         <div>
             <h4>Valor Total: R$209,98</h4>
             <form>
@@ -51,27 +51,35 @@
             </form>
         </div>
         <p><input type="submit" value="Finalizar Compra"></p>
-    </main>
-    <footer>
+        </div>
         <div>
             <img src="https://images.tcdn.com.br/img/editor/up/662183/Formasdepagamento.jpg" alt="Formas de pagamento aceitas no site, cartão de credito, debito, boleto, pix" width="400">
         </div>
+    </main>
+
+    <footer>
         <section id="rodape">
             <nav>
-                <ul class="padrao">
+                <ul class="rodape">
                     <li><a href="./sobre_nos.html">Sobre nós</a></li>
-                
-                    <li><a href="./contato.html">contato</a>
-                    <img src="" alt=""></li>
 
-                    <li><a href=".#">Facebook</a>
-                    <img src="/imagens/facebook.png" alt="" width="25"></li>
-
-                    <li><a href="#">Instagram</a>
-                    <img src="/imagens/instagram.png" alt="" width="25"></li>
+                    <li>
+                        <a href="./contato.html">Contato</a>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <a href="https://pt-br.facebook.com/">Facebook</a>
+                        <img src="/imagens/facebook.png" alt="ícone do facebok" >
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                        <img src="/imagens/instagram.png" alt="ícone do instagram">
+                    </li>
                 </ul>
+                <p>2023 - <span class="material-symbols-outlined">copyright</span> Todos os direitos reservados</p>
             </nav>
+            
         </section>
-        </footer>
+    </footer>
 </body>
 </html>

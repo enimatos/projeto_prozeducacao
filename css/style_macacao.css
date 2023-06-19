@@ -100,12 +100,12 @@ figure {
 
 #fig10{
     background-image: url("/imagens/macacao/macacao10.webp");
-    background-size: cover;
+    
     
 }
 
 #fig10:hover{
     background-image: url("/imagens/macacao/macacao10-2.webp");
-    background-size: cover;
+    
 }
 

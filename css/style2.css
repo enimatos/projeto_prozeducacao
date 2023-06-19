@@ -86,6 +86,11 @@
     
 }
 
+
+p span#coracao:hover {
+    color: red;
+}
+
 .btn_carrinho {
     display: flex;
     justify-content: center;
@@ -96,4 +101,12 @@
     height: 30px;
     background-color: rgb(238, 175, 130);
 
+}
+
+.carrinho{
+    background-color: #f3e6fb;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    width: 80%;
 }
