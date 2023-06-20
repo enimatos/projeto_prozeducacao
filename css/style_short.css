@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+figure{
+    background-size: cover;
+    border-radius: 15%;
+
+}
+#fig01{
+    background-image: url("/imagens/shorts/shorts1.webp");
+    
+    
+}
+
+#fig01:hover{
+    background-image: url("/imagens/shorts/shorts1-2.jpg");
+    
+}
+
+#fig02{
+    background-image: url("/imagens/shorts/shorts2.jpg");
+    
+}
+
+#fig02:hover{
+    background-image: url("/imagens/shorts/shorts2-2.jpg");
+
+}
+
+#fig03{
+    background-image: url("/imagens/shorts/shorts3.webp");
+
+}
+
+#fig03:hover{
+    background-image: url("/imagens/shorts/shorts3-2.webp");
+
+}
+
+#fig04{
+    background-image: url("/imagens/shorts/shorts4.jpg");
+    
+}
+
+#fig04:hover{
+    background-image: url("/imagens/shorts/shorts4-2.jpg");
+
+}
+#fig05{
+    background-image: url("/imagens/shorts/shorts5.jpg");
+    
+}
+
+#fig05:hover{
+    background-image: url("/imagens/shorts/shorts5-2.jpg");
+
+}
+
+#fig06{
+    background-image: url("/imagens/shorts/shorts6.jpg");
+    
+}
+
+#fig06:hover{
+    background-image: url("/imagens/shorts/shorts6-2.jpg");
+
+}
+
+#fig07{
+    background-image: url("/imagens/shorts/shorts7.jpg");
+    
+}
+
+#fig07:hover{
+    background-image: url("/imagens/shorts/shorts7-2.jpg");
+    background-size: cover;
+}
+
+#fig08{
+    background-image: url("/imagens/shorts/shorts8.webp");
+    
+}
+
+#fig08:hover{
+    background-image: url("/imagens/shorts/shorts8-2.webp");
+
+}
+
+#fig09{
+    background-image: url("/imagens/shorts/shorts9.jpg");
+    
+}
+
+#fig09:hover{
+    background-image: url("/imagens/shorts/shorts9-2.webp");
+
+}
+
+#fig10{
+    background-image: url("/imagens/shorts/shorts10.jpg");
+    
+}
+
+#fig10:hover{
+    background-image: url("/imagens/shorts/shorts10-2.jpg");
+
+}
+
