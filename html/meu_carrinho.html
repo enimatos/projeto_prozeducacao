@@ -21,103 +21,26 @@
             <ul class="alinhado">
                 <li>
                     <div id="divPesquisa">
-                        <span class="material-symbols-outlined">search</span>
-                        <input type="text" id="txtBusca">
-                        <button id="btnBusca">Buscar</button>
+                    <img src="search3.png" alt="Pesquisar..."/>
+                    <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
+                    <button id="btnBusca">Buscar</button>
                     </div>
                 </li>
-                <li><a href="./favoritos.html"><span class="texto">Meus favoritos</span><span class="material-symbols-outlined">favorite</span></a></li>
-                <li><a href="./meu_carrinho.html"><span class="texto">Carrinho</span><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                <li><a href="./favoritos.html">Meus favoritos</a></li>
+                <li><a href="./meu_carrinho.html">Carrinho<span class="material-symbols-outlined">shopping_cart</span></a></li>
                 <li><a href="./login.html">Login/Cadastro</a></li> 
             </ul>
         </nav>
      </header>
-     <main id="carrinho">
-        <nav class="menu">
-            <span id="burguer" class="material-symbols-outlined">menu</span>
-            <ul class="lista_links">
-                <li><a href="./bolsas.html"><button class="btn_link">Bolsas</button></a></li>
-                <li><a href="./blusas.html"><button class="btn_link">Blusas</button></a></li>
-                <li><a href="./calcas.html"><button class="btn_link">Calças</button></a></li>
-                <li><a href="./casacos.html"><button class="btn_link">Casacos</button></a></li>
-                <li><a href="./conjuntos.html"><button class="btn_link">Conjuntos</button></a></li>
-                <li><a href="./short.html"><button class="btn_link">Shorts</button></a></li>
-                <li><a href="./macacao.html"><button class="btn_link">Macacão</button></a></li>
-                <li><a href="./saias.html"><button class="btn_link">Saias</button></a></li>
-                <li><a href="./sueter.html"><button class="btn_link">Sueter</button></a></li>
-                <li><a href="./vestidos.html"><button class="btn_link">Vestido</button></a></li>      
-                <li><a href="./acessorios.html"><button class="btn_link">Acessórios</button></a></li>
-            </ul>
-        </nav>
-        <div>
-            <h3 id="titulo-carrinho">Meu Carrinho</h3>
-           </div>
-        <div id="continuar-compras">
-            <input type="submit" value="Continuar Comprando">
-        </div>
-        <div class="conteudo-carrinho">
-            <section class="valores"> 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>produto</th>
-                            <th>preço</th>
-                            <th>quantidade</th>
-                            <th>total</th>
-                            <th>--</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <td>
-                            <div class="produto">
-                                <img id="escolha-um" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9wIRo13dulO72DkAwUUSFUVpqJDaD3luz7WjZZu1uA8Y8l7rI" alt="Blusa branca de botão decote V" width="80px">
-                                <div class="info">
-                                    <div class="tipo-produto">Blusa branca decote V</div>
-                                    <div class="tamanho">GG</div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>R$39,90</td>
-                        <td>
-                            <div class="qtd">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
-                            </div>
-                        </td>
-                        <td>R$49,90</td>
-                        <td>
-                            <button><i class='bx bx-trash'></i></td></button>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="produto">
-                                    <img id="escolha-um" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9wIRo13dulO72DkAwUUSFUVpqJDaD3luz7WjZZu1uA8Y8l7rI" alt="Blusa branca de botão decote V" width="80px">
-                                    <div class="info">
-                                        <div class="tipo-produto">Blusa branca decote V</div>
-                                        <div class="tamanho">GG</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>R$39,90</td>
-                            <td>
-                                <div class="qtd">
-                                    <button>-</button>
-                                    <span>1</span>
-                                    <button>+</button>
-                                </div>
-                            </td>
-                            <td>R$39,90</td>
-                            <td>
-                                <button><i class='bx bx-trash'></i></td></button>
-                            </tr>
-                    </tbody>
-                </table>
-             </section>
-            <aside class="compras">resumo das compras </aside>
-            
-        </div>
+    <main class="conteudo">
+        <div class="carrinho">
+            <h1>Meus produtos </h1>
+            <div class="class-produtos">
+                <section> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRne5dOI2EBXXlB4QXCCrXSx2KgAzln9qpj5A&usqp=CAU" alt="Jaqueta Jeans claro" ></section>
+                <figcaption>R$159,99</figcaption><br>
+                <section> <img src="https://cdn.awsli.com.br/800x800/186/186813/produto/120129206/camiseta-feminina-codigo-background-programacao-e26627fa.jpg" alt=" Camisa preta código de programação" width="200"></section>
+                <figcaption>R$49,99</figcaption>
+            </div>
         <div>
             <h4>Valor Total: R$209,98</h4>
             <form>
@@ -128,26 +51,35 @@
             </form>
         </div>
         <p><input type="submit" value="Finalizar Compra"></p>
+        </div>
+        <div>
+            <img src="https://images.tcdn.com.br/img/editor/up/662183/Formasdepagamento.jpg" alt="Formas de pagamento aceitas no site, cartão de credito, debito, boleto, pix" width="400">
+        </div>
     </main>
-    <footer>
-        <nav>
-            <ul class="rodape">
-                <li><a href="./sobre_nos.html">Sobre nós</a></li>
 
-                <li>
-                    <a href="./contato.html">Contato</a>
-                </li>
-                <li>
-                    <a href="https://pt-br.facebook.com/">Facebook</a>
-                    <img src="/imagens/facebook.png" alt="ícone do facebok" >
-                </li>
-                <li>
-                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                    <img src="/imagens/instagram.png" alt="ícone do instagram">
-                </li>
-            </ul>
-        </nav>
-        <p>2023 - <span class="material-symbols-outlined">copyright</span> Todos os direitos reservados</p>
+    <footer>
+        <section id="rodape">
+            <nav>
+                <ul class="rodape">
+                    <li><a href="./sobre_nos.html">Sobre nós</a></li>
+
+                    <li>
+                        <a href="./contato.html">Contato</a>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <a href="https://pt-br.facebook.com/">Facebook</a>
+                        <img src="/imagens/facebook.png" alt="ícone do facebok" >
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                        <img src="/imagens/instagram.png" alt="ícone do instagram">
+                    </li>
+                </ul>
+                <p>2023 - <span class="material-symbols-outlined">copyright</span> Todos os direitos reservados</p>
+            </nav>
+            
+        </section>
     </footer>
 </body>
 </html>
