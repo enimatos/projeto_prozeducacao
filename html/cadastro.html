@@ -21,59 +21,78 @@
             <ul class="alinhado">
                 <li>
                     <div id="divPesquisa">
-                    <img src="search3.png" alt="Pesquisar..."/>
-                    <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
-                    <button id="btnBusca">Buscar</button>
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="text" id="txtBusca">
+                        <button id="btnBusca">Buscar</button>
                     </div>
                 </li>
-                <li><a href="./favoritos.html">Meus favoritos</a></li>
-                <li><a href="./meu_carrinho.html">Carrinho<span class="material-symbols-outlined">shopping_cart</span></a></li>
+                <li><a href="./favoritos.html"><span class="texto">Meus favoritos</span><span class="material-symbols-outlined">favorite</span></a></li>
+                <li><a href="./meu_carrinho.html"><span class="texto">Carrinho</span><span class="material-symbols-outlined">shopping_cart</span></a></li>
                 <li><a href="./login.html">Login/Cadastro</a></li> 
             </ul>
         </nav>
     </header>
     <!--Dados Pessoais-->
-    <main >
-        <form id="cadastro">
-            <h1>Cadastro</h1>
-            <label for="nome_completo">Nome completo: </label>
-            <input type="text" name="nome_completo" id="nome_completo">
-            <p><label for="cpf">CPF: </label>
-            <input type="number" maxlength="11" name="cpf" id="cpf" placeholder="000.000.000-00"></p>
-            <label for="email">E-mail: </label>
-            <input type="email" name="email" id="email">
-            <label for="telefone">Telefone: </label> 
-            <input type="tel" name="telefone" id="telefone">
-    <!--Endereço-->
-            <p><label for="endereco">Endereço: </label>
-            <input type="text" name="endereco" id="endereco">
-            <label for="numero">Número/Apto: </label>
-            <input type="text" name="numero" id="numero"></p>
-            <p><label for="bairro">Bairro: </label>
-            <input type="text" name="bairro" id="bairro">
-            <label for="cep">CEP: </label>
-            <input type="text" name="cep" id="cep"></p>
-            <label for="cidade">Cidade: </label>
-            <input type="text" name="cidade" id="cidade">
-            <label for="estado">Estado: </label>
-            <input type="text" name="estado" id="estado">
-            <label for="país">País: </label>
-            <input type="text" name="país" id="país">
-        <!--Login-->
-            <br>
-            <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="senha">
-            <label for="senha">Confirme sua senha: </label>
-            <input type="password" name="senha" id="senha">
-            <p><input type="submit" value="Enviar"></p>
-        </form>
+    <main class="padrao">
+        <nav class="menu">
+            <span id="burguer" class="material-symbols-outlined">menu</span>
+            <ul class="lista_links">
+                <li><a href="./bolsas.html"><button class="btn_link">Bolsas</button></a></li>
+                <li><a href="./blusas.html"><button class="btn_link">Blusas</button></a></li>
+                <li><a href="./calcas.html"><button class="btn_link">Calças</button></a></li>
+                <li><a href="./casacos.html"><button class="btn_link">Casacos</button></a></li>
+                <li><a href="./conjuntos.html"><button class="btn_link">Conjuntos</button></a></li>
+                <li><a href="./short.html"><button class="btn_link">Shorts</button></a></li>
+                <li><a href="./macacao.html"><button class="btn_link">Macacão</button></a></li>
+                <li><a href="./saias.html"><button class="btn_link">Saias</button></a></li>
+                <li><a href="./sueter.html"><button class="btn_link">Sueter</button></a></li>
+                <li><a href="./vestidos.html"><button class="btn_link">Vestido</button></a></li>      
+                <li><a href="./acessorios.html"><button class="btn_link">Acessórios</button></a></li>
+            </ul>
+        </nav>
+        <div class="corpo-formulario">
+            <div class="ellas">
+                <img src="/imagens/Ellas-Logo_big.png" alt="">
+            </div>
+            <div class="formulario">
+                <form id="cadastro">
+                    <h1>Cadastro</h1>
+                    <label for="nome_completo">Nome completo: </label>
+                    <input type="text" name="nome_completo" id="nome_completo">
+                    <label for="cpf">CPF: </label>
+                    <input type="number" maxlength="11" name="cpf" id="cpf" placeholder="000.000.000-00">
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email">
+                    <label for="telefone">Telefone: </label> 
+                    <input type="tel" name="telefone" id="telefone">
+            <!--Endereço-->
+                    <label for="endereco">Endereço: </label>
+                    <input type="text" name="endereco" id="endereco">
+                    <label for="numero">Número/Apto: </label>
+                    <input type="text" name="numero" id="numero">
+                    <label for="bairro">Bairro: </label>
+                    <input type="text" name="bairro" id="bairro">
+                    <label for="cep">CEP: </label>
+                    <input type="text" name="cep" id="cep">
+                    <label for="cidade">Cidade: </label>
+                    <input type="text" name="cidade" id="cidade">
+                    <label for="estado">Estado: </label>
+                    <input type="text" name="estado" id="estado">
+                <!--Login-->
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha">
+                    <label for="senha">Confirme sua senha: </label>
+                    <input type="password" name="senha" id="senha">
+                    <input class="botao" type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <nav>
             <ul class="rodape">
                 <li><a href="./sobre_nos.html">Sobre nós</a></li>
 
-<<<<<<< HEAD
                 <li>
                     <a href="./contato.html">Contato</a>
                 </li>
@@ -88,23 +107,6 @@
             </ul>
         </nav>
         <p>2023 - <span class="material-symbols-outlined">copyright</span> Todos os direitos reservados</p>
-=======
-                    <li>
-                        <a href="./contato.html">Contato</a>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <a href="https://pt-br.facebook.com/">Facebook</a>
-                        <img src="/imagens/facebook.png" alt="ícone do facebok" >
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                        <img src="/imagens/instagram.png" alt="ícone do instagram">
-                    </li>
-                </ul>
-            </nav>
-        </section>
->>>>>>> parent of 83c5134 (Atualização de menu horizontal)
     </footer>
 </body>
 </html>

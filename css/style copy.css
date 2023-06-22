@@ -9,7 +9,10 @@
 /* header*/
 
 body{
-
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    margin: 3px;
 
 }
 header#cabecalho{
@@ -49,10 +52,10 @@ nav .alinhado {
 
 nav.menu {
     display: flex;
-    align-items: center;
+    flex: 1 1 100vw;
     height: 50px;
+    align-items:center;
     background-color: #a34bf5;
-    width: 100%;
 }
 
 .menu a{
@@ -61,12 +64,10 @@ nav.menu {
 }
 
 ul.lista_links {
+    flex: 1 1 110vw;
     display: flex;
-    max-width: 1200px;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #a34bf5;
-    margin: 0 auto;
 
 
 }
@@ -86,64 +87,26 @@ ul.lista_links {
     color: white;
 }
 
-.menu #burguer {
+span#burguer {
     display: none;
-    width: 100%;
-    align-items: center;
-    background-color: #a34bf5;
-    color: black;
-    height: 80%;
-    text-align: center;
-    cursor:pointer;
+    width: 20px;
+    height: 20px;
+    background-color: #bde573;
+    color: azure;
 }
-
-.menu #burguer:hover {
-    background-color: #2f104d;
-    color: white;
-    font-weight: bolder;
-}
-
 
 main.conteudo{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     width: 90%;
     height: 700px;
-    max-width: 1200px;
     margin: 0 auto;
 
 }
 
-main.padrao{
-    display: flex;
-    gap: 5px;
-    width: 100%;
-    min-width: 320px;
-    margin: 0 auto;
-    height: 700px;
-    flex-direction: column;
-    align-items: center;
+main{
+    margin: 0 50px;
 }
-
-.principal {
-    max-width: 1200px;
-    height: 700px;
-    width: 100%;
-}
-
-.principal img {
-    width: 100%;
-    height: 100%;
-}
-.corpo{
-    display: flex;
-    flex-direction: row;
-    height: 600px;
-}
-
-
-
 
 .scroll {
     display: flex;
@@ -155,37 +118,21 @@ main.padrao{
 
 .corpo-formulario{
     display: flex;
-    width: 90%;
-    max-width: 1200px;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
+    background-image: url("/imagens/Ellas-Logo_big.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size:contain;
+    width: 100vw;
+    justify-content: end;
+    margin: 0 80px;
     
 }
-
-#foto_index {
-    background-image: url("/imagens/compraOnLine_grande.jpg");
-    background-repeat: no-repeat;
-    height: 70%;
-}
-
-
-.banner{
+aside{
     background-color: #4d166585;
-    width: 250px;
+    width: 20%;
 
 }
 
-.btn_carrinho {
-    justify-content: center;
-    background-color: #dac0f2;
-    width: 200px;
-    height:30px;
-    border-radius: 15%;
-    font-weight: bold;
-    color: #2f104d;
-}
 
 h1{
     font-family: 'Dancing Script', cursiva;
@@ -211,24 +158,16 @@ a{
 }
 
 footer{
+    flex: 1 1 100vw;
     background-color: #f3e6fb;
-    padding-right: 20px;
 }
 
 
-footer nav {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    width: 100%;
-}
-
-ul.rodape{
+section nav ul.rodape{
     display: flex;
     justify-content:space-around;
     align-items:center;
     height: 70px;
-    width: 100%;
 
 }
 
@@ -242,21 +181,15 @@ ul.rodape{
 
 }
 
-footer p {
-    text-align: center;
-}
+
  div.formulario{
     display: flex;
     align-items: center;
     text-align: justify;
     flex-direction: column;
-    width: 400px;
+    width: 600px;
     justify-content: center;
 
-}
-
-.ellas img {
-    width: 100%;
 }
 div.texto_sobre{
     display: flex;
@@ -270,18 +203,10 @@ div.texto_sobre{
 
 
 .form_contato{
-    display:grid;
-    gap: 0.2em;
-    width: 400px;
-}
-
-#cadastro{
-    display: grid;
-    width: 400px;
-}
-
-#cadastro h1, #cx-login h1{
-    padding: 0px;
+    display:flex;
+    flex-direction: column;
+    gap: 0.3em;
+    width: 100%;
 }
 
 .texto_sobre p{
@@ -291,14 +216,27 @@ div.texto_sobre{
 }
 
 
-.form_contato input, #cadastro input, textarea{
+
+form#cadastro {
+    width: 80%;
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    gap: 0.3em;
+    height: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
+
+}
+
+.form_contato input, textarea{
     border-radius: 10px;
     margin: 0px;
 
 }
 
 form input{
-    height: 20px;
+    height: 30px;
 }
 
 
@@ -308,7 +246,6 @@ form input{
     width: 100px;
     background-color: #a34bf5;
     font-weight: bolder;
-    border-radius: 15%;
     height: 40px;
     
 }
@@ -349,13 +286,11 @@ section.login{
     height: 500px;
     background-color: #f3e6fb;
     border-radius: 15%;
-    align-content: center;
-    justify-content: center;
 }
 
 .mb-3{
     width: 100%;
-    height: 200px;
+    height: 100%;
     padding: 10px;
 }
 
@@ -393,9 +328,8 @@ input.form-check-input{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 80px;
+    height: 60px;
     width: 100%;
-    gap:1em;
 }
 
 .card-body{
@@ -405,60 +339,26 @@ input.form-check-input{
     width: 90%;
 }
 
-#carrinho{
-    height: 700px;
-}
-
-
-
-@media only screen and (max-width: 900px){
-    main.padrao {
-        flex-direction:row;
-        width: 90%;
-    }
-   
-    main.conteudo {
-        flex-direction:column;
-        height: 800px;
+@media only screen and (max-width: 980px){
+    main {
+        display: flex;
+        height: calc(100vh - 500);
         width: 90%;
     }
 
-    .principal img{
-        width: 500px;
-        height: 600px;
-    }
-    .corpo {
-        flex-direction: column;
-        height: fit-content;
-    }
-
-    div.corpo-formulario{
-        flex-direction: column;
-    }
-
-    .ellas img{
-        display: none;
-    }
-    .scroll {
-        width: 100%;
-        height: 600px;
-    }
-
-    .texto{
-        visibility: hidden;
-    }
-    .banner {
-        width: auto;
-        background-color: #2f104d;
-        height: 200px;
-    }
-    .menu #burguer {
+    span#burguer {
         display: block;
     }
 
-    .menu .lista_links {
-        display: none;
+    nav.menu {
+        display: none
     }
 
 }
 
+@media only screen and (max-width: 980px){
+    aside {
+        flex: 1 1 100vw;
+        height: 250px;
+    }
+}

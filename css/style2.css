@@ -88,11 +88,11 @@
 
 
 p span#coracao:hover {
-    color: red;
+    background-image: url("");
 }
 
 #titulo-carrinho {
-    background-color: antiquewhite;
+    background-color: #f3e6fb;
     font-size: 20px;
     padding: 10px 0;
     text-align: center;
@@ -106,8 +106,8 @@ p span#coracao:hover {
     }
     
 .compras {
-        background: antiquewhite;
-        min-width: 400px;
+    background-color: #f3e6fb;
+    min-width: 400px;
     }
 table{
     width: 100%;
@@ -127,12 +127,25 @@ tbody tr td{
     padding: 20px 0;
 }
 
-.carrinho{
-    background-color: #f3e6fb;
+/*lista de compras/*/
+.produto{
     display: flex;
-    flex-direction: column;
-    overflow-x: auto;
-    width: 80%;
+    align-items: center;
+}
+#escolha-um{
+    border-radius: 6px;
+}
+.info{
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    }
+.tipo-produto{
+    font-size: 12px;
+}
+.tamanho{
+   font-size: 10px;
 }
 
 
