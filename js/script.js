@@ -41,7 +41,7 @@ atualizarCarrinho = () => {
 }
 
 
-let botao = document.getElementsByTagName("a");
+const botao = document.getElementsByTagName("a");
 
 for(let i = 0; i < botao.length; i++){
     botao[i].addEventListener("click", function(){
@@ -51,3 +51,11 @@ for(let i = 0; i < botao.length; i++){
         //return false;
     })
 }
+
+const menu = document.getElementById("burguer");
+const links = document.querySelector(".lista_links")
+
+menu.addEventListener("click", function(){
+    console.log("display")
+    links.style.display = 'block';
+})

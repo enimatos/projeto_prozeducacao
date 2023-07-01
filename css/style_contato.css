@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 550px;
+}
+
+#card {
+    width: 500px;
+    border-radius: 4%;
+    background-color: #f3e6fb90;
+    padding: 30px;
+    box-shadow: 3px 3px 1px 0px;
+}
+
+
+.label-float input{
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 3px solid purple;
+    outline: none;
+    min-width: 100px;
+
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.label-float input:focus{
+    border-bottom: 3px solid blue;
+  
+}
+
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor:pointer
+}
+
+
+button{
+    padding: 5px;
+    font-weight: bold;
+    font-size: 13pt;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #e0c3fa;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: #2f104d;
+    color: white;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+#campo-texto{
+    width: 100%;
+    height: 90px;
+}
