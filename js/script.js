@@ -1,4 +1,4 @@
-const arrayBlusa = [
+/*const arrayBlusa = [
     {
       nome: "blusa1",
       descricao: "descricao dfsdfsdfsdfs",
@@ -50,12 +50,15 @@ for(let i = 0; i < botao.length; i++){
         atualizarCarrinho();
         //return false;
     })
+}*/
+
+const burguer = document.querySelector("#burguer");
+
+
+
+function toggleMenu(){
+    const nav = document.querySelector("#nav")
+    nav.classList.toggle('active');
 }
 
-const menu = document.getElementById("burguer");
-const links = document.querySelector(".lista_links")
-
-menu.addEventListener("click", function(){
-    console.log("display")
-    links.style.display = 'block';
-})
+burguer.addEventListener("click", toggleMenu);

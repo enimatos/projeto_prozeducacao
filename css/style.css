@@ -21,8 +21,9 @@ header#cabecalho{
 
 
 div figure#topo{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
     background-image: url("/imagens/Ellas-Logo_mini.png");
     background-size: cover;
     alt: "logo da loja Ellas";
@@ -47,45 +48,68 @@ nav .alinhado {
     justify-items:space-between;
     align-items: center;
     flex-direction: row;
-    gap: 5rem;
+    gap: 4rem;
     padding: 10px;
     
 }
 
-nav.menu {
+#nav {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 50px;
-    background-color: #a34bf5;
+    background-color: #be7ff8;
     width: 100%;
 }
 
-.menu a{
-    margin: 5%;
+#nav a{
     font-size: 10pt;
 }
 
-ul.lista_links {
+#menu {
     display: flex;
     max-width: 1200px;
     width: 100%;
     justify-content: space-around;
-    background-color: #a34bf5;
+    background-color: #be7ff8;
     margin: 0 auto;
     height: 50px;
     align-items: end;
 
 }
 
-.lista_links li{
+#menu a {
+    display: block;
+
+}
+
+#menu li{
     width: 15%;
 
+}
+
+#burguer{
+    display: none;
+    width: 100%;
+    height: 55px;
+    background-color: #be7ff8;
+    font-size: medium;
+    border-bottom: 2px solid rgb(246, 198, 248)
+
+    
+    
+}
+
+#burguer:hover {
+    background-color: #2f104d;
+    color: white;
+    font-weight: bolder;
 }
 
 .btn_link{
     height: 50px;
     width: 100%;
-    background-color: #a34bf5;
+    background-color: #be7ff8;
     font-weight: 600;
     border: none;
 }
@@ -95,30 +119,13 @@ ul.lista_links {
     color: white;
 }
 
-.menu #burguer {
-    display: none;
-    width: 100%;
-    align-items: center;
-    background-color: #a34bf5;
-    color: black;
-    height: 50px;
-    text-align: center;
-    cursor:pointer;
-}
-
-.menu #burguer:hover {
-    background-color: #2f104d;
-    color: white;
-    font-weight: bolder;
-}
-
 
 main.conteudo{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     width: 90%;
-    height: calc(100vh - 230px);
+    height: calc(100vh - 240px);
     max-width: 1200px;
     margin: 0 auto;
 
@@ -133,7 +140,7 @@ main.padrao{
     background-repeat: no-repeat;
     background-size: inherit;
     margin: 0 auto;
-    height: calc(100vh - 230px);
+    height: calc(100vh - 240px);
     align-items: center;
 }
 
@@ -176,8 +183,10 @@ main.padrao{
 .fa-bars{
     display: inline-flex;
     align-items: center;
-    height: 50px;
-    cursor:pointer
+    font-size: large;
+    cursor:pointer;
+
+    
 }
 
 #foto_index {
@@ -228,15 +237,15 @@ a{
 }
 
 footer{
-    background-color: #f3e6fb;
-    padding-right: 20px;
+    background-color: #be7ff8;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
 }
 
 
 footer nav {
-    display: flex;
-    align-items:center;
-    justify-content: center;
     width: 100%;
     height: 60px;
 }
@@ -245,7 +254,7 @@ ul.rodape{
     display: flex;
     justify-content:space-around;
     align-items:center;
-    height: 80px;
+    height: min-content;
     width: 100%;
 
 }
@@ -261,9 +270,9 @@ ul.rodape{
 }
 
 footer p {
-    font-weight:bold;
     font-size:10pt;
     text-align: center;
+    padding-bottom: 5px;
 }
 
  div.formulario{
@@ -299,41 +308,50 @@ div.texto_sobre{
 }
 
 
-/*.form_contato input, #cadastro input, textarea{
-    border-radius: 10px;
-    margin: 0px;
-
-}
-
-form input{
-    height: 20px;
-
-
-
-
-.botao{
-    height: fit-content;
-    width: 100px;
-    background-color: #a34bf5;
-    font-weight: bolder;
-    border-radius: 15%;
-    height: 40px;
-    
-}
-.botao:hover{
-    height: fit-content;
-    width: 100px;
-    background-color: #2f104d;
-    color: white;
-    border-radius: 15%;
-    font-weight: bolder;
-    
-}
-} */
-
-
-
 @media only screen and (max-width: 900px){
+    .alinhado{
+       gap:0.2rem;
+    }
+    
+    
+    #burguer {
+        display: block;
+    
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 140px;
+        right: 0px;
+        transition: .3s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+    }
+
+    #menu li{
+        width: 100%;
+    }
+
+    #nav{
+        display: flex;
+        justify-content: center;
+
+    }
+    #nav.active #menu{
+         
+        height: calc(100vh - 150px);
+        visibility: visible;
+  
+    }
+
+    #menu a{
+   
+        border-bottom: 2px solid rgb(246, 198, 248)
+    };
+
     main.padrao {
         flex-direction:row;
         width: 90%;
@@ -341,7 +359,7 @@ form input{
    
     main.conteudo {
         flex-direction:column;
-        height: 800px;
+        height: calc(100hv - 200px);
         width: 90%;
     }
 
@@ -369,15 +387,6 @@ form input{
         width: auto;
         background-color: #2f104d;
         height: 200px;
-    }
-    .menu #burguer {
-        display: inline-block;
-        position: absolute;
-        top: 100px;
-    }
-
-    .menu .lista_links {
-        display: none;
     }
 
 }
