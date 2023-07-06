@@ -1,6 +1,6 @@
 
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family:'Work Sans', sans-serif;
     font-size:small;
     margin: 0;
     padding: 0;
@@ -8,13 +8,16 @@
 }
 /* header*/
 
+body{
+    height: 100vh;
+}
 
 header#cabecalho{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
     flex: 1 1 100vw;
-    height: 150px;
+    height: 140px;
     background-color: #f3e6fb;
 
 }
@@ -32,7 +35,9 @@ div figure#topo{
 
 div.orietacao{
     display: flex;
-    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -45,7 +50,6 @@ header img {
 
 nav .alinhado {
     display: flex;
-    justify-items:space-between;
     align-items: center;
     flex-direction: row;
     gap: 4rem;
@@ -53,12 +57,12 @@ nav .alinhado {
     
 }
 
-#nav {
+nav#nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 50px;
-    background-color: #be7ff8;
+    background-color:#f3e6fb;
     width: 100%;
 }
 
@@ -71,7 +75,6 @@ nav .alinhado {
     max-width: 1200px;
     width: 100%;
     justify-content: space-around;
-    background-color: #be7ff8;
     margin: 0 auto;
     height: 50px;
     align-items: end;
@@ -90,33 +93,30 @@ nav .alinhado {
 
 #burguer{
     display: none;
-    width: 100%;
-    height: 55px;
-    background-color: #be7ff8;
-    font-size: medium;
-    border-bottom: 2px solid rgb(246, 198, 248)
-
-    
+    height: 50px;
+    background-color: #d582ec95;
+   
     
 }
 
 #burguer:hover {
-    background-color: #2f104d;
     color: white;
-    font-weight: bolder;
+    
+
 }
 
 .btn_link{
     height: 50px;
     width: 100%;
-    background-color: #be7ff8;
-    font-weight: 600;
+    background-color: #f3e6fb;
     border: none;
 }
 .btn_link:hover{
     height: 50px;
-    background-color: #2f104d;
-    color: white;
+    background-color: #be7ff8;
+    font-weight: bolder;
+    color: #fff;
+
 }
 
 
@@ -125,7 +125,7 @@ main.conteudo{
     justify-content: space-between;
     flex-direction: row;
     width: 90%;
-    height: calc(100vh - 240px);
+    height: calc(100vh - 200px);
     max-width: 1200px;
     margin: 0 auto;
 
@@ -140,7 +140,7 @@ main.padrao{
     background-repeat: no-repeat;
     background-size: inherit;
     margin: 0 auto;
-    height: calc(100vh - 240px);
+    height: calc(100vh - 200px);
     align-items: center;
 }
 
@@ -183,7 +183,7 @@ main.padrao{
 .fa-bars{
     display: inline-flex;
     align-items: center;
-    font-size: large;
+    font-size: 18pt;
     cursor:pointer;
 
     
@@ -316,41 +316,50 @@ div.texto_sobre{
     
     #burguer {
         display: block;
+        width: 100%;
     
+    }
+
+    
+    .btn_link{
+        background-color: #d582ec;
+        font-size: 11pt;
+    }
+    nav#nav{
+        display: flex;
+        width: 50px;
+        position: absolute;
+        top:90px;
+        left: 0;
+        
+
+    }
+    #nav.active #menu{
+        height: calc(100vh - 380px);
+        visibility: visible;
+
     }
 
     #menu {
         display: block;
         position: absolute;
-        width: 100%;
-        top: 140px;
+        top: 50px;
         right: 0px;
         transition: .3s;
-        z-index: 1000;
         height: 0px;
+        margin-left: 10px;
         visibility: hidden;
-    }
 
+    }
     #menu li{
-        width: 100%;
+        width: 300px;
+        background-color: #a422c795;
+        
     }
-
-    #nav{
-        display: flex;
-        justify-content: center;
-
-    }
-    #nav.active #menu{
-         
-        height: calc(100vh - 150px);
-        visibility: visible;
-  
-    }
-
     #menu a{
    
-        border-bottom: 2px solid rgb(246, 198, 248)
-    };
+        border-bottom: 2px solid rgb(135, 20, 145);
+    }
 
     main.padrao {
         flex-direction:row;
@@ -359,7 +368,6 @@ div.texto_sobre{
    
     main.conteudo {
         flex-direction:column;
-        height: calc(100hv - 200px);
         width: 90%;
     }
 
@@ -376,14 +384,16 @@ div.texto_sobre{
         display: none;
     }
     .scroll {
-        width: 100%;
-        height: 600px;
+        width: 100vw;
+        align-content: center;
+        height: fit-content;
     }
 
     .texto{
         visibility: hidden;
     }
     .banner {
+        display: none;
         width: auto;
         background-color: #2f104d;
         height: 200px;
