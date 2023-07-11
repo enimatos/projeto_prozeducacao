@@ -1,7 +1,6 @@
-
 const blusas = [ 
     {
-        codigo: 0,
+        codigo: 1,
         nome: "Blusa Unity",
         preco: 41.99,
         descricao: [        
@@ -130,23 +129,40 @@ const blusas = [
 
 
 
+var produtosBl = document.querySelector("#scroll-blusa");
 
-function renderizar(){
-    blusas.forEach((blusa) => {
-        const prodContainer = document.querySelector(".prods_container");
-        const produtos = document.createElement("div")
-        produtos.classList.add("card")
-        produtos.innerHTML += `
-            <div class="produto_item" >
-                <img src ="${blusa.img}" alt="${blusa.descricao}">
-                <p class="preco"><button class="abrir"><i class="fa-solid fa-cart-plus"></i></button>R$ ${blusa.preco}</p>
+
+renderProducts = () => {
+    produtosBl = document.getElementById("scroll-blusa");
+    blusas.map((val) => {
+        produtosBl.innerHTML +=  `
+            <div class="caixa">
+                <div class="produto_item" >
+                    <img src="${val.img}" alt="">
+                    <p class="preco">R$ `+val.preco+`</p>        
+                    <button class="btn-detalhe" value="$`+val.codigo+`">Detalhe</button>
+                </div>
+                <div class="detalhe">
+                    <div class="img-detalhe" style="color: aquamarine;"></div>
+                    <div class="detalhe" style="color: blue;">
+                        <h3 class="nome">`+val.nome+`</h3>
+                        <p class="desccricao" style="color: brown;">`+val.descricao+`</p>
+                    </div>
+                    <div>
+                        <button class="fecharDetalhe" onclick="fecharDetalhe()">Fechar</button>
+                        <button class="carrinho"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
             </div>
-        `
-        prodContainer.appendChild(produtos)
+        `;
+
     });
 }
 
-renderizar()
+
+renderProducts()
+
+
 
 
 

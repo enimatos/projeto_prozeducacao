@@ -2,34 +2,42 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.card{
-    display: inline-flex;
-    flex-direction: column;
-    height: 300px;
-    width: 200px;
-    margin: 1% 1%;
-    justify-content: space-between;
 }
 
 .produto_item{
-    display: inline;
-    height: 100%;
-    width: 100%;
-    margin-bottom: 5px;
+    display: flex;
+    flex-flow: wrap;
+    height:500px;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
 
 }
 
 .produto_item img {
-    max-width: 190px;
-    height: 270px;
-    width: auto;
+    width: 200px;
+    height: 300px;
     border-radius: 10%;
 }
 
+.btn-detalhe{
+    cursor: pointer;
+}
 
+.detalhe{
+    display: none;
+    position: relative;
+    width: auto;
+    height: 300px;
+    
+    
+}
+
+
+.hide{
+    visibility:hidden;
+}
 .preco{
     display: flex;
     justify-content: space-around;
@@ -106,6 +114,8 @@
 
 .modal-content{
     display: flex;
+    position: absolute;
+    top: 10px;
     margin: 0 auto;
     margin-top: 5%;
     max-width: 600px;
@@ -124,14 +134,14 @@
 }
 
 .modal-content, .modal-opcoes{
-    padding: 20px;
+    padding: 10px;
 }
 
 .fechar{
     cursor: pointer;
     position: relative;
-    bottom: 40px;
-    left: 50px;
+    top: 30px;
+    left: 20px;
     width: 150px;
     height: 35px;
     background-color: rgb(118, 17, 136);
@@ -144,7 +154,7 @@
 .adCarrinho{
     cursor: pointer;
     position: relative;
-    bottom: 40px;
+    top: 30px;
     left: 100px;
     height: 35px;
     width: 150px;
@@ -159,12 +169,12 @@
 
 }
 
-.imagem{
-    position: absolute;
+.imagem img{
     width: 200px;
     height: 300px;
-    top: 50px;
-    
-    
 }
 
+.modal-opcoes{
+    position: absolute;
+    bottom: 10px;
+}

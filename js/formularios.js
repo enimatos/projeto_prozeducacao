@@ -1,4 +1,4 @@
-let btn = document.querySelector("#verSenha")
+let btn = document.querySelector(".fa-eye")
 let btnConfirm = document.querySelector("#verConfirmSenha")
 let nome = document.querySelector("#nome");
 let labelNome = document.querySelector("#labelNome")
@@ -14,6 +14,13 @@ let confirmSenha = document.querySelector("#confirmSenha")
 let labelConfirmSenha = document.querySelector("#labelConfirmSenha")
 let emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 let cpfRegex = /^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}/;
+let enviarEmail = document.querySelector("#fazerLogin")
+let assunto = document.querySelector("#assunto");
+let labelAssunto = document.querySelector("#labelAssunto")
+let telefone = document.querySelector("#telefone")
+let labelTelefone = document.querySelector("#labelTelefone")
+let telefoneRegex = /^[0-9]{2}-([0-9]{8}|[0-9]{9})/;
+
 
 nome.addEventListener('keyup', () => {
     if(nome.value.length < 3){
@@ -65,6 +72,25 @@ email.addEventListener("keyup", () => {
     }
 })
 
+btn.addEventListener("click", ()=> {
+    if(senha.getAttribute('type') == "password"){
+        senha.setAttribute('type', 'text')
+    } else{
+        senha.setAttribute('type', 'password')
+    }
+})
+
+
+btnConfirm.addEventListener("click", ()=> {
+    let confirmSenha = document.querySelector("#confirmSenha")
+
+    if(confirmSenha.getAttribute('type') == "password"){
+        confirmSenha.setAttribute('type', 'text')
+    } else{
+        confirmSenha.setAttribute('type', 'password')
+    }
+})
+
 senha.addEventListener('keyup', () => {
     if(senha.value.length <= 7){
         labelSenha.setAttribute('style', 'color: red');
@@ -92,24 +118,41 @@ confirmSenha.addEventListener('keyup', () => {
 
 
 
-btn.addEventListener("click", ()=> {
-    let senha = document.querySelector("#senha")
 
-    if(senha.getAttribute('type') == "password"){
-        senha.setAttribute('type', 'text')
-    } else{
-        senha.setAttribute('type', 'password')
+
+
+
+
+assunto.addEventListener('keyup', () => {
+    if(assunto.value.length < 5){
+        labelAssunto.setAttribute('style', 'color: red');
+        labelAssunto.innerHTML = '<strong>Assunto *O seu assunto deve ter ao menos 6 caracteres</strong>'
+        assunto.setAttribute('style', 'border-color: red');
+    }else{
+        labelAssunto.setAttribute('style', 'color: green');
+        assunto.setAttribute('style', 'border-color: green');
+        labelAssunto.innerHTML = 'Assunto *'
+    }
+});
+
+telefone.addEventListener("keyup", () => {
+    if (telefoneRegex.test(telefone.value)){
+        labelTelefone.setAttribute('style', 'color: green');
+        telefone.setAttribute('style', 'border-color: green');
+        labelTelefone.innerHTML = 'Telefone *'
+        e
+    }else{
+        labelTelefone.setAttribute('style', 'color: red');
+        telefone.setAttribute('style', 'border-color: red');
+        labelTelefone.innerHTML = '<strong>Telefone *Insire um valor válido'
     }
 })
 
 
-btnConfirm.addEventListener("click", ()=> {
-    let confirmSenha = document.querySelector("#confirmSenha")
 
-    if(confirmSenha.getAttribute('type') == "password"){
-        confirmSenha.setAttribute('type', 'text')
-    } else{
-        confirmSenha.setAttribute('type', 'password')
-    }
-})
+
+
+
+
+
 

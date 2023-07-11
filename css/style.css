@@ -1,6 +1,6 @@
 
 *{
-    font-family:'Work Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-size:small;
     margin: 0;
     padding: 0;
@@ -9,14 +9,18 @@
 /* header*/
 
 body{
-    height: 100vh;
+    
 }
 
+
 header#cabecalho{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 100vw;
     height: 140px;
     background-color: #f3e6fb;
 
@@ -33,7 +37,7 @@ div figure#topo{
     
 }
 
-div.orietacao{
+div.orientacao{
     display: flex;
     width: 90%;
     max-width: 1200px;
@@ -47,12 +51,32 @@ header img {
     padding: 5px 50px;
 
 }
+#divPesquisa{
+    display: flex;
+    height: 30px;
+    border-radius: 30px;
+    justify-content:center;
+    
+}
+
+#txtBusca{
+    border-radius: 30px;
+}
+#btnBusca{
+    border-radius: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+}
+
 
 nav .alinhado {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 4rem;
+    gap: 3rem;
     padding: 10px;
     
 }
@@ -120,34 +144,54 @@ nav#nav {
 }
 
 
-main.conteudo{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 90%;
-    height: calc(100vh - 200px);
+.principal {
     max-width: 1200px;
-    margin: 0 auto;
-
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    gap: 50rem;
+    height:fit-content;
+    
 }
 
 main.padrao{
+    position: fixed;
+    top:150px;
+    left: 0;
+    right: 0;
     display: flex;
     gap: 5px;
-    width: 100%;
-    min-width: 320px;
-    background-image: url("/imagens/Ellas-Logo_mini.png");
-    background-repeat: no-repeat;
-    background-size: inherit;
+    width: 90%;
     margin: 0 auto;
     height: calc(100vh - 200px);
     align-items: center;
+    justify-content: center;
 }
 
-.principal {
-    max-width: 1200px;
-    height: calc(100vh - 230px);
+
+#div-home{
+    position: absolute;
+    top:200px;
+    height: 100vh;
+    padding-bottom: 50%;
 }
+
+#bolsas, #calcas, #blusas, #saias, #sueter, #casacos,
+#vestidos, #macacoes, #shorts, #conjunto{
+    height: 100vh;
+}
+
+.altura{
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
 
 .principal img {
     width: 100%;
@@ -160,20 +204,28 @@ main.padrao{
 }
 
 .corpo-formulario{
+    padding: 20px;
+    margin-top: 30px;
     display: flex;
-    width: 90%;
-    height: 100%;
-    justify-content: right;
+    width: 70%;
+    height:700px;
+    justify-content: space-around;
     align-items: center;
+    border: 3px solid #8a2be2;
+    border-radius: 15px;
 }
 
 .scroll {
+
     display: flex;
     overflow-x: auto;
-    width: 80%;
+    width: 90%;
+    gap: 5rem;
+    margin: 0 auto;
     
 
 }
+
 
 .fa-cart-shopping{
     right: 10px;
@@ -202,17 +254,6 @@ main.padrao{
 
 }
 
-.btn_carrinho {
-    justify-content: center;
-    background-color: #dac0f2;
-    width: 200px;
-    height:30px;
-    border-radius: 15%;
-    font-weight: bold;
-    color: #2f104d;
-}
-
-
 h1{
     font-family: 'Dancing Script', cursiva;
     color: #8a2be2;
@@ -221,7 +262,7 @@ h1{
     width: 100%;
    
     padding-bottom: 0%;
-  }
+}
 
 
 li{
@@ -237,24 +278,30 @@ a{
 }
 
 footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: #be7ff8;
     display: flex;
-    flex-direction: column;
-    align-items:center;
     justify-content: center;
+    padding-top: 20px;
 }
 
 
 footer nav {
-    width: 100%;
-    height: 60px;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 ul.rodape{
     display: flex;
     justify-content:space-around;
     align-items:center;
-    height: min-content;
+    height:fit-content;
     width: 100%;
 
 }
@@ -272,19 +319,115 @@ ul.rodape{
 footer p {
     font-size:10pt;
     text-align: center;
-    padding-bottom: 5px;
+    padding-top: 15px;
 }
 
- div.formulario{
+
+
+/*formulários
+*/
+
+#caixa-form{
+    width: 40%;
+
+}
+
+#caixa-form img{
+    width: 100%;
+    height: auto ;
+}
+
+.label-float input{
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 3px solid purple;
+    min-width: 100px;
+
+}
+
+.label-float{
+    position: relative;
     display: flex;
+    flex-direction: column;
+    height: 70px;
+    gap: 3px;
+    padding-bottom: 10px;
+
+}
+
+.label-float input:focus{
+    border-bottom: 3px solid blue;
+
+}
+
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+}
+
+
+.fa-eye{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor:pointer
+}
+
+
+button{
+    padding: 7px;
+    font-weight: bold;
+    font-size: 10pt;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #e0c3fa;
+    border-radius: 4px;
+    transition: all .3s ease-out;
+}
+
+button:hover{
+    background-color: #2f104d;
+    color: white;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#ajuda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem
+}
+
+#formulario{
+    width: 50%;
+    padding: 30px;
     align-items: center;
     text-align: justify;
     flex-direction: column;
-    width: 400px;
+    height: fit-content;
     justify-content: center;
 
 }
 
+.tamanho{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
 .ellas img {
     width: 100%;
 }
@@ -300,7 +443,6 @@ div.texto_sobre{
 
 
 
-
 .texto_sobre p{
     width: 90%;
     padding: 1rem;
@@ -309,8 +451,15 @@ div.texto_sobre{
 
 
 @media only screen and (max-width: 900px){
+    
+    header#cabecalho{
+        align-items: end;
+        height: 100px;
+    }
     .alinhado{
-       gap:0.2rem;
+       gap:0.1rem;
+       display: flex;
+       align-items: center;
     }
     
     
@@ -329,8 +478,9 @@ div.texto_sobre{
         display: flex;
         width: 50px;
         position: absolute;
-        top:90px;
-        left: 0;
+        align-items: center;
+        top: 25px;
+        left: 5px;
         
 
     }
@@ -343,8 +493,8 @@ div.texto_sobre{
     #menu {
         display: block;
         position: absolute;
-        top: 50px;
-        right: 0px;
+        top: 0px;
+        left: 40px;
         transition: .3s;
         height: 0px;
         margin-left: 10px;
@@ -366,20 +516,28 @@ div.texto_sobre{
         width: 90%;
     }
    
-    main.conteudo {
-        flex-direction:column;
-        width: 90%;
+    #carrinho{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 140px;
+        width: 400px;
+        height: fit-content;
     }
-
+   
     .principal img{
         width: 500px;
         height: 600px;
     }
-    .corpo {
-        flex-direction: column;
-        height: fit-content;
+
+
+    #caixa-form{
+        display: none;
     }
 
+    #formulario{
+        width: 90%;
+    }
     .ellas img{
         display: none;
     }
