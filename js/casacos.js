@@ -105,33 +105,42 @@ const casacos = [
 
 ]
 
-const produtosCs = document.querySelector("#scroll-casaco");
-
-function renderProducts(){
-    casacos.forEach ((casaco) => {
+renderProducts = () => {
+    const produtosCs = document.querySelector("#scroll-casaco");
+    casacos.map((item) => {
         produtosCs.innerHTML +=  `
-            <div class="caixa">
-                <div class="produto_item" >
-                    <img src="${casaco.img}" alt="">
-                    <p class="preco">R$ 67,89</p>        
-                    <button class="btn-detalhe">Detalhe</button>
-                </div>
-                <div class="detalhe">
-                    <div class="img-detalhe" style="color: aquamarine;"></div>
-                    <div class="detalhe" style="color: blue;">
-                        <h3 class="nome">${casaco.nome}</h3>
-                        <p class="desccricao" style="color: brown;">${casaco.descricao}</p>
+                <div class="caixa">
+                    <div class="produto_item" >
+                        <p class="nome">${item.nome}</p> 
+                        <img src="${item.img}" alt="${item.nome}">
+                        <span class="preco">R$ ${item.preco}</span>
+                        <div id=descricao>
+                            <p > ${item.descricao[0]}</p>
+                            <p > ${item.descricao[1]}</p> 
+                            <p > ${item.descricao[2]}</p>
+                        </div>
+                        <div id="tamanhos">
+                            <input type="radio" id="tamanhoP" name="tamanho" value="P" />
+                            <label for="tamanhoP">P</label>
+
+                            <input type="radio" id="tamanhoM" name="tamanho" value="M" />
+                            <label for="tamanhoM">M</label>
+
+                            <input type="radio" id="tamanhoG" name="tamanho" value="G" />
+                            <label for="tamanhoG">G</label>
+                        </div>
+                        <button class="btnDetalhe" onclick="addCarrinho(${item.codigo})">Comprar</button>
                     </div>
-                    <div>
-                        <button class="fecharDetalhe" onclick="fecharDetalhe()">Fechar</button>
-                        <button class="carrinho"><i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
                 </div>
-            </div>
-        `;
+            `;
+
     });
 }
 
 
+
 renderProducts()
+
+
+
 

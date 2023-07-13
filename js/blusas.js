@@ -128,33 +128,34 @@ const blusas = [
 ]
 
 
-
-var produtosBl = document.querySelector("#scroll-blusa");
-
-
 renderProducts = () => {
-    produtosBl = document.getElementById("scroll-blusa");
-    blusas.map((val) => {
+    const produtosBl = document.querySelector("#scroll-blusa");
+    blusas.map((blusa) => {
         produtosBl.innerHTML +=  `
-            <div class="caixa">
-                <div class="produto_item" >
-                    <img src="${val.img}" alt="">
-                    <p class="preco">R$ `+val.preco+`</p>        
-                    <button class="btn-detalhe" value="$`+val.codigo+`">Detalhe</button>
-                </div>
-                <div class="detalhe">
-                    <div class="img-detalhe" style="color: aquamarine;"></div>
-                    <div class="detalhe" style="color: blue;">
-                        <h3 class="nome">`+val.nome+`</h3>
-                        <p class="desccricao" style="color: brown;">`+val.descricao+`</p>
+                <div class="caixa">
+                    <div class="produto_item" >
+                        <p class="nome">${blusa.nome}</p> 
+                        <img src="${blusa.img}" alt="${blusa.nome}">
+                        <span class="preco">R$ ${blusa.preco}</span>
+                        <div id=descricao>
+                            <p > ${blusa.descricao[0]}</p>
+                            <p > ${blusa.descricao[1]}</p> 
+                            <p > ${blusa.descricao[2]}</p>
+                        </div>
+                        <div id="tamanhos">
+                            <input type="radio" id="tamanhoP" name="tamanho" value="P" />
+                            <label for="tamanhoP">P</label>
+
+                            <input type="radio" id="tamanhoM" name="tamanho" value="M" />
+                            <label for="tamanhoM">M</label>
+
+                            <input type="radio" id="tamanhoG" name="tamanho" value="G" />
+                            <label for="tamanhoG">G</label>
+                        </div>
+                        <button class="btnCarrinho" onclick="addCarrinho(${blusa.codigo})">Comprar</button>
                     </div>
-                    <div>
-                        <button class="fecharDetalhe" onclick="fecharDetalhe()">Fechar</button>
-                        <button class="carrinho"><i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
                 </div>
-            </div>
-        `;
+            `;
 
     });
 }
@@ -162,6 +163,21 @@ renderProducts = () => {
 
 renderProducts()
 
+
+function addCarrinho(codigo){
+    if(cart.some((item) => item.codigo === codigo)){
+        alert("já existe");
+    }else{
+        const item = blusas.find((prod) => prod.codigo === codigo);
+
+
+        cart.push({
+            ...item,
+            numeroUnidade: 1,
+
+        })
+    }
+}
 
 
 

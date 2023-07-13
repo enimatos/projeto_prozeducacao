@@ -105,33 +105,44 @@ const calcas = [
 
 ]
 
-const produtosCa = document.querySelector("#scroll-calca");
 
-function renderProducts(){
-    calcas.forEach ((calca) => {
+
+renderProducts = () => {
+    const produtosCa = document.querySelector("#scroll-calca");
+    calcas.map((calca) => {
         produtosCa.innerHTML +=  `
-            <div class="caixa">
-                <div class="produto_item" >
-                    <img src="${calca.img}" alt="">
-                    <p class="preco">R$ 67,89</p>        
-                    <button class="btn-detalhe">Detalhe</button>
-                </div>
-                <div class="detalhe">
-                    <div class="img-detalhe" style="color: aquamarine;"></div>
-                    <div class="detalhe" style="color: blue;">
-                        <h3 class="nome">${calca.nome}</h3>
-                        <p class="desccricao" style="color: brown;">${calca.descricao}</p>
+                <div class="caixa">
+                    <div class="produto_item" >
+                        <p class="nome">${calca.nome}</p> 
+                        <img src="${calca.img}" alt="${calca.nome}">
+                        <span class="preco">R$ ${calca.preco}</span>
+                        <div id=descricao>
+                            <p > ${calca.descricao[0]}</p>
+                            <p > ${calca.descricao[1]}</p> 
+                            <p > ${calca.descricao[2]}</p>
+                        </div>
+                        <div id="tamanhos">
+                            <input type="radio" id="tamanhoP" name="tamanho" value="P" />
+                            <label for="tamanhoP">P</label>
+
+                            <input type="radio" id="tamanhoM" name="tamanho" value="M" />
+                            <label for="tamanhoM">M</label>
+
+                            <input type="radio" id="tamanhoG" name="tamanho" value="G" />
+                            <label for="tamanhoG">G</label>
+                        </div>
+                        <button class="btnDetalhe" onclick="addCarrinho(${calca.codigo})">Comprar</button>
                     </div>
-                    <div>
-                        <button class="fecharDetalhe" onclick="fecharDetalhe()">Fechar</button>
-                        <button class="carrinho"><i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
                 </div>
-            </div>
-        `;
+            `;
+
     });
 }
 
 
+
 renderProducts()
+
+
+
 

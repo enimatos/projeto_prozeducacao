@@ -1,24 +1,24 @@
 let btn = document.querySelector(".fa-eye")
-let btnConfirm = document.querySelector("#verConfirmSenha")
-let nome = document.querySelector("#nome");
-let labelNome = document.querySelector("#labelNome")
-let sobrenome = document.querySelector("#sobrenome")
-let labelSobrenome = document.querySelector("#labelSobrenome")
-let cpf = document.querySelector("#cpf")
-let labelCpf = document.querySelector("#labelCpf")
-let email = document.querySelector("#email")
-let labelEmail = document.querySelector("#labelemail")
-let senha = document.querySelector("#senha")
-let labelSenha = document.querySelector("#labelSenha")
-let confirmSenha = document.querySelector("#confirmSenha")
-let labelConfirmSenha = document.querySelector("#labelConfirmSenha")
+let btnConfirm = document.querySelector(".verConfirmSenha")
+let nome = document.querySelector(".nome");
+let labelNome = document.querySelector(".labelNome")
+let sobrenome = document.querySelector(".sobrenome")
+let labelSobrenome = document.querySelector(".labelSobrenome")
+let cpf = document.querySelector(".cpf")
+let labelCpf = document.querySelector(".labelCpf")
+let email = document.querySelector(".email")
+let labelEmail = document.querySelector(".labelEmail")
+let senha = document.querySelector(".senha");
+let labelSenha = document.querySelector(".labelSenha");
+let confirmSenha = document.querySelector(".confirmSenha")
+let labelConfirmSenha = document.querySelector(".labelConfirmSenha")
 let emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 let cpfRegex = /^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}/;
-let enviarEmail = document.querySelector("#fazerLogin")
-let assunto = document.querySelector("#assunto");
-let labelAssunto = document.querySelector("#labelAssunto")
-let telefone = document.querySelector("#telefone")
-let labelTelefone = document.querySelector("#labelTelefone")
+let enviarEmail = document.querySelector(".fazerLogin")
+let assunto = document.querySelector(".assunto");
+let labelAssunto = document.querySelector(".labelAssunto")
+let telefone = document.querySelector(".telefone")
+let labelTelefone = document.querySelector(".labelTelefone")
 let telefoneRegex = /^[0-9]{2}-([0-9]{8}|[0-9]{9})/;
 
 
@@ -72,25 +72,6 @@ email.addEventListener("keyup", () => {
     }
 })
 
-btn.addEventListener("click", ()=> {
-    if(senha.getAttribute('type') == "password"){
-        senha.setAttribute('type', 'text')
-    } else{
-        senha.setAttribute('type', 'password')
-    }
-})
-
-
-btnConfirm.addEventListener("click", ()=> {
-    let confirmSenha = document.querySelector("#confirmSenha")
-
-    if(confirmSenha.getAttribute('type') == "password"){
-        confirmSenha.setAttribute('type', 'text')
-    } else{
-        confirmSenha.setAttribute('type', 'password')
-    }
-})
-
 senha.addEventListener('keyup', () => {
     if(senha.value.length <= 7){
         labelSenha.setAttribute('style', 'color: red');
@@ -116,10 +97,24 @@ confirmSenha.addEventListener('keyup', () => {
 });
 
 
+btn.addEventListener("click", ()=> {
+    if(senha.getAttribute('type') == "password"){
+        senha.setAttribute('type', 'text')
+    } else{
+        senha.setAttribute('type', 'password')
+    }
+})
 
 
+btnConfirm.addEventListener("click", ()=> {
+    let confirmSenha = document.querySelector(".confirmSenha")
 
-
+    if(confirmSenha.getAttribute('type') == "password"){
+        confirmSenha.setAttribute('type', 'text')
+    } else{
+        confirmSenha.setAttribute('type', 'password')
+    }
+})
 
 
 
@@ -144,7 +139,7 @@ telefone.addEventListener("keyup", () => {
     }else{
         labelTelefone.setAttribute('style', 'color: red');
         telefone.setAttribute('style', 'border-color: red');
-        labelTelefone.innerHTML = '<strong>Telefone *Insire um valor válido'
+        labelTelefone.innerHTML = '<strong>Telefone *Insire um valor válido</strong>'
     }
 })
 

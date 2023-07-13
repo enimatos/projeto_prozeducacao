@@ -7,49 +7,70 @@
 .produto_item{
     display: flex;
     flex-flow: wrap;
-    height:500px;
-    align-items: center;
-    justify-content: space-between;
-    width: 200px;
-    margin: 0 auto;
+    justify-content: center;
+    width: 250px;
+    gap: 0.5rem;
+    margin: 3px auto;
+    
 
 }
 
+
+.nome{
+    font-size: medium;
+    font-weight: bold;
+    justify-content: center;
+    height: 30px;
+    padding-top: 7px;
+    
+}
+
+.container-produto{
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+}
 .produto_item img {
-    width: 200px;
+    width: 240px;
     height: 300px;
-    border-radius: 10%;
-}
-
-.btn-detalhe{
-    cursor: pointer;
-}
-
-.detalhe{
-    display: none;
-    position: relative;
-    width: auto;
-    height: 300px;
-    
-    
+    border-radius: 50%;
+    border: 1px solid #000;
 }
 
 
-.hide{
-    visibility:hidden;
+.caixa{
+    background-color: #f1ddf6b6;
+    border-radius: 10px;
 }
 .preco{
     display: flex;
-    justify-content: space-around;
     font-weight: bold;
     font-size: 16px;
     font-family: Cambria, Cochin, Georgia, serif;
-    align-items: center;
-    padding: 10px;
+    width: 80%;
+    height: 25px;
 }
 
 
+#descricao{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.titulo{
+    font-size: 25px;
+}
+
+#descricao p{
+    margin: 0.3em 0;
+}
+
+#tamanhos{
+    width: 200px;
+    padding-bottom: 10px;
+}
 .color{
     height: 20px;
     width: 10vh;
