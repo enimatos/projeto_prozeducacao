@@ -67,6 +67,9 @@
     margin: 0.3em 0;
 }
 
+#tabela-blusas{
+    margin: 500px;
+}
 #tamanhos{
     width: 200px;
     padding-bottom: 10px;
@@ -171,7 +174,28 @@
     
 }
 
+#carrinho{
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    max-width: 1200px;
+    width: 900px;
+    height: 100vh;
+    background-color: #fff;
+}
 
+#carrinho img{
+    width: 80px;
+    height: 100px;
+}
+
+.info-prod-car{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid dotted;
+    padding: 10px 0;
+
+}
 .adCarrinho{
     cursor: pointer;
     position: relative;
@@ -183,6 +207,47 @@
     color: white;
     border-radius: 10px;
 }
+
+.fa-circle-chevron-left, 
+.fa-circle-chevron-right{
+    font-size: 20pt;
+    
+    
+}
+
+.alteracao{
+    padding: 0px 20px;
+    display: flex;
+}
+.proximo, .anterior{
+    border:none;
+    top:0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9;
+    opacity: 0.2;
+}
+
+.proximo:hover, 
+.anterior:hover{
+    opacity: 1;
+}
+
+.anterior{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+
+.proximo{
+    right: 0;
+    transform: rotate(180deg);
+}
+
+
 .abrir{
     cursor: pointer;
     width: 100px;

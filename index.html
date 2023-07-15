@@ -40,7 +40,7 @@
                         </div>
                     </li>
                     <li><a href="html/favoritos.html"><span class="texto">Meus favoritos </span><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="#carrinho"><span class="texto">Carrinho </span><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#meu-carrinho"><span class="texto">Carrinho </span><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="#login"><span class="texto">Login/Cadastro </span><i class="fa-regular fa-user"></i></a></li> 
                 </ul>
             </nav>
@@ -63,23 +63,17 @@
         </nav>
     </header>
     <main class="principal">
+        <div id="tabela-blusas">
+            <p>blusas</p>
+        </div>
         <section id="home">
             <div id="div-home">
                 
             </div>
-        <section id="meu-carrinho">
-            <div id="carrinho">
-                <h1>Carrinho</h1>
-                
-            </div>
-            <div>
-                
-            </div>
-        </section>
+        
         </section>
         <section id="bolsas" >
             <div class="altura">
-                <h2 class="titulo">Bolsas</h2>
                 <div id="scroll-bolsa" class="scroll">
                 
                 </div>
@@ -87,14 +81,15 @@
         </section>
         <section id="blusas" >
             <div class="altura">
-                <h2 class="titulo">Blusas</h2>
+                <button class="proximo"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                
+                
                 <div id="scroll-blusa" class="scroll"></div>
-
+                <button class="anterior"><i class="fa-solid fa-circle-chevron-left"></i></button>
             </div>
         </section>
         <section id="calcas" >
             <div class="altura">
-                <h2 class="titulo">Calcas</h2>
                 <div id="scroll-calca" class="scroll"></div>
                 
             </div>
@@ -102,7 +97,6 @@
         </section>
         <section id="casacos" >
             <div class="altura">
-                <h2 class="titulo">Casacos</h2>
                 <div id="scroll-casaco" class="scroll"></div>
                 
             </div>
@@ -110,7 +104,6 @@
         </section>
         <section id="conjuntos" >
             <div class="altura">
-                <h2 class="titulo">Conjuntos</h2>
                 <div id="scroll-conjunto" class="scroll"></div>
                 
             </div>
@@ -118,7 +111,6 @@
         </section>
         <section id="shorts" >
             <div class="altura">
-                <h2 class="titulo">Shorts</h2>
                 <div id="scroll-short" class="scroll"></div>
                 
             </div>
@@ -126,7 +118,6 @@
         </section>
         <section id="macacoes" >
             <div class="altura">
-                <h2 class="titulo">Macacão</h2>
                 <div id="scroll-macacao" class="scroll"></div>
                 
             </div>
@@ -134,7 +125,6 @@
         </section>
         <section id="saias">
             <div class="altura">
-                <h2 class="titulo">Saia</h2>
                 <div id="scroll-saia" class="scroll"></div>
                 
             </div>
@@ -142,7 +132,6 @@
         </section>
         <section id="sueter" >
             <div class="altura">
-                <h2 class="titulo">Sueter</h2>
                 <div id="scroll-sueter" class="scroll"></div>
                 
             </div>
@@ -150,11 +139,19 @@
         </section>
         <section id="vestidos" >
             <div class="altura">
-                <h2 class="titulo">Vestidos</h2>
                 <div id="scroll-vestido" class="scroll"></div>
                 
             </div>
             
+        </section>
+        <section id="meu-carrinho">
+            <div id="carrinho">
+                <p class="titulo">Carrinho</p>
+                
+            </div>
+            <div>
+                
+            </div>
         </section>
         <section id="login">
             <div class="tamanho">
@@ -202,7 +199,7 @@
         
                         <div class="label-float">
                             <label for="sobrenome" class="labelSobrenome">Sobrenome* </label>
-                            <input type="text" class="sobrenome" name="sobrenome" class="">
+                            <input type="text" class="sobrenome" name="sobrenome" >
                         </div>
         
                         <div class="label-float">
@@ -216,12 +213,12 @@
                         </div>
         
                         <div class="label-float">
-                            <label for="email" class="labelEmail">E-mail: </label>
-                            <input type="email" class="email" name="email" required placeholder="nome@text.com.br">
+                            <label for="email" class="labelEmailCadastro">E-mail: </label>
+                            <input type="email" class="emailCadastro" name="email" required placeholder="nome@text.com.br">
                         </div>
                         <div class="label-float">
-                            <label for="senha" class="labelSenha">Senha: </label><i class="fa-sharp fa-solid fa-eye"></i>
-                            <input type="password" class="senha" name="senha" required >
+                            <label for="senha" class="labelSenhaCadastro">Senha: </label><i id="labelSenhaCadastro" class="fa-sharp fa-solid fa-eye"></i>
+                            <input type="password" class="senhaCadastro" name="senha" required >
                         </div>
         
                         <div class="label-float">
@@ -249,7 +246,7 @@
                         </div>
                         <div class="label-float">
                             <label for="nome" class="labelNome">Nome:</label>
-                            <input type="text" name="nome" class="nome"> 
+                            <input type="text" name="nome" class="nome" required> 
                         </div>
                         <div class="label-float">
                             <label for="telefone" class="labelTelefone">Telefone *</label>

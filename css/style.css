@@ -149,9 +149,9 @@ nav#nav {
     width: 90%;
     display: flex;
     flex-direction: column;
-    margin: 0 10%;
-    gap: 50rem;
+    gap: 40rem;
     height:fit-content;
+    margin: 0 auto;
     
 }
 
@@ -188,14 +188,11 @@ main.padrao{
 
 .altura{
     max-width: 1200px;
-    width: 90%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     padding-top: 150px;
-    gap: 30px;
 }
 
 
@@ -223,12 +220,9 @@ main.padrao{
 .scroll {
     display: flex;
     overflow-x: auto;
-    width: 90%;
     gap: 3rem;
     margin: 0 auto;
-    height:550px;
-    
-
+    height:600px;
 }
 
 
@@ -520,16 +514,7 @@ div.texto_sobre{
         width: 90%;
     }
    
-    #carrinho{
-        display: block;
-        max-width: 500px;
-        position: fixed;
-        right: 0;
-        top: 140px;
-        width: 400px;
-        height: fit-content;
-        position: fixed;
-    }
+  
    
     .principal img{
         width: 500px;

@@ -1,5 +1,6 @@
 let btn = document.querySelector(".fa-eye")
-let btnConfirm = document.querySelector(".verConfirmSenha")
+let btnConfirm = document.querySelector("#verConfirmSenha")
+let btnSenhaCadastro = document.querySelector("#labelSenhaCadastro")
 let nome = document.querySelector(".nome");
 let labelNome = document.querySelector(".labelNome")
 let sobrenome = document.querySelector(".sobrenome")
@@ -20,6 +21,10 @@ let labelAssunto = document.querySelector(".labelAssunto")
 let telefone = document.querySelector(".telefone")
 let labelTelefone = document.querySelector(".labelTelefone")
 let telefoneRegex = /^[0-9]{2}-([0-9]{8}|[0-9]{9})/;
+let labelEmailCadastro = document.querySelector(".labelEmailCadastro")
+let emailCadastro = document.querySelector(".emailCadastro")
+let labelSenhaCadastro = document.querySelector(".labelSenhaCadastro")
+let senhaCadastro = document.querySelector(".senhaCadastro")
 
 
 nome.addEventListener('keyup', () => {
@@ -33,6 +38,8 @@ nome.addEventListener('keyup', () => {
         labelNome.innerHTML = 'Nome'
     }
 });
+
+
 
 sobrenome.addEventListener('keyup', () => {
     if(sobrenome.value.length < 2){
@@ -72,6 +79,30 @@ email.addEventListener("keyup", () => {
     }
 })
 
+emailCadastro.addEventListener("keyup", () => {
+    if (emailRegex.test(emailCadastro.value)){
+        labelEmailCadastro.setAttribute('style', 'color: green');
+        emailCadastro.setAttribute('style', 'border-color: green');
+        labelEmailCadastro.innerHTML = 'E-mail*'
+    }else{
+        labelEmailCadastro.setAttribute('style', 'color: red');
+        emailCadastro.setAttribute('style', 'border-color: red');
+        labelEmailCadastro.innerHTML = '<strong>E-mail *e-mail inválido</strong>'
+    }
+})
+
+senhaCadastro.addEventListener('keyup', () => {
+    if(senhaCadastro.value.length <= 7){
+        labelSenhaCadastro.setAttribute('style', 'color: red');
+        labelSenhaCadastro.innerHTML = '<strong>Senha *Insira no mínimo 8 caracteres</strong>'
+        senhaCadastro.setAttribute('style', 'border-color: red');
+    }else{
+        labelSenhaCadastro.setAttribute('style', 'color: green');
+        senhaCadastro.setAttribute('style', 'border-color: green');
+        labelSenhaCadastro.innerHTML = 'Senha'
+    }
+});
+
 senha.addEventListener('keyup', () => {
     if(senha.value.length <= 7){
         labelSenha.setAttribute('style', 'color: red');
@@ -96,25 +127,6 @@ confirmSenha.addEventListener('keyup', () => {
     }
 });
 
-
-btn.addEventListener("click", ()=> {
-    if(senha.getAttribute('type') == "password"){
-        senha.setAttribute('type', 'text')
-    } else{
-        senha.setAttribute('type', 'password')
-    }
-})
-
-
-btnConfirm.addEventListener("click", ()=> {
-    let confirmSenha = document.querySelector(".confirmSenha")
-
-    if(confirmSenha.getAttribute('type') == "password"){
-        confirmSenha.setAttribute('type', 'text')
-    } else{
-        confirmSenha.setAttribute('type', 'password')
-    }
-})
 
 
 
@@ -143,7 +155,31 @@ telefone.addEventListener("keyup", () => {
     }
 })
 
+btn.addEventListener("click", ()=> {
+    if(senha.getAttribute('type') == "password"){
+        senha.setAttribute('type', 'text')
+    } else{
+        senha.setAttribute('type', 'password')
+    }
+})
 
+btnSenhaCadastro.addEventListener("click", ()=> {
+    if(senhaCadastro.getAttribute('type') == "password"){
+        senhaCadastro.setAttribute('type', 'text')
+    } else{
+        senhaCadastro.setAttribute('type', 'password')
+    }
+})
+
+btnConfirm.addEventListener("click", ()=> {
+    let confirmSenha = document.querySelector(".confirmSenha")
+
+    if(confirmSenha.getAttribute('type') == "password"){
+        confirmSenha.setAttribute('type', 'text')
+    } else{
+        confirmSenha.setAttribute('type', 'password')
+    }
+})
 
 
 
