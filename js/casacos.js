@@ -116,42 +116,4 @@ const casacos = [
 
 ]
 
-renderProducts = () => {
-    const produtosCs = document.querySelector("#scroll-casaco");
-    casacos.map((item) => {
-        produtosCs.innerHTML +=  `
-                <div class="caixa">
-                    <div class="produto_item" >
-                        <p class="nome">${item.nome}</p> 
-                        <img src="${item.img}" alt="${item.nome}">
-                        <span class="preco">R$ ${item.preco}</span>
-                        <div id=descricao>
-                            <p > ${item.descricao[0]}</p>
-                            <p > ${item.descricao[1]}</p> 
-                            <p > ${item.descricao[2]}</p>
-                        </div>
-                        <div id="tamanhos">
-                            <input type="radio" id="tamanhoP" name="tamanho" value="P" />
-                            <label for="tamanhoP">P</label>
-
-                            <input type="radio" id="tamanhoM" name="tamanho" value="M" />
-                            <label for="tamanhoM">M</label>
-
-                            <input type="radio" id="tamanhoG" name="tamanho" value="G" />
-                            <label for="tamanhoG">G</label>
-                        </div>
-                        <button class="btnDetalhe" onclick="addCarrinho(${item.codigo})">Comprar</button>
-                    </div>
-                </div>
-            `;
-
-    });
-}
-
-
-
-renderProducts()
-
-
-
-
+renderizarProdutos(casacos, "casaco")

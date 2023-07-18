@@ -114,44 +114,4 @@ const calcas = [
 
 ]
 
-
-
-renderProducts = () => {
-    const produtosCa = document.querySelector("#scroll-calca");
-    calcas.map((calca) => {
-        produtosCa.innerHTML +=  `
-                <div class="caixa">
-                    <div class="produto_item" >
-                        <p class="nome">${calca.nome}</p> 
-                        <img src="${calca.img}" alt="${calca.nome}">
-                        <span class="preco">R$ ${calca.preco}</span>
-                        <div id=descricao>
-                            <p > ${calca.descricao[0]}</p>
-                            <p > ${calca.descricao[1]}</p> 
-                            <p > ${calca.descricao[2]}</p>
-                        </div>
-                        <div id="tamanhos">
-                            <input type="radio" id="tamanhoP" name="tamanho" value="P" />
-                            <label for="tamanhoP">P</label>
-
-                            <input type="radio" id="tamanhoM" name="tamanho" value="M" />
-                            <label for="tamanhoM">M</label>
-
-                            <input type="radio" id="tamanhoG" name="tamanho" value="G" />
-                            <label for="tamanhoG">G</label>
-                        </div>
-                        <button class="btnDetalhe" onclick="addCarrinho(${calca.codigo})">Comprar</button>
-                    </div>
-                </div>
-            `;
-
-    });
-}
-
-
-
-renderProducts()
-
-
-
-
+renderizarProdutos(calcas, "calca")

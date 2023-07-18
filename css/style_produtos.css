@@ -1,8 +1,11 @@
-* {
+
+  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
 
 .produto_item{
     display: flex;
@@ -15,6 +18,11 @@
 
 }
 
+.altura{
+    max-width: 1200px;
+    width: 1100px;
+    margin-top: 190px;
+}
 
 .nome{
     font-size: medium;
@@ -37,11 +45,11 @@
     border: 1px solid #000;
 }
 
-
+/*
 .caixa{
     background-color: #f1ddf6b6;
     border-radius: 10px;
-}
+}/*/
 .preco{
     display: flex;
     font-weight: bold;
@@ -52,23 +60,33 @@
 }
 
 
-#descricao{
-    padding: 0 20px;
+.descricao{
     display: flex;
+    margin: 0 15px;
     flex-direction: column;
+    gap: 0.5em;
 
 }
 
+
+.caixa{
+    background-color: #f3e6fb;
+
+}
 .titulo{
     font-size: 25px;
 }
 
-#descricao p{
-    margin: 0.3em 0;
+
+#tabela-medidas{
+    position: fixed;
+    max-width: 1200px;
+    width: 100%;
+    top: 135px;
 }
 
-#tabela-blusas{
-    margin: 500px;
+#medida{
+    width: 100%;
 }
 #tamanhos{
     width: 200px;
@@ -116,63 +134,6 @@
 }
 
 
-#div-modal{
-    display: none;
-}
-
-#div-modal.active{
-   display:block;
-   
-}
-
-.modal{
-    position: absolute;
-    width: 700px;
-    height: 500px;
-    top: 20%;
-    left: 25%;
-    background-color: #fff;
-    border-radius: 4%;
-    
-}
-
-.modal-content{
-    display: flex;
-    position: absolute;
-    top: 10px;
-    margin: 0 auto;
-    margin-top: 5%;
-    max-width: 600px;
-    padding: 0px;
-    height: 300px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-
-.modal-opcoes{
-    max-width: 600px;
-    margin: 5%
-
-}
-
-.modal-content, .modal-opcoes{
-    padding: 10px;
-}
-
-.fechar{
-    cursor: pointer;
-    position: relative;
-    top: 30px;
-    left: 20px;
-    width: 150px;
-    height: 35px;
-    background-color: rgb(118, 17, 136);
-    color: white;
-    border-radius: 10px;
-    
-}
 
 #carrinho{
     display: flex;
@@ -189,63 +150,28 @@
     height: 100px;
 }
 
-.info-prod-car{
-    display: flex;
+
+
+
+
+.center {
     align-items: center;
-    border-bottom: 2px solid dotted;
-    padding: 10px 0;
-
-}
-.adCarrinho{
-    cursor: pointer;
-    position: relative;
-    top: 30px;
-    left: 100px;
-    height: 35px;
-    width: 150px;
-    background-color: rgb(118, 17, 136);
-    color: white;
-    border-radius: 10px;
-}
-
-.fa-circle-chevron-left, 
-.fa-circle-chevron-right{
-    font-size: 20pt;
-    
-    
-}
-
-.alteracao{
-    padding: 0px 20px;
     display: flex;
-}
-.proximo, .anterior{
-    border:none;
-    top:0;
-    position: relative;
-    display: flex;
+    flex-direction: column;
+    height: 100%;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 9;
-    opacity: 0.2;
-}
+  }
+  
+  
+  .caixa {
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  
 
-.proximo:hover, 
-.anterior:hover{
-    opacity: 1;
-}
-
-.anterior{
-    left: 0;
-    transform: rotate(180deg);
-}
-
-
-.proximo{
-    right: 0;
-    transform: rotate(180deg);
-}
+  
+  }
+  
+  
 
 
 .abrir{
@@ -260,7 +186,4 @@
     height: 300px;
 }
 
-.modal-opcoes{
-    position: absolute;
-    bottom: 10px;
-}
+/*estilo do carrinho*/

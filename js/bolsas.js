@@ -115,42 +115,4 @@ const bolsas = [
 
 ]
 
-
-renderProducts = () => {
-    const produtos = document.querySelector("#scroll-bolsa");
-    
-    bolsas.map((bolsa) => {
-        produtos.innerHTML +=  `
-                <div class="caixa">
-                    <div class="produto_item" >
-                        <p class="nome">${bolsa.nome}</p> 
-                        <img src="${bolsa.img}" alt="${bolsa.nome}">
-                        <span class="preco">R$ ${bolsa.preco}</span>
-                        <div id=descricao>
-                            <p > ${bolsa.descricao[0]}</p>
-                            <p > ${bolsa.descricao[1]}</p> 
-                            <p > ${bolsa.descricao[2]}</p>
-                        </div>
-                        <div id="tamanhos">
-                            <input type="radio" id="tamanhoP" name="tamanho" value="P" />
-                            <label for="tamanhoP">P</label>
-
-                            <input type="radio" id="tamanhoM" name="tamanho" value="M" />
-                            <label for="tamanhoM">M</label>
-
-                            <input type="radio" id="tamanhoG" name="tamanho" value="G" />
-                            <label for="tamanhoG">G</label>
-                        </div>
-                        <button class="btnCarrinho" onclick="addCarrinho(${bolsas})" key="${bolsa.codigo}">Comprar</button>
-                    </div>
-                </div>
-            `;
-
-    });
-}
-
-
-
-renderProducts()
-
-
+renderizarProdutos(bolsas, "bolsa")

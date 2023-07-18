@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/b27be45e74.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Work+Sans&display=swap" rel="stylesheet"> 
+    <script src="/js/script.js" defer></script> 
+
     <script src="/js/bolsas.js" defer></script>
     <script src="/js/blusas.js" defer></script>
     <script src="/js/calcas.js" defer></script>
@@ -20,12 +22,11 @@
     <script src="/js/sueter.js" defer></script>
     <script src="/js/vestidos.js" defer></script>  
     <script src="/js/formularios.js" defer></script> 
-    <script src="/js/script.js" defer></script> 
     <title>Ellas - você tem o seu lugar</title>
 </head>
 <body>
     <header id="cabecalho">
-        <div class="orientacao">
+        <div class="orienta">
             <div>
                 <figure id="topo" class="div_topo">
                     <img >
@@ -63,10 +64,14 @@
         </nav>
     </header>
     <main class="principal">
-        <div id="tabela-blusas">
-            <p>blusas</p>
-        </div>
+        
         <section id="home">
+            <div id="tabela-medidas">
+                <button id="medida">Tabela de medidas</button>
+            </div>
+            <div id="sumario">
+                <p>Blusas</p>
+            </div>
             <div id="div-home">
                 
             </div>
@@ -77,21 +82,17 @@
                 <div id="scroll-bolsa" class="scroll">
                 
                 </div>
+                
             </div>
         </section>
         <section id="blusas" >
-            <div class="altura">
-                <button class="proximo"><i class="fa-solid fa-circle-chevron-right"></i></button>
-                
-                
+            <div class="altura">           
                 <div id="scroll-blusa" class="scroll"></div>
-                <button class="anterior"><i class="fa-solid fa-circle-chevron-left"></i></button>
             </div>
         </section>
         <section id="calcas" >
             <div class="altura">
                 <div id="scroll-calca" class="scroll"></div>
-                
             </div>
             
         </section>
@@ -145,13 +146,15 @@
             
         </section>
         <section id="meu-carrinho">
-            <div id="carrinho">
-                <p class="titulo">Carrinho</p>
-                
-            </div>
-            <div>
-                
-            </div>
+            <table class="table">
+                <tbody class="cart">
+
+                </tbody>
+                <tfoot>
+                  <td class="text-right">Total: <strong class="total"></strong></td>
+                </tfoot>
+              </table>
+          </div> 
         </section>
         <section id="login">
             <div class="tamanho">
