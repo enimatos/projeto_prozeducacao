@@ -9,7 +9,7 @@ const blusas = [
       "Tecido não elástico, 92% Poliéster, 8% Elastano",
     ],
     img: "/imagens/blusa/blusa1.webp",
-    quantidade: 0,
+    quantidade: 1
   },
   {
     codigo: 1,
@@ -17,7 +17,7 @@ const blusas = [
     preco: 37.9,
     descricao: "fssfsfs",
     img: "/imagens/blusa/blusa2.webp",
-    quantidade: 0,
+    
   },
   {
     codigo: 2,
@@ -25,7 +25,7 @@ const blusas = [
     preco: 37.9,
     descricao: "fssfsfs",
     img: "/imagens/blusa/blusa3.webp",
-    quantidade: 0,
+    
   },
   {
     codigo: 3,
@@ -37,7 +37,7 @@ const blusas = [
       "Tecido não elástico, 95% Poliéster, 5% Elastano",
     ],
     img: "/imagens/blusa/blusa4.webp",
-    quantidade: 0,
+    
   },
   {
     codigo: 4,
@@ -49,7 +49,7 @@ const blusas = [
       "Tecido não elástico, 100% Poliéster",
     ],
     img: "/imagens/blusa/blusa5.webp",
-    quantidade: 0,
+    
   },
   {
     codigo: 5,
@@ -61,7 +61,7 @@ const blusas = [
       "Tecido não elástico, 95% Poliéster, 5% Elastano",
     ],
     img: "/imagens/blusa/blusa6.jpg",
-    quantidade: 0,
+    
   },
   {
     codigo: 6,
@@ -73,7 +73,7 @@ const blusas = [
       "Tecido não elástico, 100% Poliéster",
     ],
     img: "/imagens/blusa/blusa7.webp",
-    quantidade: 0,
+    
   },
   {
     codigo: 7,
@@ -86,7 +86,7 @@ const blusas = [
       "Tecido não elástico, 100% Poliéster",
     ],
     img: "/imagens/blusa/blusa8.webp",
-    quantidade: 0,
+    
   },
   {
     codigo: 8,
@@ -98,7 +98,7 @@ const blusas = [
       "Tecido não elástico, 100% Poliéster",
     ],
     img: "/imagens/blusa/blusa9.webp",
-    quantidade: 0,
+    
   },
   {
     codigo: 9,
@@ -110,7 +110,7 @@ const blusas = [
       "Baixa elasticidade, 92% Poliéster e 8% Elastano",
     ],
     img: "/imagens/blusa/blusa10.jpg",
-    quantidade: 0,
+    
   },
   {
     codigo: 10,
@@ -122,7 +122,7 @@ const blusas = [
       "Tecido não elástico, 100% Poliéster",
     ],
     img: "/imagens/blusa/blusa11.webp",
-    quantidade: 0,
+    
   },
   ,
   {
@@ -135,8 +135,9 @@ const blusas = [
       "Tecido não elástico, 100% Poliéster",
     ],
     img: "/imagens/blusa/blusa12.webp",
-    quantidade: 0,
+    
   },
 ];
 
 renderizarProdutos(blusas, "blusa")
+

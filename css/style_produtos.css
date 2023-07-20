@@ -69,6 +69,14 @@
 }
 
 
+.info-prod-car{
+    display: flex;
+    flex-flow: wrap;
+    height: 100%;
+    align-items: center;
+    gap:3em;
+
+}
 .caixa{
     background-color: #f3e6fb;
 
@@ -78,15 +86,13 @@
 }
 
 
-#tabela-medidas{
-    position: fixed;
-    max-width: 1200px;
-    width: 100%;
-    top: 135px;
-}
-
 #medida{
     width: 100%;
+
+}
+
+#sumario{
+    
 }
 #tamanhos{
     width: 200px;
@@ -136,23 +142,32 @@
 
 
 #carrinho{
-    display: flex;
-    flex-direction: column;
-    margin: 200px auto;
+    margin: 20px auto;
     max-width: 1200px;
     width: 900px;
     height: 100vh;
-    background-color: #fff;
-}
-
-#carrinho img{
-    width: 80px;
-    height: 100px;
 }
 
 
+.item-carrinho{
+    display: flex;
+    padding: 5px;
+    gap: 2em;
+    justify-content: space-between;
+}
+.item-carrinho .img-car{
+    width: 50px;
+    height: 70px;
+}
 
+.unidades{
+    display: flex;
+    align-items: center;
+}
 
+.botaoMenos, .botaoMais, .numero{
+    width: 30px;
+}
 
 .center {
     align-items: center;

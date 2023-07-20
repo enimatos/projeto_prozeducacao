@@ -1,44 +1,90 @@
 const burguer = document.querySelector("#burguer");
+const medida = document.querySelector("#medida")
+const containerCarrinho = document.querySelector("#carrinho");
+
 let carrinho = [];
+
 function toggleMenu() {
   const nav = document.querySelector("#nav");
   nav.classList.toggle("active");
 }
 
+function show() {
+  const sumario = document.querySelector("#sumario");
+  sumario.classList.toggle("show");
+}
+
 burguer.addEventListener("click", toggleMenu);
+medida.addEventListener('click', show)
 
-atualizarCarrinho = (arr) => {
-  const containerCarrinho = document.getElementById("carrinho");
-  containerCarrinho.innerHTML = "";
-  arr.map((val) => {
-    if (val.quantidade > 0) {
-      containerCarrinho.innerHTML += `
-        <div class= "info-prod-car">
-            <img src="${val.img}" alt="${val.nome}" class="img-car"/>
-            <p style="float-left";> ${val.nome} </p>
-            <p> Tamanho --- atençao ---</p>
-            <p style="float-right";>${val.quantidade}</p>
-        </div>
-        `;
-    }
-  });
-};
 
-const botoes = document.getElementsByClassName("btnCarrinho");
+
+//const botoes = document.getElementsByClassName("btnCarrinho");
 
 function addCarrinho(item) {
-  carrinho.push(item);
-  console.log("carrinho",carrinho);
+  console.log(carrinho, item)
+  if(item.codigo > 0){
+    mudaQuantidade("mais", codigo)
+  }else{
+    const item = produto.find((el) => el.codigo === codigo)
+    carrinho.push({
+      ...item,
+      quantidade: 1,
+    });
+    }
+  atualizarCarrinho()
+  //console.log(carrinho);
+}
+
+function atualizarCarrinho(){
+  mostraCarrinho();
+};
+
+
+function mostraCarrinho(){
+  containerCarrinho.innerHTML = "";
+  carrinho.forEach((produto) => {
+    containerCarrinho.innerHTML += `
+      <div class="item-carrinho">
+        <div class= "info-prod-car">
+          <img src="${produto.img}" alt="${produto.nome}" class="img-car"/>
+          <p> ${produto.nome} </p>
+          <p>R$ ${produto.preco} </p>
+          <p> Tamanho --- atençao ---</p>
+        </div>
+        <div class="unidades">
+          <div class="botaoMenos" onclick="mudaQuantidade('menos', ${produto.codigo})">-</div>
+          <div class="numero">${produto.quantidade}</div>
+          <div class="botaoMais" onclick="mudaQuantidade('mais', ${produto.codigo})">+</div>
+        </div>
+      </div>
+    
+    `
+  });
 }
 
 
-const radiobutton = document.getElementById("tamanhoP");
-radiobutton.checked = true;
+function mudaQuantidade(action, codigo){
+  carrinho = carrinho.map((produto) => {
 
-const containerProdutos = document.querySelector(".scroll");
+    let quantidade = produto.quantidade;
+    if(produto.codigo === codigo){
+      if (action === "menos"){
+        quantidade--;
+      }else if (action === "mais"){
+        quantidade++;
 
-const proximo = document.getElementsByClassName("proximo");
-const anterior = document.querySelectorAll(".anterior");
+      }
+
+    }
+    return {
+      ...produto,
+      quantidade,
+    };
+  });
+  atualizarCarrinho()
+
+}
 
 
 
@@ -116,7 +162,7 @@ function renderizarProdutos(arr, secao) {
     inputTamanhoG.type = "radio";
     inputTamanhoG.id = "tamanhoG";
     inputTamanhoG.name = "tamanho";
-    labelTamanhoG.for = "tamanhoG";
+    labelTamanhoG.htmlFor = "tamanhoG";
     labelTamanhoG.textContent = "G";
 
     btnCarrinho.onclick = function () {

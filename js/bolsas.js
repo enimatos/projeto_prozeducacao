@@ -10,7 +10,7 @@ const bolsas = [
             "Tecido não elástico, 92% Poliéster, 8% Elastano"
         ],
         img: "/imagens/bolsas/bolsa1.jpg",
-        quantidade:0
+        
     },
     {
         codigo: 1,
@@ -18,7 +18,7 @@ const bolsas = [
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/bolsas/bolsa2.jpg",
-        quantidade:0
+    
     },
     {
         codigo: 2,
@@ -26,7 +26,6 @@ const bolsas = [
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/bolsas/bolsa3.jpg",
-        quantidade:0
     },{
         codigo: 3,
         nome: "Blusa Malha de contraste",
@@ -37,7 +36,6 @@ const bolsas = [
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
         img: "/imagens/bolsas/bolsa4.jpg",
-        quantidade:0
     },
     {
         codigo: 4,
@@ -49,7 +47,6 @@ const bolsas = [
             "Tecido não elástico, 100% Poliéster"
         ],
         img: "/imagens/bolsas/bolsa5.jpg",
-        quantidade:0
     },
     {
         codigo: 5,
@@ -61,7 +58,6 @@ const bolsas = [
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
         img: "/imagens/bolsas/bolsa6.webp",
-        quantidade:0
     },{
         codigo: 6,
         nome: " Blusa Vcay ",
@@ -72,7 +68,6 @@ const bolsas = [
             "Tecido não elástico, 100% Poliéster"
         ],
         img: "/imagens/bolsas/bolsa7.jpg",
-        quantidade:0
     },
     {
         codigo: 7,
@@ -85,7 +80,6 @@ const bolsas = [
             "Tecido não elástico, 100% Poliéster"
         ],
         img: "/imagens/bolsas/bolsa8.jpg",
-        quantidade:0
     },
     {
         codigo: 8,
@@ -97,7 +91,6 @@ const bolsas = [
             "Tecido não elástico, 100% Poliéster"
         ],
         img: "/imagens/bolsas/bolsa9.webp",
-        quantidade:0
     },
     {
         codigo: 9,
@@ -109,7 +102,6 @@ const bolsas = [
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
         img: "/imagens/bolsas/bolsa10.webp",
-        quantidade:0
     }
 
 

@@ -10,6 +10,7 @@ const macacoes = [
             "Tecido não elástico, 92% Poliéster, 8% Elastano"
         ],
         img: "/imagens/macacao/macacao1.webp",
+        quantidade:0
     },
     {
         codigo: 2,
@@ -17,6 +18,7 @@ const macacoes = [
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/macacao/macacao2.webp",
+        quantidade:0
     },
     {
         codigo: 3,
@@ -24,6 +26,7 @@ const macacoes = [
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/macacao/macacao3.webp",
+        quantidade:0
     },{
         codigo: 4,
         nome: "Blusa Malha de contraste",
@@ -34,6 +37,7 @@ const macacoes = [
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
         img: "/imagens/macacao/macacao4.webp",
+        quantidade:0
     },
     {
         codigo: 5,
@@ -45,6 +49,7 @@ const macacoes = [
             "Tecido não elástico, 100% Poliéster"
         ],
         img: "/imagens/macacao/macacao5.jpg",
+        quantidade:0
     },
     {
         codigo: 6,
@@ -56,6 +61,7 @@ const macacoes = [
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
         img: "/imagens/macacao/macacao6.jpg",
+        quantidade:0
     },{
         codigo: 7,
         nome: " Blusa Vcay ",
@@ -66,6 +72,7 @@ const macacoes = [
             "Tecido não elástico, 100% Poliéster"
         ],
         img: "/imagens/macacao/macacao7.jpg",
+        quantidade:0
     },
     {
         codigo: 8,
@@ -78,6 +85,7 @@ const macacoes = [
             "Tecido não elástico, 100% Poliéster"
         ],
         img: "/imagens/macacao/macacao8.jpg",
+        quantidade:0
     },
     {
         codigo: 9,
@@ -89,6 +97,7 @@ const macacoes = [
             "Tecido não elástico, 100% Poliéster"
         ],
         img: "/imagens/macacao/macacao9.jpg",
+        quantidade:0
     },
     {
         codigo: 10,
@@ -100,6 +109,7 @@ const macacoes = [
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
         img: "/imagens/macacao/macacao10.webp",
+        quantidade:0
     }
 
 
