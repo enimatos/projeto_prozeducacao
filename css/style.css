@@ -9,6 +9,9 @@
 /* header*/
 
 body{
+display: flex;
+flex-direction: column;
+
     
 }
 
@@ -91,10 +94,6 @@ nav#nav {
 }
 
 
-#div-home img{
-    width: 100%;
-    height: 700px;
-}
 #nav a{
     font-size: 10pt;
 }
@@ -194,20 +193,6 @@ main.padrao{
     justify-content: center;
 }
 
-
-#div-home{
-    position: relative;
-    top:150px;
-    display: flex;
-    height: 100vh;
-    margin-bottom: 100px;
-    background-image: url("/imagens/www.ellas.com.br.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-
-
-
 .tamanhos{
     width: 200px;
     display: flex;
@@ -220,10 +205,6 @@ main.padrao{
 }
 
 
-.principal img {
-    width: 100%;
-    height: 100%;
-}
 .corpo{
     display: flex;
     flex-direction: row;
@@ -264,12 +245,6 @@ main.padrao{
 
 }
 
-
-.banner{
-    background-color: #4d1665;
-    width: 250px;
-
-}
 
 h1{
     font-family: 'Dancing Script', cursiva;
@@ -546,14 +521,6 @@ div.texto_sobre{
         width: 90%;
     }
    
-  
-   
-    .principal img{
-        width: 500px;
-        height: 600px;
-    }
-
-
     #caixa-form{
         display: none;
     }
@@ -574,12 +541,56 @@ div.texto_sobre{
     .texto{
         visibility: hidden;
     }
-    .banner {
-        display: none;
-        width: auto;
-        background-color: #2f104d;
-        height: 200px;
-    }
+
 
 }
 
+/*estilização do slide-banner*/
+.slider {
+    margin: 50px auto;
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    }
+    
+.slides{
+    width: 700%;
+    height: 450px;
+    display: flex;
+}
+
+.slider input{
+    display: none;
+}
+    
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.img-slide{
+    width: 800px;
+}
+
+.manual-navegation{
+    height: 20px;
+    position: absolute;
+    width: 800px;
+    bottom: 100px;
+    margin-bottom: -30px;
+    display: flex;
+    justify-content: center;
+}
+    
+.manual-btn{
+    border: 2px solid #df5252;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}

@@ -23,7 +23,7 @@ medida.addEventListener('click', show)
 
 function addCarrinho(item) {
   console.log(carrinho, item)
-  if(item.codigo > 0){
+  if(carrinho.some((item) => item.codigo === codigo)){
     mudaQuantidade("mais", codigo)
   }else{
     const item = produto.find((el) => el.codigo === codigo)

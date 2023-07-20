@@ -2,19 +2,18 @@
 const bolsas = [ 
     {
         codigo: 0,
-        nome: "Blusa Unity",
-        preco: 41.99,
+        nome: "Bolsa Duarts",
+        preco: 48.49,
         descricao: [        
-            "Decote V entalhado",
-            "Sem manga",
-            "Tecido não elástico, 92% Poliéster, 8% Elastano"
+            "Material: couro PU",
+            "Dimensão em cm: AxCxL = 19x22x10"
         ],
         img: "/imagens/bolsas/bolsa1.jpg",
         
     },
     {
         codigo: 1,
-        nome: "bsfgfsdfsdfs",
+        nome: "Bolsa 2",
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/bolsas/bolsa2.jpg",
@@ -22,7 +21,7 @@ const bolsas = [
     },
     {
         codigo: 2,
-        nome: "bsfgfsdfsdfs",
+        nome: "Bolsa 3",
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/bolsas/bolsa3.jpg",
@@ -39,33 +38,30 @@ const bolsas = [
     },
     {
         codigo: 4,
-        nome: "Blusa Privê",
+        nome: "Bolsa Hobo transversal Vintage",
         preco: 40.95,
         descricao: [        
-            "Colarinho Baixo com babado",
-            "Sem Mangas",
-            "Tecido não elástico, 100% Poliéster"
+            "Couro PU",
+            "Dimensão em cm: AxCxL = 16x27x10"
         ],
         img: "/imagens/bolsas/bolsa5.jpg",
     },
     {
         codigo: 5,
-        nome: "Blusa Frenchy",
-        preco: 37.90,
+        nome: "Bolsa 5",
+        preco: 93.90,
         descricao: [        
-            "Decote V pequeno",
-            "Sem mangas",
-            "Tecido não elástico, 95% Poliéster, 5% Elastano"
+            "Revestimento e compositção 100% Poliuretano",
+            "Dimensão em cm: AxCxL = 26x38x11"
         ],
         img: "/imagens/bolsas/bolsa6.webp",
     },{
         codigo: 6,
-        nome: " Blusa Vcay ",
+        nome: "Bolsa Hobo Vintage",
         preco: 63.95,
         descricao: [        
             "Decote V pequeno",
-            "Manga Curta esvoaçante, bainha estreita",
-            "Tecido não elástico, 100% Poliéster"
+            "Dimensão em cm: AxCxL = 26x38x11"
         ],
         img: "/imagens/bolsas/bolsa7.jpg",
     },
@@ -76,19 +72,17 @@ const bolsas = [
         descricao: "fssfsfs",
         descricao: [        
             "Decote V pequeno",
-            "Manga Comprida de enriolar",
-            "Tecido não elástico, 100% Poliéster"
+            "Dimensão em cm: AxCxL = 26x38x11"
         ],
         img: "/imagens/bolsas/bolsa8.jpg",
     },
     {
         codigo: 8,
-        nome: "Blusa Clasi",
-        preco: 47.95,
+        nome: "Bolsa de palha decorativa",
+        preco: 59.90,
         descricao: [        
             "Decote V entalhado",
-            "Manga Curta tipo Morcego",
-            "Tecido não elástico, 100% Poliéster"
+            "Dimensão em cm: AxCxL = 23x29x6"
         ],
         img: "/imagens/bolsas/bolsa9.webp",
     },
@@ -98,8 +92,7 @@ const bolsas = [
         preco: 55.99,
         descricao: [        
             "Decote V Pequeno",
-            "Manga Comprida, regular",
-            "Baixa elasticidade, 92% Poliéster e 8% Elastano"
+            "Dimensão em cm: AxCxL = 26x38x11"
         ],
         img: "/imagens/bolsas/bolsa10.webp",
     }
