@@ -9,7 +9,6 @@ const blusas = [
       "Tecido não elástico, 92% Poliéster, 8% Elastano",
     ],
     img: "/imagens/blusa/blusa1.webp",
-    quantidade: 1
   },
   {
     codigo: 1,

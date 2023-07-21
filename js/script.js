@@ -22,11 +22,12 @@ medida.addEventListener('click', show)
 //const botoes = document.getElementsByClassName("btnCarrinho");
 
 function addCarrinho(item) {
-  console.log(carrinho, item)
+  //console.log(carrinho, item)
   if(carrinho.some((item) => item.codigo === codigo)){
     mudaQuantidade("mais", codigo)
   }else{
-    const item = produto.find((el) => el.codigo === codigo)
+    produto.find((el) => el.codigo === codigp)
+    const item =  el.find((produto) => produto.codigo === codigo)
     carrinho.push({
       ...item,
       quantidade: 1,
