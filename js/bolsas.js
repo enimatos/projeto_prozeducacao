@@ -9,7 +9,7 @@ const bolsas = [
             "Dimensão em cm: AxCxL = 19x22x10",
             "Cor: Azul Claro"
         ],
-        img: "../imagens/bolsas/bolsa1.jpg",
+        img: "./imagens/bolsas/bolsa1.jpg",
         quantidade: 1
         
     },
@@ -22,7 +22,7 @@ const bolsas = [
             "Dimensão em cm: AxCxL = 26x38x11",
             "Cor: Vinho com detalhes dourado"
         ],
-        img: "../imagens/bolsas/bolsa2.jpg",
+        img: "./imagens/bolsas/bolsa2.jpg",
         quantidade: 1
     },
     {
@@ -34,7 +34,7 @@ const bolsas = [
             "Dimensão em cm: AxCxL = 26x38x11",
             "Cor: Preta"
         ],
-        img: "../imagens/bolsas/bolsa3.jpg",
+        img: "./imagens/bolsas/bolsa3.jpg",
         quantidade: 1
     },{
         codigo: 3,
@@ -45,7 +45,7 @@ const bolsas = [
             "Dimensão em cm: AxCxL = 26x28x13",
             "Cor: Marrom, de mão e ombro"
         ],
-        img: "../imagens/bolsas/bolsa4.jpg",
+        img: "./imagens/bolsas/bolsa4.jpg",
         quantidade: 1
     },
     {
@@ -58,7 +58,7 @@ const bolsas = [
             "Cor: Marrom"
         ],
         
-        img: "../imagens/bolsas/bolsa5.jpg",
+        img: "./imagens/bolsas/bolsa5.jpg",
         quantidade: 1
     },
     {
@@ -70,7 +70,7 @@ const bolsas = [
             "Dimensão em cm: AxCxL = 26x38x11",
             "Cor: Vermelha"
         ],
-        img: "../imagens/bolsas/bolsa6.webp",
+        img: "./imagens/bolsas/bolsa6.webp",
         quantidade: 1
     },{
         codigo: 6,
@@ -81,7 +81,7 @@ const bolsas = [
             "Dimensão em cm: AxCxL = 28x35x14",
             "Cor: Creme"
         ],
-        img: "../imagens/bolsas/bolsa7.jpg",
+        img: "./imagens/bolsas/bolsa7.jpg",
         quantidade: 1
     },
     {
@@ -94,7 +94,7 @@ const bolsas = [
             "Dimensão em cm: AxCxL = 26x38x11",
             "Cor: Marrom"
         ],
-        img: "../imagens/bolsas/bolsa8.jpg",
+        img: "./imagens/bolsas/bolsa8.jpg",
         quantidade: 1
     },
     {
@@ -106,7 +106,7 @@ const bolsas = [
             "Dimensão em cm: AxCxL = 23x29x6",
             "Cor: Palha"
         ],
-        img: "../imagens/bolsas/bolsa9.webp",
+        img: "./imagens/bolsas/bolsa9.webp",
         quantidade: 1
     }
 
