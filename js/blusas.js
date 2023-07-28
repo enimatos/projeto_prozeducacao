@@ -59,7 +59,7 @@ const blusas = [
       "Sem Mangas",
       "Tecido não elástico, 100% Poliéster",
     ],
-    img: "/imagens/blusa/blusa5.webp",   
+    img: "./imagens/blusa/blusa5.webp",   
     quantidade: 1
  
   },
@@ -72,7 +72,7 @@ const blusas = [
       "Sem mangas",
       "Tecido não elástico, 95% Poliéster, 5% Elastano",
     ],
-    img: "/imagens/blusa/blusa6.jpg",
+    img: "./imagens/blusa/blusa6.jpg",
     quantidade: 1
 
     
@@ -86,7 +86,7 @@ const blusas = [
       "Manga Curta esvoaçante, bainha estreita",
       "Tecido não elástico, 100% Poliéster",
     ],
-    img: "/imagens/blusa/blusa7.webp",
+    img: "./imagens/blusa/blusa7.webp",
     quantidade: 1
 
     
@@ -101,7 +101,7 @@ const blusas = [
       "Manga Comprida de enriolar",
       "Tecido não elástico, 100% Poliéster",
     ],
-    img: "/imagens/blusa/blusa8.webp",
+    img: "./imagens/blusa/blusa8.webp",
     quantidade: 1
 
     
@@ -115,7 +115,7 @@ const blusas = [
       "Manga Curta tipo Morcego",
       "Tecido não elástico, 100% Poliéster",
     ],
-    img: "/imagens/blusa/blusa9.webp",
+    img: "./imagens/blusa/blusa9.webp",
     quantidade: 1
 
     
@@ -129,7 +129,7 @@ const blusas = [
       "Manga Comprida, regular",
       "Baixa elasticidade, 92% Poliéster e 8% Elastano",
     ],
-    img: "/imagens/blusa/blusa10.jpg",
+    img: "./imagens/blusa/blusa10.jpg",
     quantidade: 1
 
   },
@@ -142,7 +142,7 @@ const blusas = [
       "Sem mangas, Malha Contraste, Bordado, Babado",
       "Tecido não elástico, 100% Poliéster",
     ],
-    img: "/imagens/blusa/blusa11.webp",
+    img: "./imagens/blusa/blusa11.webp",
     quantidade: 1
 
   }
