@@ -8,7 +8,7 @@ const blusas = [
       "Sem manga",
       "Tecido não elástico, 92% Poliéster, 8% Elastano",
     ],
-    img: "/imagens/blusa/blusa1.webp",
+    img: "./imagens/blusa/blusa1.webp",
     quantidade: 1
   },
   {
@@ -20,7 +20,7 @@ const blusas = [
       "Manga Longa",
       "Tecido não elástico, Algodão",
     ],
-    img: "/imagens/blusa/blusa2.webp",
+    img: "./imagens/blusa/blusa2.webp",
     quantidade: 1
 
   },
@@ -33,7 +33,7 @@ const blusas = [
       "Sem manga",
       "Tecido não elástico, 100% Poliéster",
     ],
-    img: "/imagens/blusa/blusa3.webp",
+    img: "./imagens/blusa/blusa3.webp",
     quantidade: 1
 
   },
@@ -46,7 +46,7 @@ const blusas = [
       "Manga Cpomprida tipo bishop",
       "Tecido não elástico, 95% Poliéster, 5% Elastano",
     ],
-    img: "/imagens/blusa/blusa4.webp",
+    img: "./imagens/blusa/blusa4.webp",
     quantidade: 1
 
   },
