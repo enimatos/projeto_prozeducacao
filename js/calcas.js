@@ -9,14 +9,14 @@ const calcas = [
             "Sem manga",
             "Tecido não elástico, 92% Poliéster, 8% Elastano"
         ],
-        img: "/imagens/calcas/calca1.jpg",
+        img: "./imagens/calcas/calca1.jpg",
     },
     {
         codigo: 1,
         nome: "Calça Dois",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/calcas/calca2.jpg",
+        img: "./imagens/calcas/calca2.jpg",
     },
     {
         codigo: 2,
@@ -33,7 +33,7 @@ const calcas = [
             "Manga Cpomprida tipo bishop",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/calcas/calca4.jpg",
+        img: "./imagens/calcas/calca4.jpg",
     },
     {
         codigo: 4,
@@ -44,7 +44,7 @@ const calcas = [
             "Sem Mangas",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/calcas/calca5.jpg",
+        img: "./imagens/calcas/calca5.jpg",
     },
     {
         codigo: 5,
@@ -55,7 +55,7 @@ const calcas = [
             "Sem mangas",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/calcas/calca6.jpg",
+        img: "./imagens/calcas/calca6.jpg",
     },{
         codigo: 6,
         nome: " Calça Sete ",
@@ -65,7 +65,7 @@ const calcas = [
             "Manga Curta esvoaçante, bainha estreita",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/calcas/calca7.jpg",
+        img: "./imagens/calcas/calca7.jpg",
     },
     {
         codigo: 7,
@@ -77,7 +77,7 @@ const calcas = [
             "Manga Comprida de enriolar",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/calcas/calca8.jpg",
+        img: "./imagens/calcas/calca8.jpg",
     },
     {
         codigo: 8,
@@ -88,7 +88,7 @@ const calcas = [
             "Manga Curta tipo Morcego",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/calcas/calca9.jpg",
+        img: "./imagens/calcas/calca9.jpg",
     },
     {
         codigo: 9,
@@ -99,7 +99,7 @@ const calcas = [
             "Manga Comprida, regular",
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
-        img: "/imagens/calcas/calca10.jpg",
+        img: "./imagens/calcas/calca10.jpg",
         
     }
 
