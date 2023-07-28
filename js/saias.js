@@ -2,7 +2,7 @@
 const saias = [ 
     {
         codigo: 0,
-        nome: "Blusa Unity",
+        nome: "Saia Um",
         preco: 41.99,
         descricao: [        
             "Decote V entalhado",
@@ -14,7 +14,7 @@ const saias = [
     },
     {
         codigo: 1,
-        nome: "bsfgfsdfsdfs",
+        nome: "Saia Dois",
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/saias/saia2.png",
@@ -22,14 +22,14 @@ const saias = [
     },
     {
         codigo: 2,
-        nome: "bsfgfsdfsdfs",
+        nome: "Saia Três",
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/saias/saia3.jpg",
         quantidade: 0
     },{
         codigo: 3,
-        nome: "Blusa Malha de contraste",
+        nome: "Saia 4",
         preco: 63.99,
         descricao: [        
             "Decote V entalhado",
@@ -41,7 +41,7 @@ const saias = [
     },
     {
         codigo: 4,
-        nome: "Blusa Privê",
+        nome: "Saia 5",
         preco: 40.95,
         descricao: [        
             "Colarinho Baixo com babado",
@@ -53,7 +53,7 @@ const saias = [
     },
     {
         codigo: 5,
-        nome: "Blusa Frenchy",
+        nome: "Saia 6",
         preco: 37.90,
         descricao: [        
             "Decote V pequeno",
@@ -64,7 +64,7 @@ const saias = [
         quantidade: 0
     },{
         codigo: 6,
-        nome: " Blusa Vcay ",
+        nome: "Saia 7",
         preco: 63.95,
         descricao: [        
             "Decote V pequeno",
@@ -76,7 +76,7 @@ const saias = [
     },
     {
         codigo: 7,
-        nome: "LUNE Zíper ",
+        nome: "Saia 8",
         preco: 68.99,
         descricao: "fssfsfs",
         descricao: [        
@@ -89,7 +89,7 @@ const saias = [
     },
     {
         codigo: 8,
-        nome: "Blusa Clasi",
+        nome: "Saia 9",
         preco: 47.95,
         descricao: [        
             "Decote V entalhado",
@@ -101,7 +101,7 @@ const saias = [
     },
     {
         codigo: 9,
-        nome: "Blusa Sólida",
+        nome: "Saia 10",
         preco: 55.99,
         descricao: [        
             "Decote V Pequeno",

@@ -1,8 +1,8 @@
 
 const macacoes = [ 
     {
-        codigo: 1,
-        nome: "Blusa Unity",
+        codigo: 0,
+        nome: "Macacao um",
         preco: 41.99,
         descricao: [        
             "Decote V entalhado",
@@ -13,23 +13,23 @@ const macacoes = [
         quantidade:0
     },
     {
-        codigo: 2,
-        nome: "bsfgfsdfsdfs",
+        codigo: 1,
+        nome: "Macacão Dois",
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/macacao/macacao2.webp",
         quantidade:0
     },
     {
-        codigo: 3,
-        nome: "bsfgfsdfsdfs",
+        codigo: 2,
+        nome: "Macacão Tres",
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/macacao/macacao3.webp",
         quantidade:0
     },{
-        codigo: 4,
-        nome: "Blusa Malha de contraste",
+        codigo: 3,
+        nome: "Macacão Quatro",
         preco: 63.99,
         descricao: [        
             "Decote V entalhado",
@@ -40,8 +40,8 @@ const macacoes = [
         quantidade:0
     },
     {
-        codigo: 5,
-        nome: "Blusa Privê",
+        codigo: 4,
+        nome: "Macacão Cinco",
         preco: 40.95,
         descricao: [        
             "Colarinho Baixo com babado",
@@ -52,8 +52,8 @@ const macacoes = [
         quantidade:0
     },
     {
-        codigo: 6,
-        nome: "Blusa Frenchy",
+        codigo: 5,
+        nome: "Macacão Seis",
         preco: 37.90,
         descricao: [        
             "Decote V pequeno",
@@ -63,8 +63,8 @@ const macacoes = [
         img: "/imagens/macacao/macacao6.jpg",
         quantidade:0
     },{
-        codigo: 7,
-        nome: " Blusa Vcay ",
+        codigo: 6,
+        nome: "Macacão Sete",
         preco: 63.95,
         descricao: [        
             "Decote V pequeno",
@@ -75,8 +75,8 @@ const macacoes = [
         quantidade:0
     },
     {
-        codigo: 8,
-        nome: "LUNE Zíper ",
+        codigo: 7,
+        nome: "Macacão Oito",
         preco: 68.99,
         descricao: "fssfsfs",
         descricao: [        
@@ -88,8 +88,8 @@ const macacoes = [
         quantidade:0
     },
     {
-        codigo: 9,
-        nome: "Blusa Clasi",
+        codigo: 8,
+        nome: "Macacão Nove",
         preco: 47.95,
         descricao: [        
             "Decote V entalhado",
@@ -100,8 +100,8 @@ const macacoes = [
         quantidade:0
     },
     {
-        codigo: 10,
-        nome: "Blusa Sólida",
+        codigo: 9,
+        nome: "Macacão Dez",
         preco: 55.99,
         descricao: [        
             "Decote V Pequeno",
