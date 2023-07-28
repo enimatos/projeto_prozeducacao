@@ -18,6 +18,7 @@
 
 }
 
+
 .altura{
     max-width: 1200px;
     width: 1100px;
@@ -65,21 +66,32 @@
     margin: 0 15px;
     flex-direction: column;
     gap: 0.5em;
+    height: 80px;
 
 }
 
 
 .info-prod-car{
     display: flex;
+    width: 85%;
     flex-flow: wrap;
     height: 100%;
     align-items: center;
     gap:3em;
 
 }
+
+
+.info-prod-car p{
+    text-align: center;
+}
 .caixa{
     background-color: #f3e6fb;
 
+}
+
+#bolsas, #calcas, #blusas, #shorts, #macacoes, #saias, #vestidos, #casacos, #sueter, #conjuntos{
+    margin: 0 auto;
 }
 .titulo{
     font-size: 25px;
@@ -98,75 +110,92 @@
     width: 200px;
     padding-bottom: 10px;
 }
-.color{
-    height: 20px;
-    width: 10vh;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
+
+.tnome{
+    width: 35%;
 }
 
-.vermelho{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: red;
-    padding-top: 5px;
-    
+.tnome-titulo{
+    width: 45%;
 }
 
-.amarelo{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #d9ff00;
-    
-}
-.branco{
-    width: 15px;
-    height: 15px;
-    border:  solid 1px #000;
-    border-radius: 50%;
-    background-color: #fff;
-    
+.tpreco{
+    width: 15%;
 }
 
-.rosa_claro{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #f1beea;
-    
+.tpreco-titulo{
+    width: 15%;
 }
 
+.ttamanho{
+    width: 10%;
+}
 
+.ttamanho-titulo{
+    width: 15%;
+}
+
+.tsubtotal{
+    width: 15%;
+}
+
+.tsubtotal-titulo{
+    width: 25%;
+}
 
 #carrinho{
-    margin: 20px auto;
+    margin: 20px 10px;
     max-width: 1200px;
-    width: 900px;
     height: 100vh;
 }
 
+#carrinho-linha{
+    display: flex;
+    margin: 20px 10px;
+    max-width: 1200px;
+    justify-content: space-between;
+    
+}
 
-.item-carrinho{
+#carrinho-linha p{
+    text-align: center;
+
+    
+}
+.item{
     display: flex;
     padding: 5px;
     gap: 2em;
     justify-content: space-between;
 }
+
+.item-carrinho{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3e6fb;
+}
 .item-carrinho .img-car{
     width: 50px;
-    height: 70px;
+    height: 60px;
 }
 
+.controle{
+    display: flex;
+    width: 80px;
+    justify-content: space-around;
+}
 .unidades{
+    width: 100px;
     display: flex;
     align-items: center;
 }
 
 .botaoMenos, .botaoMais, .numero{
-    width: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .center {
@@ -196,9 +225,10 @@
 
 }
 
-.imagem img{
+.imagem{
     width: 200px;
     height: 300px;
 }
 
 /*estilo do carrinho*/
+

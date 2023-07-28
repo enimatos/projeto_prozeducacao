@@ -2,7 +2,7 @@
 const calcas = [ 
     {
         codigo: 0,
-        nome: "Blusa Unity",
+        nome: "Calça one",
         preco: 41.99,
         descricao: [        
             "Decote V entalhado",
@@ -13,20 +13,20 @@ const calcas = [
     },
     {
         codigo: 1,
-        nome: "bsfgfsdfsdfs",
+        nome: "Calça Dois",
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/calcas/calca2.jpg",
     },
     {
         codigo: 2,
-        nome: "bsfgfsdfsdfs",
+        nome: "Calça Tres",
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/calcas/calca3.jpg",
     },{
         codigo: 3,
-        nome: "Blusa Malha de contraste",
+        nome: "Calça Quatro",
         preco: 63.99,
         descricao: [        
             "Decote V entalhado",
@@ -37,7 +37,7 @@ const calcas = [
     },
     {
         codigo: 4,
-        nome: "Blusa Privê",
+        nome: "Calça Cinco",
         preco: 40.95,
         descricao: [        
             "Colarinho Baixo com babado",
@@ -48,7 +48,7 @@ const calcas = [
     },
     {
         codigo: 5,
-        nome: "Blusa Frenchy",
+        nome: "Calça Seis",
         preco: 37.90,
         descricao: [        
             "Decote V pequeno",
@@ -58,7 +58,7 @@ const calcas = [
         img: "/imagens/calcas/calca6.jpg",
     },{
         codigo: 6,
-        nome: " Blusa Vcay ",
+        nome: " Calça Sete ",
         preco: 63.95,
         descricao: [        
             "Decote V pequeno",
@@ -69,7 +69,7 @@ const calcas = [
     },
     {
         codigo: 7,
-        nome: "LUNE Zíper ",
+        nome: "Calça Oito",
         preco: 68.99,
         descricao: "fssfsfs",
         descricao: [        
@@ -81,7 +81,7 @@ const calcas = [
     },
     {
         codigo: 8,
-        nome: "Blusa Clasi",
+        nome: "Calça Nove",
         preco: 47.95,
         descricao: [        
             "Decote V entalhado",
@@ -91,8 +91,8 @@ const calcas = [
         img: "/imagens/calcas/calca9.jpg",
     },
     {
-        codigo: 10,
-        nome: "Blusa Sólida",
+        codigo: 9,
+        nome: "Calça Dez",
         preco: 55.99,
         descricao: [        
             "Decote V Pequeno",

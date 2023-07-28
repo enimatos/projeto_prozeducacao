@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" >
+<html lang="pt-br" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Work+Sans&display=swap" rel="stylesheet"> 
     <script src="/js/script.js" defer></script> 
-
     <script src="/js/bolsas.js" defer></script>
     <script src="/js/blusas.js" defer></script>
     <script src="/js/calcas.js" defer></script>
@@ -40,7 +39,7 @@
                             <button id="btnBusca"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </li>
-                    <li><a href="html/favoritos.html"><span class="texto">Meus favoritos </span><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#favoritos.html"><span class="texto">Meus favoritos </span><i class="fa-regular fa-heart"></i></a></li>
                     <li><a href="#meu-carrinho"><span class="texto">Carrinho </span><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="#login"><span class="texto">Login/Cadastro </span><i class="fa-regular fa-user"></i></a></li> 
                 </ul>
@@ -66,63 +65,66 @@
     <main class="principal">
         
         <section id="home">
-            <div id="tabela-medidas">
-                <button id="medida">Tabela de medidas</button>
-            </div>
-            <div id="sumario">
-                <img src="/imagens/tabelaMedidas.png" alt="tabela de medidas padrão">
-            </div>
-
-            <div class="slider">
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <input type="radio" name="radio-btn" id="radio5">
-                    <input type="radio" name="radio-btn" id="radio6">
-                    <input type="radio" name="radio-btn" id="radio7">
-                
-                    <div class="slider first">
-                        <img src="/imagens/1.png" alt="image 1" class="img-slide"/>
+            <div class="altura">
+                <div id="controle-medida">
+                    <div id="tabela-medidas">
+                        <button id="medida">Tabela de medidas</button>
                     </div>
-                    <div class="slider">
-                        <img src="/imagens/2.png" alt="imagem 2" class="img-slide"/>
-                    </div>
-                    <div class="slider">
-                        <img src="/imagens/3.png" alt="imagem 3" class="img-slide"/>
-                    </div>
-                    <div class="slider">
-                        <img src="/imagens/4.png" alt="imagem 4" class="img-slide"/>
-                    </div>
-                    <div class="slider">
-                        <img src="/imagens/5.png" alt="imagem 5" class="img-slide"/>
-                    </div>
-                    <div class="slider">
-                        <img src="/imagens/6.png" alt="imagem 6" class="img-slide"/>
-                    </div>
-                    <div class="slider">
-                        <img src="/imagens/7.png" alt="imagem 7" class="img-slide"/>
-                    </div>
-
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                        <div class="auto-btn5"></div>
-                        <div class="auto-btn6"></div>
-                        <div class="auto-btn7"></div>
+                    <div class="sumario">
+                        <img src="/imagens/tabelaMedidas1.png" alt="tabela com medidas de ombro, costas e braço">
+                        <img src="/imagens/tabelaMedidas2.png" alt="tabela com medidas de ombro, costas e braço">
                     </div>
                 </div>
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                    <label for="radio5" class="manual-btn"></label>
-                    <label for="radio6" class="manual-btn"></label>
-                    <label for="radio7" class="manual-btn"></label>
+                <div class="content">
+                    <div class="slides">
+                        <input class="sld" type="radio" name="slide" id="slide1">
+                        <input class="sld" type="radio" name="slide" id="slide2">
+                        <input class="sld" type="radio" name="slide" id="slide3">
+                        <input class="sld" type="radio" name="slide" id="slide4">
+                        <input class="sld" type="radio" name="slide" id="slide5">
+                        <input class="sld" type="radio" name="slide" id="slide6">
+                        <input class="sld" type="radio" name="slide" id="slide7">
+                    
+                        <div class="slide s1">
+                            <a href="#conjuntos"><img src="/imagens/1.png" alt="image 1" class="img-slide"/></a>
+                        </div>
+                        <div class="slide">
+                            <img src="/imagens/2.png" alt="imagem 2" class="img-slide"/>
+                        </div>
+                        <div class="slide">
+                            <a href="#blusas"><img src="/imagens/3.png" alt="imagem 3" class="img-slide"/></a> 
+                        </div>
+                        <div class="slide">
+                            <a href="#shorts"><img src="/imagens/4.png" alt="imagem 4" class="img-slide"/></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#calcas"></a><img src="/imagens/5.png" alt="imagem 5" class="img-slide"/></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#saias"></a><img src="/imagens/6.png" alt="imagem 6" class="img-slide"/></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#casacos"><img src="/imagens/7.png" alt="imagem 7" class="img-slide"/></a>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <label class="bar" for="slide1"></label>
+                        <label class="bar" for="slide2"></label>
+                        <label class="bar" for="slide3"></label>
+                        <label class="bar" for="slide4"></label>
+                        <label class="bar" for="slide5"></label>
+                        <label class="bar" for="slide6"></label>
+                        <label class="bar" for="slide7"></label>
+                    </div>
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                        <label for="radio6" class="manual-btn"></label>
+                        <label for="radio7" class="manual-btn"></label>
+                    </div>
                 </div>
             </div>
         </section>
@@ -195,11 +197,42 @@
             
         </section>
         <section id="meu-carrinho">
-            <h1 class="titulo-carrinho">Meu carrinho</h1>
-            <div id="carrinho">
-                
+            <div class="altura">
+                <h2 id="titulo-carrinho">Meu carrinho</h2>
+                <div id="carrinho-linha">
+                    <p class="tnome-titulo">detalhe</p>
+                    <p class="tpreco-titulo">preço</p>
+                    <p class="ttamanho-titulo">Tamanho</p>
+                    <p class="tsubtotal-titulo" >Subtotal</p>
+                    <div><p class="unidades" >Quantidade</p></div>
+                    
+                </div>
+                <div id="carrinho-detalhe">
+
+                    <div id="carrinho">               
+                    </div>
+                </div>
+                <div class="total">
+                    <p id="preco-total">Total: R$</p>
+                    <div class="preco-total">0</div>
+                    <button class="btn-comprar">Finalizar Compra</button>
+
+                </div>
+                <div id="formas-pagamento">
+                    <p>Forma de pagamento</p>
+                    <img src="/imagens/pagamento/American-Express.png" alt="pagamento com cartão American Express" class="cartao">
+                    <img src="/imagens/pagamento/Boleto.png" alt="pagamento com boleto" class="cartao">
+                    <img src="/imagens/pagamento/Citi-Bank.png" alt="pagamento com cartão Citi-Bank" class="cartao">
+                    <img src="/imagens/pagamento/Discover.png" alt="pagamento com cartão Discover" class="cartao">
+                    <img src="/imagens/pagamento/mastro.png" alt="pagamento comcartão Maestro" class="cartao">
+                    <img src="/imagens/pagamento/master.png" alt="pagamento comcartão Master Card" class="cartao">
+                    <img src="/imagens/pagamento/visa.png" alt="pagamento com cartão Visa" class="cartao">
+                    <img src="/imagens/pagamento/Cirrus.png" alt="pagamento com cartão Cirrus" class="cartao">
+                    <img src="/imagens/pagamento/DinersClub.png" alt="pagamento com cartão DinersClub" class="cartao">
+                    <img src="/imagens/pagamento/JCB.png" alt="pagamento com cartão JCB" class="cartao">
+                    <img src="/imagens/pagamento/PayPal.png" alt="pagamento com PayPal" class="cartao">
+                </div>
             </div>
-            
         </section>
         <section id="login">
             <div class="campo">
@@ -314,6 +347,21 @@
                     </form>
                 </div>
             </div>
+        </section>
+        <section id="sobre-nos">
+            <div class="campo">
+                <div class="corpo-formulario">                    
+                    <div class="caixa-form">
+                        <img src="/imagens/Ellas-Logo_mini.png" alt="">
+                    </div>
+                    <div class="texto_sobre">
+                        <h1>Sobre nós</h1>
+                        <p>O Ellas foi criado para valorizar cuidar da autoestimada mulher com necessidades especiais acreditamos que todas as mulheres têm o direito de vestir bem, independente do tipo ou formato de seus corpos!</p>
+                        <p>Pensando nisso,trouxemos para esse público, a moda com adaptações e tamanhos especiais, além de um site com ambiente acessível para que todos possam navegar com conforto e independêcia.</p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
     </main>
     <footer>

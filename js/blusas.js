@@ -9,22 +9,33 @@ const blusas = [
       "Tecido não elástico, 92% Poliéster, 8% Elastano",
     ],
     img: "/imagens/blusa/blusa1.webp",
+    quantidade: 1
   },
   {
     codigo: 1,
-    nome: "bsfgfsdfsdfs",
-    preco: 37.9,
-    descricao: "fssfsfs",
+    nome: "Blusa Ben Job",
+    preco: 98.95,
+    descricao: [
+      "Decote V entalhado",
+      "Manga Longa",
+      "Tecido não elástico, Algodão",
+    ],
     img: "/imagens/blusa/blusa2.webp",
-    
+    quantidade: 1
+
   },
   {
     codigo: 2,
-    nome: "bsfgfsdfsdfs",
-    preco: 37.9,
-    descricao: "fssfsfs",
+    nome: "Blusa Frenchy Topo",
+    preco: 37.99,
+    descricao: [
+      "Decote V entalhado",
+      "Sem manga",
+      "Tecido não elástico, 100% Poliéster",
+    ],
     img: "/imagens/blusa/blusa3.webp",
-    
+    quantidade: 1
+
   },
   {
     codigo: 3,
@@ -36,7 +47,8 @@ const blusas = [
       "Tecido não elástico, 95% Poliéster, 5% Elastano",
     ],
     img: "/imagens/blusa/blusa4.webp",
-    
+    quantidade: 1
+
   },
   {
     codigo: 4,
@@ -47,8 +59,9 @@ const blusas = [
       "Sem Mangas",
       "Tecido não elástico, 100% Poliéster",
     ],
-    img: "/imagens/blusa/blusa5.webp",
-    
+    img: "/imagens/blusa/blusa5.webp",   
+    quantidade: 1
+ 
   },
   {
     codigo: 5,
@@ -60,6 +73,8 @@ const blusas = [
       "Tecido não elástico, 95% Poliéster, 5% Elastano",
     ],
     img: "/imagens/blusa/blusa6.jpg",
+    quantidade: 1
+
     
   },
   {
@@ -72,6 +87,8 @@ const blusas = [
       "Tecido não elástico, 100% Poliéster",
     ],
     img: "/imagens/blusa/blusa7.webp",
+    quantidade: 1
+
     
   },
   {
@@ -85,6 +102,8 @@ const blusas = [
       "Tecido não elástico, 100% Poliéster",
     ],
     img: "/imagens/blusa/blusa8.webp",
+    quantidade: 1
+
     
   },
   {
@@ -97,6 +116,8 @@ const blusas = [
       "Tecido não elástico, 100% Poliéster",
     ],
     img: "/imagens/blusa/blusa9.webp",
+    quantidade: 1
+
     
   },
   {
@@ -109,7 +130,8 @@ const blusas = [
       "Baixa elasticidade, 92% Poliéster e 8% Elastano",
     ],
     img: "/imagens/blusa/blusa10.jpg",
-    
+    quantidade: 1
+
   },
   {
     codigo: 10,
@@ -121,22 +143,12 @@ const blusas = [
       "Tecido não elástico, 100% Poliéster",
     ],
     img: "/imagens/blusa/blusa11.webp",
-    
-  },
-  ,
-  {
-    codigo: 11,
-    nome: "Blusa Frenchy Topo",
-    preco: 37.99,
-    descricao: [
-      "Frente-única",
-      "Sem manga",
-      "Tecido não elástico, 100% Poliéster",
-    ],
-    img: "/imagens/blusa/blusa12.webp",
-    
-  },
+    quantidade: 1
+
+  }
 ];
 
-renderizarProdutos(blusas, "blusa")
+renderizarProdutos(blusas, "blusa");
+
+
 

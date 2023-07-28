@@ -2,7 +2,7 @@
 const conjuntos = [ 
     {
         codigo: 0,
-        nome: "Blusa Unity",
+        nome: "Conjunto UNO",
         preco: 41.99,
         descricao: [        
             "Decote V entalhado",
@@ -14,7 +14,7 @@ const conjuntos = [
     },
     {
         codigo: 1,
-        nome: "bsfgfsdfsdfs",
+        nome: "Conjunto Verao",
         preco: 37.90,
         descricao: "fssfsfs",
         img: "/imagens/conjunto/conjunto2.jpg",
@@ -22,66 +22,69 @@ const conjuntos = [
     },
     {
         codigo: 2,
-        nome: "bsfgfsdfsdfs",
+        nome: "Conjunto Chic",
         preco: 37.90,
-        descricao: "fssfsfs",
+        descricao: [        
+            "Decote V entalhado",
+            "Blazer longo e calça capri",
+            "Cor: Verde Militar"
+        ],
         img: "/imagens/conjunto/conjunto3.webp",
         quantidade:0
     },{
         codigo: 3,
-        nome: "Blusa Malha de contraste",
+        nome: "Conjunto Social Largo",
         preco: 63.99,
         descricao: [        
-            "Decote V entalhado",
-            "Manga Cpomprida tipo bishop",
-            "Tecido não elástico, 95% Poliéster, 5% Elastano"
+            "Camisa fechada decote redondo, com meia-manga",
+            "Calça pantalona",
+            "Cor: Caqui - Tecido: crepe"
         ],
         img: "/imagens/conjunto/conjunto4.jpg",
         quantidade:0
     },
     {
         codigo: 4,
-        nome: "Blusa Privê",
+        nome: "Conjunto na Moda",
         preco: 40.95,
         descricao: [        
-            "Colarinho Baixo com babado",
-            "Sem Mangas",
-            "Tecido não elástico, 100% Poliéster"
+            "Camisa fechada,decote quadrado e meia-manga",
+            "Calça pantalona acinturada",
+            "Cor: Azul"
         ],
         img: "/imagens/conjunto/conjunto5.jpg",
         quantidade:0
     },
     {
         codigo: 5,
-        nome: "Blusa Frenchy",
-        preco: 37.90,
+        nome: "Conjunto Legal",
+        preco: 78.90,
         descricao: [        
-            "Decote V pequeno",
-            "Sem mangas",
-            "Tecido não elástico, 95% Poliéster, 5% Elastano"
+            "Camisa fechada com manga curta",
+            "Calça pantalona acinturada",
+            "Cor: Preto"
         ],
         img: "/imagens/conjunto/conjunto6.jpg",
         quantidade:0
     },{
         codigo: 6,
-        nome: " Blusa Vcay ",
-        preco: 63.95,
+        nome: " Conjunto Vcay ",
+        preco: 83.95,
         descricao: [        
-            "Decote V pequeno",
-            "Manga Curta esvoaçante, bainha estreita",
-            "Tecido não elástico, 100% Poliéster"
+            "Cropped com decote V",
+            "Manga longa e calça capri",
+            "Cor: Azul"
         ],
         img: "/imagens/conjunto/conjunto7.jpg",
         quantidade:0
     },
     {
         codigo: 7,
-        nome: "LUNE Zíper ",
-        preco: 68.99,
-        descricao: "fssfsfs",
+        nome: "Conjunto LUNE",
+        preco: 109.99,
         descricao: [        
-            "Decote V pequeno",
-            "Manga Comprida de enriolar",
+            "Cropped com decote V, sem manga",
+            "Calça Pantalona",
             "Tecido não elástico, 100% Poliéster"
         ],
         img: "/imagens/conjunto/conjunto8.jpg",
@@ -89,19 +92,19 @@ const conjuntos = [
     },
     {
         codigo: 8,
-        nome: "Blusa Clasi",
-        preco: 47.95,
+        nome: "Conjunto Clasi",
+        preco: 89.95,
         descricao: [        
-            "Decote V entalhado",
-            "Manga Curta tipo Morcego",
-            "Tecido não elástico, 100% Poliéster"
+            "Blazer longo com cinto",
+            "Calça Capri",
+            "Cor: Azul - Tecido: 100% Poliéster"
         ],
         img: "/imagens/conjunto/conjunto9.webp",
         quantidade:0
     },
     {
         codigo: 9,
-        nome: "Blusa Sólida",
+        nome: "Conjunto rod",
         preco: 55.99,
         descricao: [        
             "Decote V Pequeno",
@@ -114,12 +117,12 @@ const conjuntos = [
     ,
     {
         codigo: 10,
-        nome: "Blusa Sólida",
+        nome: "Conjunto Curto",
         preco: 55.99,
         descricao: [        
             "Decote V Pequeno",
             "Manga Comprida, regular",
-            "Baixa elasticidade, 92% Poliéster e 8% Elastano"
+            "Cor: Vermelho"
         ],
         img: "/imagens/conjunto/conjunto11.jpg",
         quantidade:0
