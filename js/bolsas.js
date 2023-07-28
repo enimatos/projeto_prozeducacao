@@ -9,7 +9,7 @@ const bolsas = [
             "Dimensão em cm: AxCxL = 19x22x10",
             "Cor: Azul Claro"
         ],
-        img: "./imagens/bolsas/bolsa1.jpg",
+        img: "../imagens/bolsas/bolsa1.jpg",
         quantidade: 1
         
     },
