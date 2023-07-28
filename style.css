@@ -1,0 +1,703 @@
+
+*{
+    font-family: 'Fira Sans', sans-serif;
+    font-size:small;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header*/
+
+body{
+display: flex;
+flex-direction: column;
+
+    
+}
+
+
+header#cabecalho{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    background-color: #f3e6fb;
+
+}
+
+
+div figure#topo{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    background-image: url("/imagens/Ellas-Logo_mini.png");
+    background-size: cover;
+    alt: "logo da loja Ellas";
+    
+}
+
+div.orienta{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header img {
+    width: 100px;
+    height: 100px;
+    padding: 5px 50px;
+
+}
+#divPesquisa{
+    display: flex;
+    height: 30px;
+    border-radius: 30px;
+    justify-content:center;
+    
+}
+
+#txtBusca{
+    border-radius: 30px;
+}
+#btnBusca{
+    border-radius: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+}
+
+
+nav .alinhado {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 10px;
+    
+}
+
+nav#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    background-color:#f3e6fb;
+    width: 100%;
+}
+
+
+#nav a{
+    font-size: 10pt;
+}
+
+#menu {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 50px;
+    align-items: end;
+
+}
+
+#menu a {
+    display: block;
+
+}
+
+#menu li{
+    width: 15%;
+
+}
+
+#burguer{
+    display: none;
+    height: 50px;
+    margin-top: 0px;
+    background-color: transparent;
+   
+    
+}
+
+#burguer:hover {
+    color: #451d90;
+    
+
+}
+
+#tabela-medidas{
+    position: none;
+    max-width: 1200px;
+    width: 100%;
+    top: 135px;
+}
+.show{
+    display: flex;
+    position: fixed;
+    top:170px;
+    width: 900px;
+    height: 80px;
+    
+    
+
+}
+
+.sumario{
+    display: none;
+        
+}
+.sumario img{
+    width: 40%;
+    gap: 0.3rem;
+
+    
+    
+}
+
+.btn_link{
+    height: 50px;
+    width: 100%;
+    background-color: #f3e6fb;
+    border: none;
+}
+.btn_link:hover{
+    height: 50px;
+    background-color: #be7ff8;
+    font-weight: bolder;
+    color: #fff;
+
+}
+
+
+.principal {
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+    height:fit-content;
+    margin: 0 auto;
+    
+}
+
+
+.tamanhos{
+    width: 200px;
+    display: flex;
+    justify-content:flex-start;
+    gap: 0.5em;
+    
+}
+
+.observacao{
+    display: flex;
+    width: 80%;
+    margin-top: 10%;
+}
+.altura{
+    width: 100%;
+   max-width: 964px;
+}
+
+#carrinho-detalhe{
+    overflow-y: scroll;
+    height: 400px;
+}
+
+#titulo-carrinho{
+    display: flex;
+    justify-content: center;
+    font-size: 20pt;
+    padding-bottom: 20px;
+}
+.corpo-formulario{
+    margin-top: 30px;
+    display: flex;
+    width: 70%;
+    height: 550px;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid #8a2be2;
+    border-radius: 15px;
+}
+
+.scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 2.5rem;
+    margin: 0 auto;
+    height:600px;
+}
+
+
+
+.fa-cart-shopping{
+    right: 10px;
+    cursor:pointer
+}
+
+.fa-bars{
+    display: inline-flex;
+    align-items: center;
+    font-size: 18pt;
+    cursor:pointer;
+
+}
+
+
+h1{
+    color: #8a2be2;
+    font-size:  5em;
+    text-align: center;
+    width: 100%;  
+    padding-bottom: 0%;
+}
+
+
+li{
+    list-style-type: none;
+    text-align: center;
+ }
+
+a{
+    text-decoration: none;
+    color: #2f104d;
+    font-weight:600;
+        
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #be7ff8;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+footer nav {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul.rodape{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    height:fit-content;
+    width: 100%;
+
+}
+
+.rodape img {
+    width: 20px;
+    height: auto;
+}
+
+.rodape li {
+    width: 20%;
+
+}
+
+footer p {
+    font-size:10pt;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+/*formulários
+*/
+
+.caixa-form{
+    width: 40%;
+
+}
+
+.caixa-form img{
+    width: 100%;
+    height: auto ;
+}
+
+.label-float input{
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 3px solid purple;
+    min-width: 100px;
+
+}
+
+.label-float{
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    gap: 3px;
+    padding-bottom: 10px;
+
+}
+
+.label-float input:focus{
+    border-bottom: 3px solid blue;
+
+}
+
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+}
+
+
+.fa-eye{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor:pointer
+}
+
+
+button{
+    padding: 7px;
+    font-weight: bold;
+    font-size: 10pt;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #e0c3fa;
+    border-radius: 4px;
+    transition: all .3s ease-out;
+}
+
+button:hover{
+    background-color: #2f104d;
+    color: white;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#ajuda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem
+}
+
+.formulario{
+    width: 50%;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+
+}
+
+.campo{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+.ellas img {
+    width: 100%;
+}
+div.texto_sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+    width: 600px;
+    padding: 0 5px;
+}
+
+
+.texto_sobre p{
+    width: 90%;
+    padding: 1rem;
+    font-size:medium;
+}
+
+
+
+/*estilização do slide-banner*/
+.content{
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: #FFF;
+
+}
+
+.sld{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 700%;
+    height: 100%;
+}
+
+.slide{
+    width: 14.5%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -14.4%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -28.8%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -43.2%;
+}
+
+#slide5:checked ~ .s1{
+    margin-left: -57.9%;
+}
+
+#slide6:checked ~ .s1{
+    margin-left: -73.8%;
+}
+
+#slide7:checked ~ .s1{
+    margin-left: -88.2%;
+}
+
+/*forma de pagamento*/
+#formas-pagamento{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: wrap;
+    width: 900px;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+#formas-pagamento p, .preco-total, #preco-total{
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+#formas-pagamento img{
+    width: 40px;
+    height: 30px;
+}
+
+.total{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 900px){
+    
+    header#cabecalho{
+        align-items: end;
+        height: 100px;
+    }
+    .alinhado{
+       gap:0.1rem;
+       display: flex;
+       align-items: center;
+    }
+    
+
+    
+    
+    #tabela-medidas{
+        display: none;
+        top: 95px;
+        width: 50%;
+        right: 0;
+    }
+
+    #sumario{
+        top: 132px;
+        display: flex;
+        flex-flow: column;
+    }
+    #sumario img{
+        width: 30%;
+        
+
+
+    }
+
+    h1{
+        color: #8a2be2;
+        text-align: center;  
+        padding-bottom: 10%;
+        font-size: x-large;
+    }
+
+    .corpo-formulario{
+        height: 500px;
+    }
+    .formulario{
+        width: 80%;
+    }
+
+
+
+    div.texto_sobre{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        flex-direction: column;
+        height: fit-content;
+        padding: 0 5px;
+    }
+    
+    
+    .texto_sobre p{
+        width: 90%;
+        padding: 1rem;
+   
+    }
+    #burguer {
+        display: block;
+        margin-top: 0px;
+        width: 100%;
+    
+    }
+
+    
+    .btn_link{
+        background-color: #fff;
+        font-size: 11pt;
+    }
+    nav#nav{
+        display: flex;
+        width: 50px;
+        position: absolute;
+        align-items: center;
+        top: 45px;
+        left: 0px;
+        
+
+    }
+    #nav.active #menu{
+        height: calc(100vh - 400px);
+        visibility: visible;
+
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: -9px;
+        transition: .3s;
+        height: 0px;
+        margin-left: 5px;
+        visibility: hidden;
+
+    }
+    #menu li{
+        width: 300px;
+        background-color: #f3e6fb;
+        
+    }
+    #menu a{
+   
+        border-bottom: 2px solid rgb(135, 20, 145);
+    }
+
+    main.padrao {
+        flex-direction:row;
+        width: 90%;
+    }
+   
+    .caixa-form{
+        display: none;
+    }
+
+    #formulario{
+        width: 90%;
+    }
+    .ellas img{
+        display: none;
+    }
+    .scroll {
+        overflow-y: auto;
+ 
+    }
+
+    .texto{
+        visibility: hidden;
+    }
+
+
+}
+
