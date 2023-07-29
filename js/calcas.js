@@ -23,7 +23,7 @@ const calcas = [
         nome: "Calça Tres",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/calcas/calca3.jpg",
+        img: "./imagens/calcas/calca3.jpg",
     },{
         codigo: 3,
         nome: "Calça Quatro",
