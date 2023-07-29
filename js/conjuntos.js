@@ -9,7 +9,7 @@ const conjuntos = [
             "Sem manga",
             "Tecido não elástico, 92% Poliéster, 8% Elastano"
         ],
-        img: "/imagens/conjunto/conjunto1.jpg",
+        img: "./imagens/conjunto/conjunto1.jpg",
         quantidade:0
     },
     {
@@ -17,7 +17,7 @@ const conjuntos = [
         nome: "Conjunto Verao",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/conjunto/conjunto2.jpg",
+        img: "./imagens/conjunto/conjunto2.jpg",
         quantidade:0
     },
     {
@@ -29,7 +29,7 @@ const conjuntos = [
             "Blazer longo e calça capri",
             "Cor: Verde Militar"
         ],
-        img: "/imagens/conjunto/conjunto3.webp",
+        img: "./imagens/conjunto/conjunto3.webp",
         quantidade:0
     },{
         codigo: 3,
@@ -40,7 +40,7 @@ const conjuntos = [
             "Calça pantalona",
             "Cor: Caqui - Tecido: crepe"
         ],
-        img: "/imagens/conjunto/conjunto4.jpg",
+        img: "./imagens/conjunto/conjunto4.jpg",
         quantidade:0
     },
     {
@@ -52,7 +52,7 @@ const conjuntos = [
             "Calça pantalona acinturada",
             "Cor: Azul"
         ],
-        img: "/imagens/conjunto/conjunto5.jpg",
+        img: "./imagens/conjunto/conjunto5.jpg",
         quantidade:0
     },
     {
@@ -64,7 +64,7 @@ const conjuntos = [
             "Calça pantalona acinturada",
             "Cor: Preto"
         ],
-        img: "/imagens/conjunto/conjunto6.jpg",
+        img: "./imagens/conjunto/conjunto6.jpg",
         quantidade:0
     },{
         codigo: 6,
@@ -75,7 +75,7 @@ const conjuntos = [
             "Manga longa e calça capri",
             "Cor: Azul"
         ],
-        img: "/imagens/conjunto/conjunto7.jpg",
+        img: "./imagens/conjunto/conjunto7.jpg",
         quantidade:0
     },
     {
@@ -87,7 +87,7 @@ const conjuntos = [
             "Calça Pantalona",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/conjunto/conjunto8.jpg",
+        img: "./imagens/conjunto/conjunto8.jpg",
         quantidade:0
     },
     {
@@ -99,7 +99,7 @@ const conjuntos = [
             "Calça Capri",
             "Cor: Azul - Tecido: 100% Poliéster"
         ],
-        img: "/imagens/conjunto/conjunto9.webp",
+        img: "./imagens/conjunto/conjunto9.webp",
         quantidade:0
     },
     {
@@ -111,7 +111,7 @@ const conjuntos = [
             "Manga Comprida, regular",
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
-        img: "/imagens/conjunto/conjunto10.jpg",
+        img: "./imagens/conjunto/conjunto10.jpg",
         quantidade:0
     }
     ,
@@ -124,7 +124,7 @@ const conjuntos = [
             "Manga Comprida, regular",
             "Cor: Vermelho"
         ],
-        img: "/imagens/conjunto/conjunto11.jpg",
+        img: "./imagens/conjunto/conjunto11.jpg",
         quantidade:0
     }
 ]
