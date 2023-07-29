@@ -9,7 +9,7 @@ const macacoes = [
             "Sem manga",
             "Tecido não elástico, 92% Poliéster, 8% Elastano"
         ],
-        img: "/imagens/macacao/macacao1.webp",
+        img: "./imagens/macacao/macacao1.webp",
         quantidade:0
     },
     {
@@ -17,7 +17,7 @@ const macacoes = [
         nome: "Macacão Dois",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/macacao/macacao2.webp",
+        img: "./imagens/macacao/macacao2.webp",
         quantidade:0
     },
     {
@@ -25,7 +25,7 @@ const macacoes = [
         nome: "Macacão Tres",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/macacao/macacao3.webp",
+        img: "./imagens/macacao/macacao3.webp",
         quantidade:0
     },{
         codigo: 3,
@@ -36,7 +36,7 @@ const macacoes = [
             "Manga Cpomprida tipo bishop",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/macacao/macacao4.webp",
+        img: "./imagens/macacao/macacao4.webp",
         quantidade:0
     },
     {
@@ -48,7 +48,7 @@ const macacoes = [
             "Sem Mangas",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/macacao/macacao5.jpg",
+        img: "./imagens/macacao/macacao5.jpg",
         quantidade:0
     },
     {
@@ -60,7 +60,7 @@ const macacoes = [
             "Sem mangas",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/macacao/macacao6.jpg",
+        img: "./imagens/macacao/macacao6.jpg",
         quantidade:0
     },{
         codigo: 6,
@@ -71,7 +71,7 @@ const macacoes = [
             "Manga Curta esvoaçante, bainha estreita",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/macacao/macacao7.jpg",
+        img: "./imagens/macacao/macacao7.jpg",
         quantidade:0
     },
     {
@@ -84,7 +84,7 @@ const macacoes = [
             "Manga Comprida de enriolar",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/macacao/macacao8.jpg",
+        img: "./imagens/macacao/macacao8.jpg",
         quantidade:0
     },
     {
@@ -96,7 +96,7 @@ const macacoes = [
             "Manga Curta tipo Morcego",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/macacao/macacao9.jpg",
+        img: "./imagens/macacao/macacao9.jpg",
         quantidade:0
     },
     {
@@ -108,7 +108,7 @@ const macacoes = [
             "Manga Comprida, regular",
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
-        img: "/imagens/macacao/macacao10.webp",
+        img: ."/imagens/macacao/macacao10.webp",
         quantidade:0
     }
 
