@@ -9,7 +9,7 @@ const casacos = [
             "Sem manga",
             "Tecido não elástico, 92% Poliéster, 8% Elastano"
         ],
-        img: "/imagens/casacos/casaco1.jpg",
+        img: "./imagens/casacos/casaco1.jpg",
         quantidade:0
         
     },
@@ -18,7 +18,7 @@ const casacos = [
         nome: "bsfgfsdfsdfs",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/casacos/casaco2.webp",
+        img: "./imagens/casacos/casaco2.webp",
         quantidade:0
     },
     {
@@ -26,7 +26,7 @@ const casacos = [
         nome: "bsfgfsdfsdfs",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/casacos/casaco3.webp",
+        img: "./imagens/casacos/casaco3.webp",
         quantidade:0
     },{
         codigo: 3,
@@ -37,7 +37,7 @@ const casacos = [
             "Manga Cpomprida tipo bishop",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/casacos/casaco4.webp",
+        img: "./imagens/casacos/casaco4.webp",
         quantidade:0
     },
     {
@@ -49,7 +49,7 @@ const casacos = [
             "Sem Mangas",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/casacos/casaco5.jpg",
+        img: "./imagens/casacos/casaco5.jpg",
         quantidade:0
     },
     {
@@ -61,7 +61,7 @@ const casacos = [
             "Sem mangas",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/casacos/casaco6.webp",
+        img: "./imagens/casacos/casaco6.webp",
         quantidade:0
     },{
         codigo: 6,
@@ -72,7 +72,7 @@ const casacos = [
             "Manga Curta esvoaçante, bainha estreita",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/casacos/casaco7.jpg",
+        img: "./imagens/casacos/casaco7.jpg",
         quantidade:0
     },
     {
@@ -85,7 +85,7 @@ const casacos = [
             "Manga Comprida de enriolar",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/casacos/casaco8.webp",
+        img: "./imagens/casacos/casaco8.webp",
         quantidade:0
     },
     {
@@ -97,7 +97,7 @@ const casacos = [
             "Manga Curta tipo Morcego",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/casacos/casaco9.jpg",
+        img: "./imagens/casacos/casaco9.jpg",
         quantidade:0
     },
     {
@@ -109,7 +109,7 @@ const casacos = [
             "Manga Comprida, regular",
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
-        img: "/imagens/casacos/casaco10.jpg",
+        img: "./imagens/casacos/casaco10.jpg",
         quantidade:0
     }
 
