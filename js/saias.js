@@ -9,7 +9,7 @@ const saias = [
             "Sem manga",
             "Tecido não elástico, 92% Poliéster, 8% Elastano"
         ],
-        img: "/imagens/saias/saia1.jpg",
+        img: "./imagens/saias/saia1.jpg",
         quantidade: 0
     },
     {
@@ -17,7 +17,7 @@ const saias = [
         nome: "Saia Dois",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/saias/saia2.png",
+        img: ."/imagens/saias/saia2.png",
         quantidade: 0
     },
     {
@@ -25,7 +25,7 @@ const saias = [
         nome: "Saia Três",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/saias/saia3.jpg",
+        img: "./imagens/saias/saia3.jpg",
         quantidade: 0
     },{
         codigo: 3,
@@ -36,7 +36,7 @@ const saias = [
             "Manga Cpomprida tipo bishop",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/saias/saia4.jpg",
+        img: "./imagens/saias/saia4.jpg",
         quantidade: 0
     },
     {
@@ -48,7 +48,7 @@ const saias = [
             "Sem Mangas",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/saias/saia5.webp",
+        img: "./imagens/saias/saia5.webp",
         quantidade: 0
     },
     {
@@ -60,7 +60,7 @@ const saias = [
             "Sem mangas",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/saias/saia6.png",
+        img: "./imagens/saias/saia6.png",
         quantidade: 0
     },{
         codigo: 6,
@@ -71,7 +71,7 @@ const saias = [
             "Manga Curta esvoaçante, bainha estreita",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/saias/saia7.webp",
+        img: "./imagens/saias/saia7.webp",
         quantidade: 0
     },
     {
@@ -84,7 +84,7 @@ const saias = [
             "Manga Comprida de enriolar",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/saias/saia8.webp",
+        img: "./imagens/saias/saia8.webp",
         quantidade: 0
     },
     {
@@ -96,7 +96,7 @@ const saias = [
             "Manga Curta tipo Morcego",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/saias/saia9.webp",
+        img: "./imagens/saias/saia9.webp",
         quantidade: 0
     },
     {
@@ -108,7 +108,7 @@ const saias = [
             "Manga Comprida, regular",
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
-        img: "/imagens/saias/saia10.webp",
+        img: "./imagens/saias/saia10.webp",
         quantidade: 0
     }
 ]
