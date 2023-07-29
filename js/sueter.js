@@ -9,21 +9,21 @@ const sueter = [
             "Sem manga",
             "Tecido não elástico, 92% Poliéster, 8% Elastano"
         ],
-        img: "/imagens/sueter/sueter1.jpg",
+        img: "./imagens/sueter/sueter1.jpg",
     },
     {
         codigo: 2,
         nome: "bsfgfsdfsdfs",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/sueter/sueter2.jpg",
+        img: "./imagens/sueter/sueter2.jpg",
     },
     {
         codigo: 3,
         nome: "bsfgfsdfsdfs",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/sueter/sueter3.jpg",
+        img: "./imagens/sueter/sueter3.jpg",
     },{
         codigo: 4,
         nome: "Blusa Malha de contraste",
@@ -33,7 +33,7 @@ const sueter = [
             "Manga Cpomprida tipo bishop",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/sueter/sueter4.jpg",
+        img: "./imagens/sueter/sueter4.jpg",
     },
     {
         codigo: 5,
@@ -44,7 +44,7 @@ const sueter = [
             "Sem Mangas",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/sueter/sueter5.jpg",
+        img: "./imagens/sueter/sueter5.jpg",
     },
     {
         codigo: 6,
@@ -55,7 +55,7 @@ const sueter = [
             "Sem mangas",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/sueter/sueter6.jpg",
+        img: "./imagens/sueter/sueter6.jpg",
     },{
         codigo: 7,
         nome: " Blusa Vcay ",
@@ -65,7 +65,7 @@ const sueter = [
             "Manga Curta esvoaçante, bainha estreita",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/sueter/sueter7.jpg",
+        img: "./imagens/sueter/sueter7.jpg",
     },
     {
         codigo: 8,
@@ -77,7 +77,7 @@ const sueter = [
             "Manga Comprida de enriolar",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/sueter/sueter8.webp",
+        img: "./imagens/sueter/sueter8.webp",
     },
     {
         codigo: 9,
@@ -88,7 +88,7 @@ const sueter = [
             "Manga Curta tipo Morcego",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/sueter/sueter9.webp",
+        img: "./imagens/sueter/sueter9.webp",
     },
     {
         codigo: 10,
@@ -99,7 +99,7 @@ const sueter = [
             "Manga Comprida, regular",
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
-        img: "/imagens/sueter/sueter10.webp",
+        img: "./imagens/sueter/sueter10.webp",
     }
 
 
