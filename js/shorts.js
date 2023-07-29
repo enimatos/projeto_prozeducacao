@@ -9,21 +9,21 @@ const shorts = [
             "Sem manga",
             "Tecido não elástico, 92% Poliéster, 8% Elastano"
         ],
-        img: "/imagens/shorts/shorts1.webp",
+        img: "./imagens/shorts/shorts1.webp",
     },
     {
         codigo: 2,
         nome: "bsfgfsdfsdfs",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/shorts/shorts2.jpg",
+        img: "./imagens/shorts/shorts2.jpg",
     },
     {
         codigo: 3,
         nome: "bsfgfsdfsdfs",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/shorts/shorts3.webp",
+        img: "./imagens/shorts/shorts3.webp",
     },{
         codigo: 4,
         nome: "Blusa Malha de contraste",
@@ -33,7 +33,7 @@ const shorts = [
             "Manga Cpomprida tipo bishop",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/shorts/shorts4.jpg",
+        img: "./imagens/shorts/shorts4.jpg",
     },
     {
         codigo: 5,
@@ -44,7 +44,7 @@ const shorts = [
             "Sem Mangas",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/shorts/shorts5.jpg",
+        img: "./imagens/shorts/shorts5.jpg",
     },
     {
         codigo: 6,
@@ -55,7 +55,7 @@ const shorts = [
             "Sem mangas",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/conjunto/conjunto6.jpg",
+        img: "./imagens/conjunto/conjunto6.jpg",
     },{
         codigo: 7,
         nome: " Blusa Vcay ",
@@ -65,7 +65,7 @@ const shorts = [
             "Manga Curta esvoaçante, bainha estreita",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/shorts/shorts7.jpg",
+        img: "./imagens/shorts/shorts7.jpg",
     },
     {
         codigo: 8,
@@ -77,7 +77,7 @@ const shorts = [
             "Manga Comprida de enriolar",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/shorts/shorts8.webp",
+        img: "./imagens/shorts/shorts8.webp",
     },
     {
         codigo: 9,
@@ -88,7 +88,7 @@ const shorts = [
             "Manga Curta tipo Morcego",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/shorts/shorts9.jpg",
+        img: "./imagens/shorts/shorts9.jpg",
     },
     {
         codigo: 10,
@@ -99,7 +99,7 @@ const shorts = [
             "Manga Comprida, regular",
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
-        img: "/imagens/shorts/shorts10.jpg",
+        img: "./imagens/shorts/shorts10.jpg",
     }
 
 
