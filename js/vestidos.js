@@ -9,21 +9,21 @@ const vestidos = [
             "Sem manga",
             "Tecido não elástico, 92% Poliéster, 8% Elastano"
         ],
-        img: "/imagens/vestidos/vestido1.jpg",
+        img: "./imagens/vestidos/vestido1.jpg",
     },
     {
         codigo: 2,
         nome: "bsfgfsdfsdfs",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/vestidos/vestido2.jpg",
+        img: "./imagens/vestidos/vestido2.jpg",
     },
     {
         codigo: 3,
         nome: "bsfgfsdfsdfs",
         preco: 37.90,
         descricao: "fssfsfs",
-        img: "/imagens/vestidos/vestido3.webp",
+        img: "./imagens/vestidos/vestido3.webp",
     },{
         codigo: 4,
         nome: "Blusa Malha de contraste",
@@ -33,7 +33,7 @@ const vestidos = [
             "Manga Cpomprida tipo bishop",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/vestidos/vestido4.webp",
+        img: "./imagens/vestidos/vestido4.webp",
     },
     {
         codigo: 5,
@@ -44,7 +44,7 @@ const vestidos = [
             "Sem Mangas",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/vestidos/vestido5.jpg",
+        img: "./imagens/vestidos/vestido5.jpg",
     },
     {
         codigo: 6,
@@ -55,7 +55,7 @@ const vestidos = [
             "Sem mangas",
             "Tecido não elástico, 95% Poliéster, 5% Elastano"
         ],
-        img: "/imagens/vestidos/vestido6.webp",
+        img: "./imagens/vestidos/vestido6.webp",
     },{
         codigo: 7,
         nome: " Blusa Vcay ",
@@ -65,7 +65,7 @@ const vestidos = [
             "Manga Curta esvoaçante, bainha estreita",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/vestidos/vestido7.webp",
+        img: "./imagens/vestidos/vestido7.webp",
     },
     {
         codigo: 8,
@@ -77,7 +77,7 @@ const vestidos = [
             "Manga Comprida de enriolar",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/vestidos/vestido8.webp",
+        img: "./imagens/vestidos/vestido8.webp",
     },
     {
         codigo: 9,
@@ -88,7 +88,7 @@ const vestidos = [
             "Manga Curta tipo Morcego",
             "Tecido não elástico, 100% Poliéster"
         ],
-        img: "/imagens/vestidos/vestido9.webp",
+        img: "./imagens/vestidos/vestido9.webp",
     },
     {
         codigo: 10,
@@ -99,7 +99,7 @@ const vestidos = [
             "Manga Comprida, regular",
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
-        img: "/imagens/vestidos/vestido10.webp",
+        img: "./imagens/vestidos/vestido10.webp",
     },
     {
         codigo: 10,
@@ -110,7 +110,7 @@ const vestidos = [
             "Manga Comprida, regular",
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
-        img: "/imagens/vestidos/vestido11.webp",
+        img: "./imagens/vestidos/vestido11.webp",
     }
 
 
