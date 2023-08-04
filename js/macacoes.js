@@ -108,7 +108,7 @@ const macacoes = [
             "Manga Comprida, regular",
             "Baixa elasticidade, 92% Poliéster e 8% Elastano"
         ],
-        img: ."/imagens/macacao/macacao10.webp",
+        img: "./imagens/macacao/macacao10.webp",
         quantidade:0
     }
 

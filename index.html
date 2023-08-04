@@ -26,24 +26,20 @@
 <body>
     <header id="cabecalho">
         <div class="orienta">
-            <div>
-                <figure id="topo" class="div_topo">
-                    <img >
-                </figure>
+            <div id="div_topo">
+                <img src="./imagens/Ellas-Logo_mini.png" alt="logo da loja Ellas" id="topo" >
             </div>
-            <nav>
+            <nav id="nav-topo">
                 <ul class="alinhado">
-                    <li>
-                        <div id="divPesquisa">
-                            <input type="text" id="txtBusca">
-                            <button id="btnBusca"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                    </li>
-                    <li><a href="#favoritos.html"><span class="texto">Meus favoritos </span><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#favoritos"><span class="texto">Meus favoritos </span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg></a></li>
                     <li><a href="#meu-carrinho"><span class="texto">Carrinho </span><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="#login"><span class="texto">Login/Cadastro </span><i class="fa-regular fa-user"></i></a></li> 
                 </ul>
             </nav>
+        </div>
+        <div id="divPesquisa">
+            <input type="text" id="txtBusca">
+            <button id="btnBusca"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <nav id="nav">
             <button id="burguer"><i class="fa-solid fa-bars"></i></button>
@@ -241,13 +237,16 @@
                         <img src="./imagens/Ellas-Logo_mini.png" alt="">
                     </div>
                     <form class="formulario">
-                        <h1>Login</h1>
+                        <h2>Login</h2>
                         <div class="label-float">
                             <label for="email" class="labelEmail">E-mail: </label>
-                            <input type="email" class="email" name="email" required placeholder="nome@text.com.br">
+                            <input type="email" class="email" id="email" name="email" required placeholder="nome@text.com.br">
                         </div>
                         <div class="label-float">
-                            <label for="senha" class="labelSenha">Senha: </label><i class="fa-sharp fa-solid fa-eye"></i>
+                            <div class="dist-senha">
+                                <label for="senha" class="labelSenha">Senha: </label>
+                                <div><i class="fa-sharp fa-solid fa-eye"></i></div>
+                            </div>
                             <input type="password" class="senha" name="senha" required >
                         </div>
                         <div class="justify-center">
@@ -272,20 +271,20 @@
                         <img src="./imagens/Ellas-Logo_mini.png" alt="">
                     </div>
                     <form class="formulario">
-                        <h1>Cadastro</h1>
+                        <h2>Cadastro</h2>
                         <div class="label-float">
                             <label  for="nome" class="labelNome">Nome* </label>
-                            <input type="text" class="nome" name="nome" required >
+                            <input type="text" class="nome" id="nome" name="nome" required >
                         </div>
         
                         <div class="label-float">
                             <label for="sobrenome" class="labelSobrenome">Sobrenome* </label>
-                            <input type="text" class="sobrenome" name="sobrenome" >
+                            <input type="text" class="sobrenome" id="sobrenome" name="sobrenome" >
                         </div>
         
                         <div class="label-float">
                             <label for="dtnasc" class="labelDtNasc">Data de Nascimento* </label>
-                            <input type="date" class="dtnasc" name="dtnasc" required placeholder="00/00/0000">
+                            <input type="date" class="dtnasc" name="dtnasc" id="dtnasc" required placeholder="00/00/0000">
                         </div>
         
                         <div class="label-float">
@@ -295,16 +294,22 @@
         
                         <div class="label-float">
                             <label for="email" class="labelEmailCadastro">E-mail: </label>
-                            <input type="email" class="emailCadastro" name="email" required placeholder="nome@text.com.br">
+                            <input type="email" class="emailCadastro" id="email" name="email" required placeholder="nome@text.com.br">
                         </div>
                         <div class="label-float">
-                            <label for="senha" class="labelSenhaCadastro">Senha: </label><i id="labelSenhaCadastro" class="fa-sharp fa-solid fa-eye"></i>
-                            <input type="password" class="senhaCadastro" name="senha" required >
+                            <div class="dist-senha">
+                                <label for="senha" class="labelSenhaCadastro">Senha: </label>
+                                <div><i id="labelSenhaCadastro" class="fa-sharp fa-solid fa-eye"></i></div>
+                            </div>
+                            <input type="password" class="senhaCadastro" id="senha" name="senha" required >
                         </div>
         
                         <div class="label-float">
-                            <label for="confirmSenha" class="labelConfirmSenha">Confirmar Senha: </label><i id="verConfirmSenha" class="fa-sharp fa-solid fa-eye"></i>
-                            <input type="password" class="confirmSenha" name="confirmSenha" required >
+                            <div class="dist-senha">
+                                <label for="confirmSenha" class="labelConfirmSenha">Confirmar Senha: </label>
+                                <div><i id="verConfirmSenha" class="fa-sharp fa-solid fa-eye"></i></div>
+                            </div>
+                            <input type="password" class="confirmSenha" id="confirmSenha" name="confirmSenha" required >
                         </div>
                         <div class="justify-center">
                             <button type="submit" onclick="alert('Cadastro realizado')">Cadastrar</button>
@@ -320,10 +325,10 @@
                         <img src="./imagens/Ellas-Logo_mini.png" alt="">
                     </div>
                     <form class="formulario">
-                        <h1>Contato:</h1>
+                        <h2>Contato:</h2>
                         <div class="label-float">
                             <label for="assunto" class="labelAssunto">Assunto:</label>
-                            <input type="text" name="assunto" class="assunto" required>
+                            <input type="text" name="assunto" id="assunto" class="assunto" required>
                         </div>
                         <div class="label-float">
                             <label for="nome" class="labelNome">Nome:</label>
@@ -331,7 +336,7 @@
                         </div>
                         <div class="label-float">
                             <label for="telefone" class="labelTelefone">Telefone *</label>
-                            <input type="tel" name="telefone" class="telefone" required placeholder="(00) 00000-0000">
+                            <input type="tel" name="telefone" id="telefone" class="telefone" required placeholder="(00) 00000-0000">
                         </div>
                         <div class="label-float">
                             <label for="email" class="labelEmail">E-mail: </label>
@@ -339,7 +344,7 @@
                         </div>
                         <div class="label-float">
                             <label for="campo-texto">Vamos lá, me conta:</label>
-                            <textarea class="campo-texto" name="campo-texto"></textarea>
+                            <textarea class="campo-texto" rows="8" name="campo-texto"></textarea>
                         </div>    
                         <div class="justify-center">
                             <button type="submit">  Enviar  </button>

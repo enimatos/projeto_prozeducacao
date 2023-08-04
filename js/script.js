@@ -150,7 +150,7 @@ function renderizarProdutos(arr, secao) {
 
     const img = document.createElement("img");
 
-    const preco = document.createElement("span");
+    const preco = document.createElement("p");
 
     preco.classList.add("preco");
 
